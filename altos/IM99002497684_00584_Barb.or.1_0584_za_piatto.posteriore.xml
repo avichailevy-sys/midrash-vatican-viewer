@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+    xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-3.xsd">
+    <Description>
+        <MeasurementUnit>pixel</MeasurementUnit>
+        <sourceImageInformation>
+            <fileName>/nas/archive/paris-data/non_ktiv_mss_imgs/Vatican_MSS/MSS_Barb.or.1/IM99002497684_00584_Barb.or.1_0584_za_piatto.posteriore.jpg</fileName>
+        </sourceImageInformation>
+        <Processing ID="OCR_0">
+            <processingCategory>other</processingCategory>
+            <processingStepDescription>unknown</processingStepDescription>
+            <processingSoftware>
+                <softwareName>kraken</softwareName>
+                <softwareVersion>5.3.1.dev56</softwareVersion>
+            </processingSoftware>
+        </Processing>
+    </Description>
+    <Tags>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_1" TYPE="region" LABEL="Arabic"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_2" TYPE="region" LABEL="Oblique_135"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_3" TYPE="region" LABEL="Oblique_45"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_4" TYPE="region" LABEL="Oblique_225"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_5" TYPE="region" LABEL="Oblique_315"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_6" TYPE="region" LABEL="Main"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_7" TYPE="region" LABEL="Upside_Down"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_8" TYPE="region" LABEL="Vertical_Top_Down_270"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_9" TYPE="region" LABEL="Vertical_Bottom_Up_90"/>
+    </Tags>
+    <Layout>
+        <Page WIDTH="2915" HEIGHT="3484" PHYSICAL_IMG_NR="0" ID="page_0">
+            <PrintSpace HPOS="0" VPOS="0" WIDTH="2915" HEIGHT="3484">
+                <TextBlock ID="_8832080e-9ad9-4a6e-9f06-f11d9b3a7d68" HPOS="836" VPOS="1602" WIDTH="8" HEIGHT="160" TAGREFS="REGION_TYPE_1">
+<Shape>
+                        <Polygon POINTS="841 1602 844 1762 836 1762 836 1602 841 1602"/>
+                    </Shape></TextBlock>
+                <TextBlock ID="_a6d914cd-569b-4137-b81e-681568f53ea2" HPOS="2090" VPOS="1614" WIDTH="43" HEIGHT="194" TAGREFS="REGION_TYPE_1">
+<Shape>
+                        <Polygon POINTS="2133 1614 2133 1808 2102 1808 2090 1707 2133 1614"/>
+                    </Shape></TextBlock>
+                <TextBlock ID="_915ce7ba-f6e5-4870-8894-4558f1148d1b" HPOS="2125" VPOS="1416" WIDTH="8" HEIGHT="21" TAGREFS="REGION_TYPE_1">
+<Shape>
+                        <Polygon POINTS="2133 1416 2133 1437 2125 1437 2125 1416 2133 1416"/>
+                    </Shape></TextBlock>
+                <TextBlock ID="_7c6dbecf-10ec-4d6a-9cc1-82003b7c63aa" HPOS="2125" VPOS="1474" WIDTH="8" HEIGHT="56" TAGREFS="REGION_TYPE_1">
+<Shape>
+                        <Polygon POINTS="2131 1474 2133 1530 2125 1530 2125 1474 2131 1474"/>
+                    </Shape></TextBlock>
+                <TextBlock ID="_d9d56296-46ca-4505-87bb-fa22a427175c" HPOS="2404" VPOS="476" WIDTH="217" HEIGHT="183" TAGREFS="REGION_TYPE_1">
+<Shape>
+                        <Polygon POINTS="2424 476 2621 557 2586 659 2404 589 2424 476"/>
+                    </Shape></TextBlock>
+                <TextBlock ID="_718f3da4-f1df-45bc-bd46-3f17cc7d91e1" HPOS="2671" VPOS="510" WIDTH="43" HEIGHT="90" TAGREFS="REGION_TYPE_1">
+<Shape>
+                        <Polygon POINTS="2703 510 2714 577 2682 600 2671 545 2703 510"/>
+                    </Shape></TextBlock>
+            </PrintSpace>
+        </Page>
+    </Layout>
+</alto>

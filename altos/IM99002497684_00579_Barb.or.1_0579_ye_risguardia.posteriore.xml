@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+    xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-3.xsd">
+    <Description>
+        <MeasurementUnit>pixel</MeasurementUnit>
+        <sourceImageInformation>
+            <fileName>/nas/archive/paris-data/non_ktiv_mss_imgs/Vatican_MSS/MSS_Barb.or.1/IM99002497684_00579_Barb.or.1_0579_ye_risguardia.posteriore.jpg</fileName>
+        </sourceImageInformation>
+        <Processing ID="OCR_0">
+            <processingCategory>other</processingCategory>
+            <processingStepDescription>unknown</processingStepDescription>
+            <processingSoftware>
+                <softwareName>kraken</softwareName>
+                <softwareVersion>5.3.1.dev56</softwareVersion>
+            </processingSoftware>
+        </Processing>
+    </Description>
+    <Tags>
+        <OtherTag DESCRIPTION="line type" ID="LINE_TYPE_1" TYPE="type" LABEL="Arabic"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_1" TYPE="region" LABEL="Arabic"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_2" TYPE="region" LABEL="Oblique_135"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_3" TYPE="region" LABEL="Oblique_45"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_4" TYPE="region" LABEL="Oblique_225"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_5" TYPE="region" LABEL="Oblique_315"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_6" TYPE="region" LABEL="Main"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_7" TYPE="region" LABEL="Upside_Down"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_8" TYPE="region" LABEL="Vertical_Top_Down_270"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_9" TYPE="region" LABEL="Vertical_Bottom_Up_90"/>
+    </Tags>
+    <Layout>
+        <Page WIDTH="2762" HEIGHT="3413" PHYSICAL_IMG_NR="0" ID="page_0">
+            <PrintSpace HPOS="0" VPOS="0" WIDTH="2762" HEIGHT="3413">
+                <TextBlock ID="_ee43ef7d-6b73-4fca-acaa-96f874dfca8b" HPOS="2355" VPOS="409" WIDTH="168" HEIGHT="191" TAGREFS="REGION_TYPE_1">
+<Shape>
+                        <Polygon POINTS="2426 409 2523 443 2523 543 2443 600 2355 497 2426 409"/>
+                    </Shape>
+                    <TextLine ID="_9f02947c-5abb-4082-b3e5-b18a44d0cfa3" HPOS="2477" VPOS="466" WIDTH="26" HEIGHT="176" BASELINE="2477 514 2503 514" TAGREFS="LINE_TYPE_1">
+                        <Shape>
+                            <Polygon POINTS="2477 514 2477 642 2503 637 2503 514 2500 466 2477 469 2477 514"/>
+                        </Shape>
+                        <String CONTENT=""/>
+                    </TextLine>
+</TextBlock>
+                <TextBlock ID="_6aa715ac-9d60-4470-ad7d-ea86ed05bb60" HPOS="398" VPOS="466" WIDTH="8" HEIGHT="8" TAGREFS="REGION_TYPE_1">
+<Shape>
+                        <Polygon POINTS="401 466 406 466 406 474 398 474 401 466"/>
+                    </Shape></TextBlock>
+                <TextBlock ID="_7b874b35-2e8e-4106-902e-fcb5b4b0bc6e" HPOS="1763" VPOS="2502" WIDTH="20" HEIGHT="9" TAGREFS="REGION_TYPE_7">
+<Shape>
+                        <Polygon POINTS="1766 2502 1783 2502 1783 2511 1763 2511 1766 2502"/>
+                    </Shape></TextBlock>
+                <TextBlock ID="_4f3a11fb-4712-4aed-bb8c-6c4a5ea922a5" HPOS="1809" VPOS="2502" WIDTH="8" HEIGHT="9" TAGREFS="REGION_TYPE_7">
+<Shape>
+                        <Polygon POINTS="1814 2502 1817 2511 1809 2511 1809 2502 1814 2502"/>
+                    </Shape></TextBlock>
+                <TextBlock ID="_ef25467e-1b34-46b8-86f8-73f95ab55879" HPOS="1763" VPOS="2434" WIDTH="145" HEIGHT="54" TAGREFS="REGION_TYPE_7">
+<Shape>
+                        <Polygon POINTS="1848 2434 1908 2488 1763 2488 1786 2445 1848 2434"/>
+                    </Shape></TextBlock>
+            </PrintSpace>
+        </Page>
+    </Layout>
+</alto>

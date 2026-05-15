@@ -1,0 +1,2296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+    xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-3.xsd">
+    <Description>
+        <MeasurementUnit>pixel</MeasurementUnit>
+        <sourceImageInformation>
+            <fileName>/nas/archive/paris-data/non_ktiv_mss_imgs/Vatican_MSS/MSS_Barb.or.1/IM99002497684_00276_Barb.or.1_0276_fa_0125v.jpg</fileName>
+        </sourceImageInformation>
+        <Processing ID="OCR_0">
+            <processingCategory>other</processingCategory>
+            <processingStepDescription>unknown</processingStepDescription>
+            <processingSoftware>
+                <softwareName>kraken</softwareName>
+                <softwareVersion>5.3.1.dev56</softwareVersion>
+            </processingSoftware>
+        </Processing>
+    </Description>
+    <Tags>
+        <OtherTag DESCRIPTION="line type" ID="LINE_TYPE_1" TYPE="type" LABEL="NotMain"/>
+        <OtherTag DESCRIPTION="line type" ID="LINE_TYPE_2" TYPE="type" LABEL="Main"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_1" TYPE="region" LABEL="Margin"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_2" TYPE="region" LABEL="Main"/>
+    </Tags>
+    <Layout>
+        <Page WIDTH="2725" HEIGHT="3411" PHYSICAL_IMG_NR="0" ID="page_0">
+            <PrintSpace HPOS="0" VPOS="0" WIDTH="2725" HEIGHT="3411">
+                <TextBlock ID="_d370da45-59ea-484e-9c96-e90bb1a3e7bf" HPOS="170" VPOS="625" WIDTH="1189" HEIGHT="1953" TAGREFS="REGION_TYPE_2">
+<Shape>
+                        <Polygon POINTS="1126 625 1328 659 1316 2453 1359 2566 193 2578 170 750 1126 625"/>
+                    </Shape>
+                    <TextLine ID="_1086eda5-4592-4859-a502-8b3d00448ad2" HPOS="992" VPOS="625" WIDTH="211" HEIGHT="148" BASELINE="1004 702 1188 665" TAGREFS="LINE_TYPE_2">
+                        <Shape>
+                            <Polygon POINTS="1163 631 1132 625 1123 625 992 648 1004 702 1018 773 1203 750 1188 665 1177 631 1163 631"/>
+                        </Shape>
+                        <String ID="segment_0" CONTENT="בסון" HPOS="1014" VPOS="629" WIDTH="163" HEIGHT="141" WC="0.9881">
+                            <Shape>
+                                <Polygon POINTS="1014 644 1039 770 1177 753 1153 629"/>
+                            </Shape>
+                            <Glyph ID="char_0" CONTENT="ב" HPOS="1153" VPOS="629" WIDTH="24" HEIGHT="124" GC="0.9734">
+                                <Shape>
+                                    <Polygon POINTS="1153 629 1177 753 1177 753 1153 629"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_1" CONTENT="ס" HPOS="1092" VPOS="631" WIDTH="26" HEIGHT="130" GC="0.993">
+                                <Shape>
+                                    <Polygon POINTS="1092 631 1118 761 1118 761 1092 631"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_2" CONTENT="ו" HPOS="1043" VPOS="639" WIDTH="26" HEIGHT="128" GC="0.9914">
+                                <Shape>
+                                    <Polygon POINTS="1043 639 1069 767 1069 767 1043 639"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_3" CONTENT="ן" HPOS="1014" VPOS="644" WIDTH="25" HEIGHT="126" GC="0.9945">
+                                <Shape>
+                                    <Polygon POINTS="1014 644 1039 770 1039 770 1014 644"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                    </TextLine>
+
+                    <TextLine ID="_497c1b31-bafc-4f97-a948-9bf2fbf32c03" HPOS="287" VPOS="750" WIDTH="981" HEIGHT="119" BASELINE="290 810 1268 804" TAGREFS="LINE_TYPE_2">
+                        <Shape>
+                            <Polygon POINTS="290 810 290 852 773 869 776 869 779 869 859 849 964 849 978 864 978 866 981 866 984 866 987 869 1191 869 1191 866 1194 866 1268 847 1268 804 1265 776 1103 750 1100 750 913 776 853 750 850 750 776 750 773 750 770 750 768 750 768 753 742 776 682 781 597 781 546 753 543 753 406 753 403 753 401 753 398 753 398 756 378 773 287 756 290 810"/>
+                        </Shape>
+                        <String ID="segment_1" CONTENT="אאיצפם" HPOS="1090" VPOS="751" WIDTH="148" HEIGHT="118" WC="0.8257">
+                            <Shape>
+                                <Polygon POINTS="1090 751 1090 869 1238 855 1238 772"/>
+                            </Shape>
+                            <Glyph ID="char_4" CONTENT="א" HPOS="1238" VPOS="772" WIDTH="0" HEIGHT="83" GC="0.8768">
+                                <Shape>
+                                    <Polygon POINTS="1238 772 1238 855 1238 855 1238 772"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_5" CONTENT="א" HPOS="1197" VPOS="765" WIDTH="0" HEIGHT="100" GC="0.9521">
+                                <Shape>
+                                    <Polygon POINTS="1197 765 1197 865 1197 865 1197 765"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_6" CONTENT="י" HPOS="1164" VPOS="760" WIDTH="0" HEIGHT="109" GC="0.8448">
+                                <Shape>
+                                    <Polygon POINTS="1164 760 1164 869 1164 869 1164 760"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_7" CONTENT="צ" HPOS="1147" VPOS="757" WIDTH="0" HEIGHT="112" GC="0.3171">
+                                <Shape>
+                                    <Polygon POINTS="1147 757 1147 869 1147 869 1147 757"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_8" CONTENT="פ" HPOS="1114" VPOS="752" WIDTH="0" HEIGHT="117" GC="0.9787">
+                                <Shape>
+                                    <Polygon POINTS="1114 752 1114 869 1114 869 1114 752"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_9" CONTENT="ם" HPOS="1090" VPOS="751" WIDTH="0" HEIGHT="118" GC="0.9844">
+                                <Shape>
+                                    <Polygon POINTS="1090 751 1090 869 1090 869 1090 751"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_2" HPOS="1057"  VPOS="755" WIDTH="8"  HEIGHT="114"/>
+                        <String ID="segment_3" CONTENT="במיא" HPOS="933" VPOS="758" WIDTH="107" HEIGHT="111" WC="0.917">
+                            <Shape>
+                                <Polygon POINTS="933 773 933 849 1040 869 1040 758"/>
+                            </Shape>
+                            <Glyph ID="char_11" CONTENT="ב" HPOS="1040" VPOS="758" WIDTH="0" HEIGHT="111" GC="0.8961">
+                                <Shape>
+                                    <Polygon POINTS="1040 758 1040 869 1040 869 1040 758"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_12" CONTENT="מ" HPOS="991" VPOS="765" WIDTH="0" HEIGHT="104" GC="0.7755">
+                                <Shape>
+                                    <Polygon POINTS="991 765 991 869 991 869 991 765"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_13" CONTENT="י" HPOS="958" VPOS="770" WIDTH="0" HEIGHT="79" GC="0.999">
+                                <Shape>
+                                    <Polygon POINTS="958 770 958 849 958 849 958 770"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_14" CONTENT="א" HPOS="933" VPOS="773" WIDTH="0" HEIGHT="76" GC="0.9976">
+                                <Shape>
+                                    <Polygon POINTS="933 773 933 849 933 849 933 773"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_4" HPOS="884"  VPOS="763" WIDTH="8"  HEIGHT="86"/>
+                        <String ID="segment_5" CONTENT="מצף" HPOS="801" VPOS="750" WIDTH="66" HEIGHT="113" WC="0.9814">
+                            <Shape>
+                                <Polygon POINTS="801 750 801 863 867 849 867 756"/>
+                            </Shape>
+                            <Glyph ID="char_16" CONTENT="מ" HPOS="867" VPOS="756" WIDTH="0" HEIGHT="93" GC="0.9995">
+                                <Shape>
+                                    <Polygon POINTS="867 756 867 849 867 849 867 756"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_17" CONTENT="צ" HPOS="834" VPOS="750" WIDTH="0" HEIGHT="105" GC="0.9839">
+                                <Shape>
+                                    <Polygon POINTS="834 750 834 855 834 855 834 750"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_18" CONTENT="ף" HPOS="801" VPOS="750" WIDTH="0" HEIGHT="113" GC="0.9607">
+                                <Shape>
+                                    <Polygon POINTS="801 750 801 863 801 863 801 750"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_6" HPOS="768"  VPOS="750" WIDTH="8"  HEIGHT="119"/>
+                        <String ID="segment_7" CONTENT="וחב" HPOS="719" VPOS="760" WIDTH="41" HEIGHT="109" WC="0.9773">
+                            <Shape>
+                                <Polygon POINTS="719 778 719 867 760 869 760 760"/>
+                            </Shape>
+                            <Glyph ID="char_20" CONTENT="ו" HPOS="760" VPOS="760" WIDTH="0" HEIGHT="109" GC="0.9602">
+                                <Shape>
+                                    <Polygon POINTS="760 760 760 869 760 869 760 760"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_21" CONTENT="ח" HPOS="743" VPOS="775" WIDTH="0" HEIGHT="93" GC="0.9834">
+                                <Shape>
+                                    <Polygon POINTS="743 775 743 868 743 868 743 775"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_22" CONTENT="ב" HPOS="719" VPOS="778" WIDTH="0" HEIGHT="89" GC="0.9884">
+                                <Shape>
+                                    <Polygon POINTS="719 778 719 867 719 867 719 778"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_8" HPOS="677"  VPOS="781" WIDTH="9"  HEIGHT="85"/>
+                        <String ID="segment_9" CONTENT="אית" HPOS="595" VPOS="780" WIDTH="66" HEIGHT="85" WC="0.8705">
+                            <Shape>
+                                <Polygon POINTS="595 780 595 863 661 865 661 781"/>
+                            </Shape>
+                            <Glyph ID="char_24" CONTENT="א" HPOS="661" VPOS="781" WIDTH="0" HEIGHT="84" GC="0.987">
+                                <Shape>
+                                    <Polygon POINTS="661 781 661 865 661 865 661 781"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_25" CONTENT="י" HPOS="620" VPOS="781" WIDTH="0" HEIGHT="83" GC="0.63">
+                                <Shape>
+                                    <Polygon POINTS="620 781 620 864 620 864 620 781"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_26" CONTENT="ת" HPOS="595" VPOS="780" WIDTH="0" HEIGHT="83" GC="0.9944">
+                                <Shape>
+                                    <Polygon POINTS="595 780 595 863 595 863 595 780"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_10" HPOS="554"  VPOS="757" WIDTH="0"  HEIGHT="104"/>
+                        <String ID="segment_11" CONTENT="ב" HPOS="537" VPOS="753" WIDTH="0" HEIGHT="108" WC="0.9809">
+                            <Shape>
+                                <Polygon POINTS="537 753 537 861 537 861 537 753"/>
+                            </Shape>
+                            <Glyph ID="char_28" CONTENT="ב" HPOS="537" VPOS="753" WIDTH="0" HEIGHT="108" GC="0.9809">
+                                <Shape>
+                                    <Polygon POINTS="537 753 537 861 537 861 537 753"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_12" HPOS="504"  VPOS="753" WIDTH="0"  HEIGHT="107"/>
+                        <String ID="segment_13" CONTENT="אום" HPOS="447" VPOS="753" WIDTH="41" HEIGHT="106" WC="0.5249">
+                            <Shape>
+                                <Polygon POINTS="447 753 447 858 488 859 488 753"/>
+                            </Shape>
+                            <Glyph ID="char_30" CONTENT="א" HPOS="488" VPOS="753" WIDTH="0" HEIGHT="106" GC="0.3024">
+                                <Shape>
+                                    <Polygon POINTS="488 753 488 859 488 859 488 753"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_31" CONTENT="ו" HPOS="463" VPOS="753" WIDTH="0" HEIGHT="105" GC="0.9615">
+                                <Shape>
+                                    <Polygon POINTS="463 753 463 858 463 858 463 753"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_32" CONTENT="ם" HPOS="447" VPOS="753" WIDTH="0" HEIGHT="105" GC="0.311">
+                                <Shape>
+                                    <Polygon POINTS="447 753 447 858 447 858 447 753"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_14" HPOS="414"  VPOS="753" WIDTH="0"  HEIGHT="103"/>
+                        <String ID="segment_15" CONTENT="ישא" HPOS="331" VPOS="753" WIDTH="74" HEIGHT="103" WC="0.8321">
+                            <Shape>
+                                <Polygon POINTS="331 764 331 853 405 856 405 753"/>
+                            </Shape>
+                            <Glyph ID="char_34" CONTENT="י" HPOS="405" VPOS="753" WIDTH="0" HEIGHT="103" GC="0.9549">
+                                <Shape>
+                                    <Polygon POINTS="405 753 405 856 405 856 405 753"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_35" CONTENT="ש" HPOS="381" VPOS="771" WIDTH="0" HEIGHT="84" GC="0.7444">
+                                <Shape>
+                                    <Polygon POINTS="381 771 381 855 381 855 381 771"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_36" CONTENT="א" HPOS="331" VPOS="764" WIDTH="0" HEIGHT="89" GC="0.7968">
+                                <Shape>
+                                    <Polygon POINTS="331 764 331 853 331 853 331 764"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                    </TextLine>
+
+                    <TextLine ID="_5ee0713b-4029-45a9-bd95-40ba6f1b8f0a" HPOS="236" VPOS="858" WIDTH="1026" HEIGHT="85" BASELINE="238 884 1262 889" TAGREFS="LINE_TYPE_2">
+                        <Shape>
+                            <Polygon POINTS="238 884 236 920 287 940 290 940 292 940 392 923 457 940 460 940 463 940 466 940 500 923 676 940 679 940 762 926 887 943 890 943 992 926 1109 943 1112 943 1257 932 1262 889 1260 864 238 858 238 884"/>
+                        </Shape>
+                        <String ID="segment_16" CONTENT="ג.ואב." HPOS="1037" VPOS="863" WIDTH="195" HEIGHT="79" WC="0.6427">
+                            <Shape>
+                                <Polygon POINTS="1037 863 1037 933 1232 934 1232 864"/>
+                            </Shape>
+                            <Glyph ID="char_37" CONTENT="ג" HPOS="1232" VPOS="864" WIDTH="0" HEIGHT="70" GC="0.7431">
+                                <Shape>
+                                    <Polygon POINTS="1232 864 1232 934 1232 934 1232 864"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_38" CONTENT="." HPOS="1198" VPOS="864" WIDTH="0" HEIGHT="72" GC="0.4193">
+                                <Shape>
+                                    <Polygon POINTS="1198 864 1198 936 1198 936 1198 864"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_39" CONTENT="ו" HPOS="1143" VPOS="863" WIDTH="0" HEIGHT="78" GC="0.204">
+                                <Shape>
+                                    <Polygon POINTS="1143 863 1143 941 1143 941 1143 863"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_40" CONTENT="א" HPOS="1126" VPOS="863" WIDTH="0" HEIGHT="79" GC="0.507">
+                                <Shape>
+                                    <Polygon POINTS="1126 863 1126 942 1126 942 1126 863"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_41" CONTENT="ב" HPOS="1087" VPOS="863" WIDTH="0" HEIGHT="77" GC="0.9954">
+                                <Shape>
+                                    <Polygon POINTS="1087 863 1087 940 1087 940 1087 863"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_42" CONTENT="." HPOS="1037" VPOS="863" WIDTH="0" HEIGHT="70" GC="0.9876">
+                                <Shape>
+                                    <Polygon POINTS="1037 863 1037 933 1037 933 1037 863"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_17" HPOS="971"  VPOS="862" WIDTH="0"  HEIGHT="68"/>
+                        <String ID="segment_18" CONTENT="א.שאאיפאד" HPOS="593" VPOS="860" WIDTH="367" HEIGHT="81" WC="0.8759">
+                            <Shape>
+                                <Polygon POINTS="593 860 593 932 960 931 960 862"/>
+                            </Shape>
+                            <Glyph ID="char_44" CONTENT="א" HPOS="960" VPOS="862" WIDTH="0" HEIGHT="69" GC="0.9986">
+                                <Shape>
+                                    <Polygon POINTS="960 862 960 931 960 931 960 862"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_45" CONTENT="." HPOS="915" VPOS="862" WIDTH="0" HEIGHT="77" GC="0.9348">
+                                <Shape>
+                                    <Polygon POINTS="915 862 915 939 915 939 915 862"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_46" CONTENT="ש" HPOS="871" VPOS="862" WIDTH="0" HEIGHT="79" GC="0.5167">
+                                <Shape>
+                                    <Polygon POINTS="871 862 871 941 871 941 871 862"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_47" CONTENT="א" HPOS="788" VPOS="861" WIDTH="0" HEIGHT="69" GC="0.9794">
+                                <Shape>
+                                    <Polygon POINTS="788 861 788 930 788 930 788 861"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_48" CONTENT="א" HPOS="743" VPOS="861" WIDTH="0" HEIGHT="68" GC="0.5548">
+                                <Shape>
+                                    <Polygon POINTS="743 861 743 929 743 929 743 861"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_49" CONTENT="י" HPOS="699" VPOS="861" WIDTH="0" HEIGHT="76" GC="0.8996">
+                                <Shape>
+                                    <Polygon POINTS="699 861 699 937 699 937 699 861"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_50" CONTENT="פ" HPOS="677" VPOS="861" WIDTH="0" HEIGHT="79" GC="0.9994">
+                                <Shape>
+                                    <Polygon POINTS="677 861 677 940 677 940 677 861"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_51" CONTENT="א" HPOS="643" VPOS="860" WIDTH="0" HEIGHT="77" GC="0.9998">
+                                <Shape>
+                                    <Polygon POINTS="643 860 643 937 643 937 643 860"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_52" CONTENT="ד" HPOS="593" VPOS="860" WIDTH="0" HEIGHT="72" GC="0.9998">
+                                <Shape>
+                                    <Polygon POINTS="593 860 593 932 593 932 593 860"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_19" HPOS="554"  VPOS="860" WIDTH="0"  HEIGHT="68"/>
+                        <String ID="segment_20" CONTENT="איא" HPOS="477" VPOS="859" WIDTH="66" HEIGHT="76" WC="0.9597">
+                            <Shape>
+                                <Polygon POINTS="477 859 477 935 543 927 543 860"/>
+                            </Shape>
+                            <Glyph ID="char_54" CONTENT="א" HPOS="543" VPOS="860" WIDTH="0" HEIGHT="67" GC="0.9974">
+                                <Shape>
+                                    <Polygon POINTS="543 860 543 927 543 927 543 860"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_55" CONTENT="י" HPOS="493" VPOS="859" WIDTH="0" HEIGHT="68" GC="0.8819">
+                                <Shape>
+                                    <Polygon POINTS="493 859 493 927 493 927 493 859"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_56" CONTENT="א" HPOS="477" VPOS="859" WIDTH="0" HEIGHT="76" GC="0.9996">
+                                <Shape>
+                                    <Polygon POINTS="477 859 477 935 477 935 477 859"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_21" HPOS="427"  VPOS="859" WIDTH="5"  HEIGHT="74"/>
+                        <String ID="segment_22" CONTENT="מקםוחף" HPOS="288" VPOS="858" WIDTH="128" HEIGHT="82" WC="0.9909">
+                            <Shape>
+                                <Polygon POINTS="288 858 288 940 416 929 416 859"/>
+                            </Shape>
+                            <Glyph ID="char_58" CONTENT="מ" HPOS="416" VPOS="859" WIDTH="0" HEIGHT="70" GC="0.9964">
+                                <Shape>
+                                    <Polygon POINTS="416 859 416 929 416 929 416 859"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_59" CONTENT="ק" HPOS="377" VPOS="859" WIDTH="0" HEIGHT="67" GC="0.9923">
+                                <Shape>
+                                    <Polygon POINTS="377 859 377 926 377 926 377 859"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_60" CONTENT="ם" HPOS="355" VPOS="859" WIDTH="0" HEIGHT="70" GC="0.9949">
+                                <Shape>
+                                    <Polygon POINTS="355 859 355 929 355 929 355 859"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_61" CONTENT="ו" HPOS="321" VPOS="858" WIDTH="0" HEIGHT="77" GC="0.9798">
+                                <Shape>
+                                    <Polygon POINTS="321 858 321 935 321 935 321 858"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_62" CONTENT="ח" HPOS="305" VPOS="858" WIDTH="0" HEIGHT="80" GC="0.9895">
+                                <Shape>
+                                    <Polygon POINTS="305 858 305 938 305 938 305 858"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_63" CONTENT="ף" HPOS="288" VPOS="858" WIDTH="0" HEIGHT="82" GC="0.9922">
+                                <Shape>
+                                    <Polygon POINTS="288 858 288 940 288 940 288 858"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                    </TextLine>
+
+                    <TextLine ID="_87622348-6d57-4c6d-b0d4-1546e5ff0dbb" HPOS="307" VPOS="918" WIDTH="958" HEIGHT="108" BASELINE="310 966 1265 974" TAGREFS="LINE_TYPE_2">
+                        <Shape>
+                            <Polygon POINTS="310 966 307 1003 358 1020 361 1020 364 1020 560 1009 622 1023 625 1023 628 1026 1260 1026 1265 974 1265 946 1075 946 1043 923 1041 923 1038 923 1035 923 932 940 910 923 910 920 907 920 904 920 901 920 699 940 631 918 628 918 625 918 622 918 554 938 506 920 503 920 500 920 497 920 452 938 310 938 310 966"/>
+                        </Shape>
+                        <String ID="segment_23" CONTENT="פי" HPOS="347" VPOS="938" WIDTH="22" HEIGHT="82" WC="0.9396">
+                            <Shape>
+                                <Polygon POINTS="347 938 347 1016 369 1020 369 938"/>
+                            </Shape>
+                            <Glyph ID="char_64" CONTENT="פ" HPOS="369" VPOS="938" WIDTH="0" HEIGHT="82" GC="0.9283">
+                                <Shape>
+                                    <Polygon POINTS="369 938 369 1020 369 1020 369 938"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_65" CONTENT="י" HPOS="347" VPOS="938" WIDTH="0" HEIGHT="78" GC="0.9509">
+                                <Shape>
+                                    <Polygon POINTS="347 938 347 1016 347 1016 347 938"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                    </TextLine>
+
+                    <TextLine ID="_759d3e0a-073a-4b21-99b1-fa02c3c10aab" HPOS="264" VPOS="1085" WIDTH="998" HEIGHT="111" BASELINE="267 1119 1262 1125" TAGREFS="LINE_TYPE_2">
+                        <Shape>
+                            <Polygon POINTS="267 1119 264 1182 278 1193 281 1193 284 1193 287 1193 290 1193 361 1171 435 1171 455 1191 455 1193 457 1193 460 1193 463 1196 560 1196 560 1193 563 1193 566 1193 591 1176 611 1193 614 1193 617 1193 620 1193 622 1193 682 1173 759 1196 762 1196 765 1196 768 1196 810 1173 907 1173 958 1193 961 1193 964 1196 964 1193 967 1193 1018 1173 1254 1188 1262 1125 1260 1097 267 1085 267 1119"/>
+                        </Shape>
+                        <String ID="segment_24" CONTENT="מואבלהמחסי" HPOS="818" VPOS="1092" WIDTH="425" HEIGHT="95" WC="0.6747">
+                            <Shape>
+                                <Polygon POINTS="818 1092 818 1173 1243 1187 1243 1097"/>
+                            </Shape>
+                            <Glyph ID="char_66" CONTENT="מ" HPOS="1243" VPOS="1097" WIDTH="0" HEIGHT="90" GC="0.2366">
+                                <Shape>
+                                    <Polygon POINTS="1243 1097 1243 1187 1243 1187 1243 1097"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_67" CONTENT="ו" HPOS="1161" VPOS="1096" WIDTH="0" HEIGHT="86" GC="0.8609">
+                                <Shape>
+                                    <Polygon POINTS="1161 1096 1161 1182 1161 1182 1161 1096"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_68" CONTENT="א" HPOS="1146" VPOS="1096" WIDTH="0" HEIGHT="85" GC="0.8345">
+                                <Shape>
+                                    <Polygon POINTS="1146 1096 1146 1181 1146 1181 1146 1096"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_69" CONTENT="ב" HPOS="1094" VPOS="1095" WIDTH="0" HEIGHT="83" GC="0.6899">
+                                <Shape>
+                                    <Polygon POINTS="1094 1095 1094 1178 1094 1178 1094 1095"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_70" CONTENT="ל" HPOS="1049" VPOS="1094" WIDTH="0" HEIGHT="81" GC="0.977">
+                                <Shape>
+                                    <Polygon POINTS="1049 1094 1049 1175 1049 1175 1049 1094"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_71" CONTENT="ה" HPOS="1027" VPOS="1094" WIDTH="0" HEIGHT="80" GC="0.271">
+                                <Shape>
+                                    <Polygon POINTS="1027 1094 1027 1174 1027 1174 1027 1094"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_72" CONTENT="מ" HPOS="937" VPOS="1093" WIDTH="0" HEIGHT="92" GC="0.9975">
+                                <Shape>
+                                    <Polygon POINTS="937 1093 937 1185 937 1185 937 1093"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_73" CONTENT="ח" HPOS="878" VPOS="1092" WIDTH="0" HEIGHT="81" GC="0.826">
+                                <Shape>
+                                    <Polygon POINTS="878 1092 878 1173 878 1173 878 1092"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_74" CONTENT="ס" HPOS="848" VPOS="1092" WIDTH="0" HEIGHT="81" GC="0.5332">
+                                <Shape>
+                                    <Polygon POINTS="848 1092 848 1173 848 1173 848 1092"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_75" CONTENT="י" HPOS="818" VPOS="1092" WIDTH="0" HEIGHT="81" GC="0.5204">
+                                <Shape>
+                                    <Polygon POINTS="818 1092 818 1173 818 1173 818 1092"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_25" HPOS="811"  VPOS="1092" WIDTH="0"  HEIGHT="81"/>
+                        <String ID="segment_26" CONTENT="מא" HPOS="751" VPOS="1091" WIDTH="45" HEIGHT="102" WC="0.4599">
+                            <Shape>
+                                <Polygon POINTS="751 1091 751 1193 796 1181 796 1091"/>
+                            </Shape>
+                            <Glyph ID="char_77" CONTENT="מ" HPOS="796" VPOS="1091" WIDTH="0" HEIGHT="90" GC="0.5343">
+                                <Shape>
+                                    <Polygon POINTS="796 1091 796 1181 796 1181 796 1091"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_78" CONTENT="א" HPOS="751" VPOS="1091" WIDTH="0" HEIGHT="102" GC="0.3855">
+                                <Shape>
+                                    <Polygon POINTS="751 1091 751 1193 751 1193 751 1091"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_27" HPOS="714"  VPOS="1090" WIDTH="0"  HEIGHT="92"/>
+                        <String ID="segment_28" CONTENT="יכסאאיבר" HPOS="446" VPOS="1087" WIDTH="260" HEIGHT="109" WC="0.9851">
+                            <Shape>
+                                <Polygon POINTS="446 1087 446 1182 706 1180 706 1090"/>
+                            </Shape>
+                            <Glyph ID="char_80" CONTENT="י" HPOS="706" VPOS="1090" WIDTH="0" HEIGHT="90" GC="0.9578">
+                                <Shape>
+                                    <Polygon POINTS="706 1090 706 1180 706 1180 706 1090"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_81" CONTENT="כ" HPOS="684" VPOS="1090" WIDTH="0" HEIGHT="84" GC="0.9984">
+                                <Shape>
+                                    <Polygon POINTS="684 1090 684 1174 684 1174 684 1090"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_82" CONTENT="ס" HPOS="632" VPOS="1089" WIDTH="0" HEIGHT="101" GC="0.9725">
+                                <Shape>
+                                    <Polygon POINTS="632 1089 632 1190 632 1190 632 1089"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_83" CONTENT="א" HPOS="602" VPOS="1089" WIDTH="0" HEIGHT="96" GC="0.9977">
+                                <Shape>
+                                    <Polygon POINTS="602 1089 602 1185 602 1185 602 1089"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_84" CONTENT="א" HPOS="557" VPOS="1089" WIDTH="0" HEIGHT="107" GC="0.9791">
+                                <Shape>
+                                    <Polygon POINTS="557 1089 557 1196 557 1196 557 1089"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_85" CONTENT="י" HPOS="513" VPOS="1088" WIDTH="0" HEIGHT="108" GC="0.9814">
+                                <Shape>
+                                    <Polygon POINTS="513 1088 513 1196 513 1196 513 1088"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_86" CONTENT="ב" HPOS="490" VPOS="1088" WIDTH="0" HEIGHT="108" GC="0.9952">
+                                <Shape>
+                                    <Polygon POINTS="490 1088 490 1196 490 1196 490 1088"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_87" CONTENT="ר" HPOS="446" VPOS="1087" WIDTH="0" HEIGHT="95" GC="0.9988">
+                                <Shape>
+                                    <Polygon POINTS="446 1087 446 1182 446 1182 446 1087"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_29" HPOS="416"  VPOS="1087" WIDTH="0"  HEIGHT="84"/>
+                        <String ID="segment_30" CONTENT="וא." HPOS="304" VPOS="1085" WIDTH="105" HEIGHT="104" WC="0.9092">
+                            <Shape>
+                                <Polygon POINTS="304 1085 304 1189 409 1171 409 1087"/>
+                            </Shape>
+                            <Glyph ID="char_89" CONTENT="ו" HPOS="409" VPOS="1087" WIDTH="0" HEIGHT="84" GC="0.9882">
+                                <Shape>
+                                    <Polygon POINTS="409 1087 409 1171 409 1171 409 1087"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_90" CONTENT="א" HPOS="342" VPOS="1086" WIDTH="0" HEIGHT="91" GC="0.8836">
+                                <Shape>
+                                    <Polygon POINTS="342 1086 342 1177 342 1177 342 1086"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_91" CONTENT="." HPOS="304" VPOS="1085" WIDTH="0" HEIGHT="104" GC="0.8557">
+                                <Shape>
+                                    <Polygon POINTS="304 1085 304 1189 304 1189 304 1085"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                    </TextLine>
+
+                    <TextLine ID="_85e89cd5-65b4-44e0-bd2c-8be0b2bc176d" HPOS="224" VPOS="1245" WIDTH="1030" HEIGHT="105" BASELINE="227 1281 1254 1290" TAGREFS="LINE_TYPE_2">
+                        <Shape>
+                            <Polygon POINTS="227 1281 224 1318 355 1344 358 1344 361 1344 364 1344 395 1324 517 1324 563 1347 566 1347 568 1347 571 1347 614 1333 907 1350 910 1350 1032 1335 1171 1350 1174 1350 1177 1350 1251 1327 1254 1290 1254 1267 1086 1250 1083 1250 1080 1250 1024 1264 981 1250 978 1250 975 1250 972 1250 913 1264 887 1247 884 1247 881 1247 878 1247 876 1247 873 1247 850 1264 571 1264 469 1245 466 1245 227 1259 227 1281"/>
+                        </Shape>
+                        <String ID="segment_31" CONTENT="א..אלחבי." HPOS="967" VPOS="1251" WIDTH="262" HEIGHT="96" WC="0.7647">
+                            <Shape>
+                                <Polygon POINTS="968 1251 967 1343 1229 1334 1229 1264"/>
+                            </Shape>
+                            <Glyph ID="char_92" CONTENT="א" HPOS="1229" VPOS="1264" WIDTH="0" HEIGHT="70" GC="0.899">
+                                <Shape>
+                                    <Polygon POINTS="1229 1264 1229 1334 1229 1334 1229 1264"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_93" CONTENT="." HPOS="1185" VPOS="1260" WIDTH="1" HEIGHT="87" GC="0.6681">
+                                <Shape>
+                                    <Polygon POINTS="1186 1260 1185 1347 1185 1347 1186 1260"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_94" CONTENT="." HPOS="1143" VPOS="1256" WIDTH="1" HEIGHT="91" GC="0.6787">
+                                <Shape>
+                                    <Polygon POINTS="1144 1256 1143 1347 1143 1347 1144 1256"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_95" CONTENT="א" HPOS="1101" VPOS="1252" WIDTH="1" HEIGHT="90" GC="0.8522">
+                                <Shape>
+                                    <Polygon POINTS="1102 1252 1101 1342 1101 1342 1102 1252"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_96" CONTENT="ל" HPOS="1095" VPOS="1251" WIDTH="0" HEIGHT="91" GC="0.8789">
+                                <Shape>
+                                    <Polygon POINTS="1095 1251 1095 1342 1095 1342 1095 1251"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_97" CONTENT="ח" HPOS="1074" VPOS="1251" WIDTH="0" HEIGHT="88" GC="0.1582">
+                                <Shape>
+                                    <Polygon POINTS="1074 1251 1074 1339 1074 1339 1074 1251"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_98" CONTENT="ב" HPOS="1031" VPOS="1262" WIDTH="0" HEIGHT="73" GC="0.7649">
+                                <Shape>
+                                    <Polygon POINTS="1031 1262 1031 1335 1031 1335 1031 1262"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_99" CONTENT="י" HPOS="989" VPOS="1253" WIDTH="0" HEIGHT="87" GC="0.9946">
+                                <Shape>
+                                    <Polygon POINTS="989 1253 989 1340 989 1340 989 1253"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_100" CONTENT="." HPOS="967" VPOS="1251" WIDTH="1" HEIGHT="92" GC="0.9873">
+                                <Shape>
+                                    <Polygon POINTS="968 1251 967 1343 967 1343 968 1251"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_32" HPOS="924"  VPOS="1259" WIDTH="8"  HEIGHT="89"/>
+                        <String ID="segment_33" CONTENT="אלייא" HPOS="797" VPOS="1250" WIDTH="121" HEIGHT="100" WC="0.9463">
+                            <Shape>
+                                <Polygon POINTS="798 1264 797 1344 917 1349 918 1263"/>
+                            </Shape>
+                            <Glyph ID="char_102" CONTENT="א" HPOS="917" VPOS="1263" WIDTH="1" HEIGHT="86" GC="0.9747">
+                                <Shape>
+                                    <Polygon POINTS="918 1263 917 1349 917 1349 918 1263"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_103" CONTENT="ל" HPOS="903" VPOS="1258" WIDTH="1" HEIGHT="92" GC="0.8652">
+                                <Shape>
+                                    <Polygon POINTS="904 1258 903 1350 903 1350 904 1258"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_104" CONTENT="י" HPOS="868" VPOS="1250" WIDTH="1" HEIGHT="98" GC="0.9851">
+                                <Shape>
+                                    <Polygon POINTS="869 1250 868 1348 868 1348 869 1250"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_105" CONTENT="י" HPOS="819" VPOS="1264" WIDTH="1" HEIGHT="81" GC="0.9513">
+                                <Shape>
+                                    <Polygon POINTS="820 1264 819 1345 819 1345 820 1264"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_106" CONTENT="א" HPOS="797" VPOS="1264" WIDTH="1" HEIGHT="80" GC="0.9552">
+                                <Shape>
+                                    <Polygon POINTS="798 1264 797 1344 797 1344 798 1264"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_34" HPOS="762"  VPOS="1264" WIDTH="1"  HEIGHT="78"/>
+                        <String ID="segment_35" CONTENT="חראי" HPOS="664" VPOS="1264" WIDTH="85" HEIGHT="77" WC="0.9169">
+                            <Shape>
+                                <Polygon POINTS="664 1264 664 1336 748 1341 749 1264"/>
+                            </Shape>
+                            <Glyph ID="char_108" CONTENT="ח" HPOS="748" VPOS="1264" WIDTH="1" HEIGHT="77" GC="0.8441">
+                                <Shape>
+                                    <Polygon POINTS="749 1264 748 1341 748 1341 749 1264"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_109" CONTENT="ר" HPOS="721" VPOS="1264" WIDTH="0" HEIGHT="75" GC="0.9535">
+                                <Shape>
+                                    <Polygon POINTS="721 1264 721 1339 721 1339 721 1264"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_110" CONTENT="א" HPOS="693" VPOS="1264" WIDTH="0" HEIGHT="74" GC="0.9734">
+                                <Shape>
+                                    <Polygon POINTS="693 1264 693 1338 693 1338 693 1264"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_111" CONTENT="י" HPOS="664" VPOS="1264" WIDTH="0" HEIGHT="72" GC="0.8967">
+                                <Shape>
+                                    <Polygon POINTS="664 1264 664 1336 664 1336 664 1264"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_36" HPOS="643"  VPOS="1264" WIDTH="7"  HEIGHT="71"/>
+                        <String ID="segment_37" CONTENT="מכהתאבם" HPOS="410" VPOS="1246" WIDTH="219" HEIGHT="99" WC="0.8779">
+                            <Shape>
+                                <Polygon POINTS="410 1248 410 1324 629 1334 629 1264"/>
+                            </Shape>
+                            <Glyph ID="char_113" CONTENT="מ" HPOS="629" VPOS="1264" WIDTH="0" HEIGHT="70" GC="0.9919">
+                                <Shape>
+                                    <Polygon POINTS="629 1264 629 1334 629 1334 629 1264"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_114" CONTENT="כ" HPOS="586" VPOS="1264" WIDTH="1" HEIGHT="78" GC="0.9856">
+                                <Shape>
+                                    <Polygon POINTS="587 1264 586 1342 586 1342 587 1264"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_115" CONTENT="ה" HPOS="558" VPOS="1262" WIDTH="1" HEIGHT="83" GC="0.8692">
+                                <Shape>
+                                    <Polygon POINTS="559 1262 558 1345 558 1345 559 1262"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_116" CONTENT="ת" HPOS="537" VPOS="1258" WIDTH="0" HEIGHT="76" GC="0.8413">
+                                <Shape>
+                                    <Polygon POINTS="537 1258 537 1334 537 1334 537 1258"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_117" CONTENT="א" HPOS="509" VPOS="1252" WIDTH="0" HEIGHT="72" GC="0.9772">
+                                <Shape>
+                                    <Polygon POINTS="509 1252 509 1324 509 1324 509 1252"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_118" CONTENT="ב" HPOS="474" VPOS="1246" WIDTH="0" HEIGHT="78" GC="0.9906">
+                                <Shape>
+                                    <Polygon POINTS="474 1246 474 1324 474 1324 474 1246"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_119" CONTENT="ם" HPOS="410" VPOS="1248" WIDTH="0" HEIGHT="76" GC="0.4895">
+                                <Shape>
+                                    <Polygon POINTS="410 1248 410 1324 410 1324 410 1248"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_38" HPOS="389"  VPOS="1249" WIDTH="0"  HEIGHT="79"/>
+                        <String ID="segment_39" CONTENT="אל" HPOS="360" VPOS="1250" WIDTH="15" HEIGHT="94" WC="0.8885">
+                            <Shape>
+                                <Polygon POINTS="361 1251 360 1344 375 1337 375 1250"/>
+                            </Shape>
+                            <Glyph ID="char_121" CONTENT="א" HPOS="375" VPOS="1250" WIDTH="0" HEIGHT="87" GC="0.9791">
+                                <Shape>
+                                    <Polygon POINTS="375 1250 375 1337 375 1337 375 1250"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_122" CONTENT="ל" HPOS="360" VPOS="1251" WIDTH="8" HEIGHT="93" GC="0.7979">
+                                <Shape>
+                                    <Polygon POINTS="361 1251 360 1344 367 1342 368 1251"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                    </TextLine>
+
+                    <TextLine ID="_03eda59e-9549-4bce-9847-8bfc76f1887f" HPOS="233" VPOS="1392" WIDTH="1021" HEIGHT="128" BASELINE="236 1438 1254 1452" TAGREFS="LINE_TYPE_2">
+                        <Shape>
+                            <Polygon POINTS="233 1495 238 1500 241 1500 241 1503 244 1503 247 1503 250 1503 253 1503 256 1503 281 1483 435 1509 438 1509 440 1509 500 1486 620 1486 668 1509 671 1509 674 1509 827 1489 1046 1517 1049 1520 1194 1520 1194 1517 1197 1517 1251 1492 1254 1452 1254 1426 1049 1401 1046 1401 850 1421 804 1398 802 1398 799 1398 796 1398 756 1421 685 1421 648 1395 645 1395 642 1395 640 1395 460 1415 335 1392 332 1392 329 1392 278 1412 238 1398 236 1438 233 1495"/>
+                        </Shape>
+                        <String ID="segment_40" CONTENT="אלא" HPOS="1192" VPOS="1419" WIDTH="42" HEIGHT="101" WC="0.4103">
+                            <Shape>
+                                <Polygon POINTS="1193 1419 1192 1520 1233 1500 1234 1424"/>
+                            </Shape>
+                            <Glyph ID="char_123" CONTENT="א" HPOS="1233" VPOS="1424" WIDTH="1" HEIGHT="76" GC="0.4449">
+                                <Shape>
+                                    <Polygon POINTS="1234 1424 1233 1500 1233 1500 1234 1424"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_124" CONTENT="ל" HPOS="1224" VPOS="1423" WIDTH="1" HEIGHT="81" GC="0.3045">
+                                <Shape>
+                                    <Polygon POINTS="1225 1423 1224 1504 1224 1504 1225 1423"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_125" CONTENT="א" HPOS="1192" VPOS="1419" WIDTH="1" HEIGHT="101" GC="0.4814">
+                                <Shape>
+                                    <Polygon POINTS="1193 1419 1192 1520 1192 1520 1193 1419"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_41" HPOS="1168"  VPOS="1416" WIDTH="1"  HEIGHT="104"/>
+                        <String ID="segment_42" CONTENT="יבוץ" HPOS="1095" VPOS="1407" WIDTH="66" HEIGHT="113" WC="0.4853">
+                            <Shape>
+                                <Polygon POINTS="1097 1407 1095 1520 1160 1520 1161 1415"/>
+                            </Shape>
+                            <Glyph ID="char_127" CONTENT="י" HPOS="1160" VPOS="1415" WIDTH="1" HEIGHT="105" GC="0.4748">
+                                <Shape>
+                                    <Polygon POINTS="1161 1415 1160 1520 1160 1520 1161 1415"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_128" CONTENT="ב" HPOS="1143" VPOS="1413" WIDTH="1" HEIGHT="107" GC="0.2188">
+                                <Shape>
+                                    <Polygon POINTS="1144 1413 1143 1520 1143 1520 1144 1413"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_129" CONTENT="ו" HPOS="1119" VPOS="1410" WIDTH="1" HEIGHT="110" GC="0.4177">
+                                <Shape>
+                                    <Polygon POINTS="1120 1410 1119 1520 1119 1520 1120 1410"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_130" CONTENT="ץ" HPOS="1095" VPOS="1407" WIDTH="2" HEIGHT="113" GC="0.83">
+                                <Shape>
+                                    <Polygon POINTS="1097 1407 1095 1520 1095 1520 1097 1407"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_43" HPOS="1070"  VPOS="1404" WIDTH="11"  HEIGHT="116"/>
+                        <String ID="segment_44" CONTENT="בי" HPOS="973" VPOS="1403" WIDTH="51" HEIGHT="111" WC="0.5577">
+                            <Shape>
+                                <Polygon POINTS="974 1408 973 1508 1022 1514 1024 1403"/>
+                            </Shape>
+                            <Glyph ID="char_132" CONTENT="ב" HPOS="1022" VPOS="1403" WIDTH="2" HEIGHT="111" GC="0.6072">
+                                <Shape>
+                                    <Polygon POINTS="1024 1403 1022 1514 1022 1514 1024 1403"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_133" CONTENT="י" HPOS="973" VPOS="1408" WIDTH="1" HEIGHT="100" GC="0.5082">
+                                <Shape>
+                                    <Polygon POINTS="974 1408 973 1508 973 1508 974 1408"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_45" HPOS="965"  VPOS="1409" WIDTH="1"  HEIGHT="98"/>
+                        <String ID="segment_46" CONTENT="מ" HPOS="949" VPOS="1411" WIDTH="1" HEIGHT="94" WC="0.3679">
+                            <Shape>
+                                <Polygon POINTS="950 1411 949 1505 949 1505 950 1411"/>
+                            </Shape>
+                            <Glyph ID="char_135" CONTENT="מ" HPOS="949" VPOS="1411" WIDTH="1" HEIGHT="94" GC="0.3679">
+                                <Shape>
+                                    <Polygon POINTS="950 1411 949 1505 949 1505 950 1411"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_47" HPOS="868"  VPOS="1418" WIDTH="9"  HEIGHT="77"/>
+                        <String ID="segment_48" CONTENT="שביא" HPOS="754" VPOS="1398" WIDTH="107" HEIGHT="101" WC="0.9476">
+                            <Shape>
+                                <Polygon POINTS="755 1421 754 1499 860 1493 861 1420"/>
+                            </Shape>
+                            <Glyph ID="char_137" CONTENT="ש" HPOS="860" VPOS="1420" WIDTH="1" HEIGHT="73" GC="0.9966">
+                                <Shape>
+                                    <Polygon POINTS="861 1420 860 1493 860 1493 861 1420"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_138" CONTENT="ב" HPOS="803" VPOS="1398" WIDTH="2" HEIGHT="94" GC="0.876">
+                                <Shape>
+                                    <Polygon POINTS="805 1398 803 1492 803 1492 805 1398"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_139" CONTENT="י" HPOS="778" VPOS="1408" WIDTH="1" HEIGHT="87" GC="0.9524">
+                                <Shape>
+                                    <Polygon POINTS="779 1408 778 1495 778 1495 779 1408"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_140" CONTENT="א" HPOS="754" VPOS="1421" WIDTH="1" HEIGHT="78" GC="0.9655">
+                                <Shape>
+                                    <Polygon POINTS="755 1421 754 1499 754 1499 755 1421"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_49" HPOS="722"  VPOS="1421" WIDTH="1"  HEIGHT="82"/>
+                        <String ID="segment_50" CONTENT="." HPOS="705" VPOS="1421" WIDTH="1" HEIGHT="84" WC="0.7837">
+                            <Shape>
+                                <Polygon POINTS="706 1421 705 1505 705 1505 706 1421"/>
+                            </Shape>
+                            <Glyph ID="char_142" CONTENT="." HPOS="705" VPOS="1421" WIDTH="1" HEIGHT="84" GC="0.7837">
+                                <Shape>
+                                    <Polygon POINTS="706 1421 705 1505 705 1505 706 1421"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_51" HPOS="665"  VPOS="1408" WIDTH="1"  HEIGHT="100"/>
+                        <String ID="segment_52" CONTENT="םישא" HPOS="519" VPOS="1399" WIDTH="83" HEIGHT="87" WC="0.6964">
+                            <Shape>
+                                <Polygon POINTS="520 1408 519 1486 600 1486 602 1399"/>
+                            </Shape>
+                            <Glyph ID="char_144" CONTENT="ם" HPOS="600" VPOS="1399" WIDTH="2" HEIGHT="87" GC="0.8801">
+                                <Shape>
+                                    <Polygon POINTS="602 1399 600 1486 600 1486 602 1399"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_145" CONTENT="י" HPOS="568" VPOS="1403" WIDTH="2" HEIGHT="83" GC="0.6986">
+                                <Shape>
+                                    <Polygon POINTS="570 1403 568 1486 568 1486 570 1403"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_146" CONTENT="ש" HPOS="551" VPOS="1405" WIDTH="1" HEIGHT="81" GC="0.8812">
+                                <Shape>
+                                    <Polygon POINTS="552 1405 551 1486 551 1486 552 1405"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_147" CONTENT="א" HPOS="519" VPOS="1408" WIDTH="1" HEIGHT="78" GC="0.3256">
+                                <Shape>
+                                    <Polygon POINTS="520 1408 519 1486 519 1486 520 1408"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_53" HPOS="405"  VPOS="1405" WIDTH="58"  HEIGHT="99"/>
+                        <String ID="segment_54" CONTENT="יכבם" HPOS="324" VPOS="1393" WIDTH="74" HEIGHT="110" WC="0.4991">
+                            <Shape>
+                                <Polygon POINTS="326 1393 324 1490 397 1503 398 1404"/>
+                            </Shape>
+                            <Glyph ID="char_150" CONTENT="י" HPOS="397" VPOS="1404" WIDTH="1" HEIGHT="99" GC="0.5781">
+                                <Shape>
+                                    <Polygon POINTS="398 1404 397 1503 397 1503 398 1404"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_151" CONTENT="כ" HPOS="373" VPOS="1399" WIDTH="2" HEIGHT="100" GC="0.4392">
+                                <Shape>
+                                    <Polygon POINTS="375 1399 373 1499 373 1499 375 1399"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_152" CONTENT="ב" HPOS="349" VPOS="1395" WIDTH="2" HEIGHT="100" GC="0.5703">
+                                <Shape>
+                                    <Polygon POINTS="351 1395 349 1495 349 1495 351 1395"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_153" CONTENT="ם" HPOS="324" VPOS="1393" WIDTH="2" HEIGHT="97" GC="0.4086">
+                                <Shape>
+                                    <Polygon POINTS="326 1393 324 1490 324 1490 326 1393"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_55" HPOS="308"  VPOS="1400" WIDTH="2"  HEIGHT="88"/>
+                        <String ID="segment_56" CONTENT="ה" HPOS="300" VPOS="1403" WIDTH="1" HEIGHT="83" WC="0.8259">
+                            <Shape>
+                                <Polygon POINTS="301 1403 300 1486 300 1486 301 1403"/>
+                            </Shape>
+                            <Glyph ID="char_155" CONTENT="ה" HPOS="300" VPOS="1403" WIDTH="1" HEIGHT="83" GC="0.8259">
+                                <Shape>
+                                    <Polygon POINTS="301 1403 300 1486 300 1486 301 1403"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_57" HPOS="292"  VPOS="1406" WIDTH="1"  HEIGHT="79"/>
+                        <String ID="segment_58" CONTENT="חאי" HPOS="243" VPOS="1400" WIDTH="34" HEIGHT="103" WC="0.5775">
+                            <Shape>
+                                <Polygon POINTS="245 1400 243 1503 276 1487 277 1412"/>
+                            </Shape>
+                            <Glyph ID="char_157" CONTENT="ח" HPOS="276" VPOS="1412" WIDTH="1" HEIGHT="75" GC="0.863">
+                                <Shape>
+                                    <Polygon POINTS="277 1412 276 1487 276 1487 277 1412"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_158" CONTENT="א" HPOS="259" VPOS="1406" WIDTH="1" HEIGHT="94" GC="0.2859">
+                                <Shape>
+                                    <Polygon POINTS="260 1406 259 1500 259 1500 260 1406"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_159" CONTENT="י" HPOS="243" VPOS="1400" WIDTH="2" HEIGHT="103" GC="0.5835">
+                                <Shape>
+                                    <Polygon POINTS="245 1400 243 1503 243 1503 245 1400"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                    </TextLine>
+
+                    <TextLine ID="_59ac89b4-f5b3-42a2-95ef-1677ea0f1bad" HPOS="258" VPOS="1557" WIDTH="1007" HEIGHT="105" BASELINE="261 1597 1265 1603" TAGREFS="LINE_TYPE_2">
+                        <Shape>
+                            <Polygon POINTS="261 1597 258 1640 486 1660 489 1660 492 1660 543 1645 753 1645 793 1662 796 1662 799 1662 1260 1657 1265 1603 1260 1563 1211 1577 961 1566 958 1566 796 1577 739 1560 736 1560 733 1560 361 1574 261 1557 261 1597"/>
+                        </Shape>
+                        <String ID="segment_59" CONTENT="אש.....אמצ.ח....." HPOS="482" VPOS="1560" WIDTH="752" HEIGHT="102" WC="0.8001">
+                            <Shape>
+                                <Polygon POINTS="482 1569 482 1660 1234 1657 1234 1570"/>
+                            </Shape>
+                            <Glyph ID="char_160" CONTENT="א" HPOS="1234" VPOS="1570" WIDTH="0" HEIGHT="87" GC="0.5045">
+                                <Shape>
+                                    <Polygon POINTS="1234 1570 1234 1657 1234 1657 1234 1570"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_161" CONTENT="ש" HPOS="1165" VPOS="1575" WIDTH="0" HEIGHT="83" GC="0.3656">
+                                <Shape>
+                                    <Polygon POINTS="1165 1575 1165 1658 1165 1658 1165 1575"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_162" CONTENT="." HPOS="1117" VPOS="1573" WIDTH="0" HEIGHT="86" GC="0.9651">
+                                <Shape>
+                                    <Polygon POINTS="1117 1573 1117 1659 1117 1659 1117 1573"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_163" CONTENT="." HPOS="1096" VPOS="1572" WIDTH="0" HEIGHT="87" GC="0.9644">
+                                <Shape>
+                                    <Polygon POINTS="1096 1572 1096 1659 1096 1659 1096 1572"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_164" CONTENT="." HPOS="1055" VPOS="1570" WIDTH="0" HEIGHT="89" GC="0.9777">
+                                <Shape>
+                                    <Polygon POINTS="1055 1570 1055 1659 1055 1659 1055 1570"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_165" CONTENT="." HPOS="1000" VPOS="1568" WIDTH="0" HEIGHT="92" GC="0.9457">
+                                <Shape>
+                                    <Polygon POINTS="1000 1568 1000 1660 1000 1660 1000 1568"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_166" CONTENT="." HPOS="931" VPOS="1568" WIDTH="0" HEIGHT="93" GC="0.7788">
+                                <Shape>
+                                    <Polygon POINTS="931 1568 931 1661 931 1661 931 1568"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_167" CONTENT="א" HPOS="903" VPOS="1570" WIDTH="0" HEIGHT="91" GC="0.7703">
+                                <Shape>
+                                    <Polygon POINTS="903 1570 903 1661 903 1661 903 1570"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_168" CONTENT="מ" HPOS="848" VPOS="1573" WIDTH="0" HEIGHT="88" GC="0.7677">
+                                <Shape>
+                                    <Polygon POINTS="848 1573 848 1661 848 1661 848 1573"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_169" CONTENT="צ" HPOS="806" VPOS="1576" WIDTH="0" HEIGHT="86" GC="0.7876">
+                                <Shape>
+                                    <Polygon POINTS="806 1576 806 1662 806 1662 806 1576"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_170" CONTENT="." HPOS="772" VPOS="1570" WIDTH="0" HEIGHT="83" GC="0.938">
+                                <Shape>
+                                    <Polygon POINTS="772 1570 772 1653 772 1653 772 1570"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_171" CONTENT="ח" HPOS="730" VPOS="1560" WIDTH="0" HEIGHT="85" GC="0.9552">
+                                <Shape>
+                                    <Polygon POINTS="730 1560 730 1645 730 1645 730 1560"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_172" CONTENT="." HPOS="689" VPOS="1562" WIDTH="0" HEIGHT="83" GC="0.9037">
+                                <Shape>
+                                    <Polygon POINTS="689 1562 689 1645 689 1645 689 1562"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_173" CONTENT="." HPOS="655" VPOS="1563" WIDTH="0" HEIGHT="82" GC="0.963">
+                                <Shape>
+                                    <Polygon POINTS="655 1563 655 1645 655 1645 655 1563"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_174" CONTENT="." HPOS="634" VPOS="1564" WIDTH="0" HEIGHT="81" GC="0.6665">
+                                <Shape>
+                                    <Polygon POINTS="634 1564 634 1645 634 1645 634 1564"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_175" CONTENT="." HPOS="565" VPOS="1566" WIDTH="0" HEIGHT="79" GC="0.4406">
+                                <Shape>
+                                    <Polygon POINTS="565 1566 565 1645 565 1645 565 1566"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_176" CONTENT="." HPOS="482" VPOS="1569" WIDTH="0" HEIGHT="91" GC="0.907">
+                                <Shape>
+                                    <Polygon POINTS="482 1569 482 1660 482 1660 482 1569"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                    </TextLine>
+
+                    <TextLine ID="_12903814-5a8a-4246-bedd-77e95161d0e9" HPOS="244" VPOS="1642" WIDTH="1021" HEIGHT="97" BASELINE="247 1677 1265 1688" TAGREFS="LINE_TYPE_2">
+                        <Shape>
+                            <Polygon POINTS="244 1714 1257 1739 1265 1688 1265 1668 1143 1651 1140 1651 1046 1665 1012 1648 1009 1648 1006 1648 913 1662 409 1660 384 1642 381 1642 378 1642 375 1642 270 1657 253 1642 247 1677 244 1714"/>
+                        </Shape>
+                        <String CONTENT=""/>
+                    </TextLine>
+
+                    <TextLine ID="_2db26ab6-d6a5-4d3f-ac75-d8d0310135a2" HPOS="244" VPOS="1711" WIDTH="1004" HEIGHT="108" BASELINE="247 1750 1248 1773" TAGREFS="LINE_TYPE_2">
+                        <Shape>
+                            <Polygon POINTS="244 1793 278 1807 281 1807 284 1807 349 1796 395 1810 398 1810 401 1810 489 1799 512 1813 514 1813 517 1813 520 1813 580 1802 1240 1819 1248 1773 1248 1748 489 1716 486 1716 292 1725 250 1711 247 1750 244 1793"/>
+                        </Shape>
+                        <String ID="segment_60" CONTENT="סל.." HPOS="1053" VPOS="1740" WIDTH="185" HEIGHT="79" WC="0.8158">
+                            <Shape>
+                                <Polygon POINTS="1054 1740 1053 1814 1237 1819 1238 1748"/>
+                            </Shape>
+                            <Glyph ID="char_177" CONTENT="ס" HPOS="1237" VPOS="1748" WIDTH="1" HEIGHT="71" GC="0.4217">
+                                <Shape>
+                                    <Polygon POINTS="1238 1748 1237 1819 1237 1819 1238 1748"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_178" CONTENT="ל" HPOS="1204" VPOS="1746" WIDTH="1" HEIGHT="72" GC="0.9923">
+                                <Shape>
+                                    <Polygon POINTS="1205 1746 1204 1818 1204 1818 1205 1746"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_179" CONTENT="." HPOS="1092" VPOS="1741" WIDTH="1" HEIGHT="74" GC="0.8673">
+                                <Shape>
+                                    <Polygon POINTS="1093 1741 1092 1815 1092 1815 1093 1741"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_180" CONTENT="." HPOS="1053" VPOS="1740" WIDTH="1" HEIGHT="74" GC="0.9819">
+                                <Shape>
+                                    <Polygon POINTS="1054 1740 1053 1814 1053 1814 1054 1740"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                    </TextLine>
+
+                    <TextLine ID="_55170cf4-da88-43a1-9364-6dff763f3474" HPOS="497" VPOS="1819" WIDTH="683" HEIGHT="82" BASELINE="497 1844 1180 1844" TAGREFS="LINE_TYPE_2">
+                        <Shape>
+                            <Polygon POINTS="497 1844 500 1901 551 1887 580 1901 583 1901 585 1901 588 1901 591 1901 617 1884 859 1884 878 1901 881 1901 884 1901 887 1901 987 1884 1046 1901 1049 1901 1052 1901 1180 1887 1180 1844 1180 1827 497 1819 497 1844"/>
+                        </Shape>
+                        <String CONTENT=""/>
+                    </TextLine>
+
+                    <TextLine ID="_4306a4be-a881-4b4a-973a-2baa041d4083" HPOS="244" VPOS="1864" WIDTH="1001" HEIGHT="108" BASELINE="247 1907 1245 1918" TAGREFS="LINE_TYPE_2">
+                        <Shape>
+                            <Polygon POINTS="247 1907 244 1947 290 1967 292 1967 295 1967 372 1952 492 1969 494 1969 497 1969 557 1955 645 1969 648 1969 651 1969 696 1952 739 1972 742 1972 745 1972 1240 1955 1245 1918 1245 1895 1112 1895 1095 1878 1092 1878 1089 1878 1086 1878 1083 1878 1024 1893 1001 1873 998 1873 995 1873 793 1873 790 1873 787 1873 785 1873 762 1890 631 1870 628 1870 625 1870 574 1887 403 1887 381 1867 378 1867 375 1867 372 1867 369 1867 366 1867 347 1881 247 1864 247 1907"/>
+                        </Shape>
+                        <String ID="segment_61" CONTENT="א[" HPOS="692" VPOS="1879" WIDTH="529" HEIGHT="77" WC="0.9803">
+                            <Shape>
+                                <Polygon POINTS="692 1879 692 1954 1221 1956 1221 1895"/>
+                            </Shape>
+                            <Glyph ID="char_181" CONTENT="א" HPOS="1221" VPOS="1895" WIDTH="0" HEIGHT="61" GC="0.9783">
+                                <Shape>
+                                    <Polygon POINTS="1221 1895 1221 1956 1221 1956 1221 1895"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_182" CONTENT="[" HPOS="692" VPOS="1879" WIDTH="0" HEIGHT="75" GC="0.9823">
+                                <Shape>
+                                    <Polygon POINTS="692 1879 692 1954 692 1954 692 1879"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_62" HPOS="677"  VPOS="1877" WIDTH="8"  HEIGHT="82"/>
+                        <String ID="segment_63" CONTENT="]" HPOS="670" VPOS="1876" WIDTH="1" HEIGHT="86" WC="0.9889">
+                            <Shape>
+                                <Polygon POINTS="671 1876 670 1962 670 1962 671 1876"/>
+                            </Shape>
+                            <Glyph ID="char_184" CONTENT="]" HPOS="670" VPOS="1876" WIDTH="1" HEIGHT="86" GC="0.9889">
+                                <Shape>
+                                    <Polygon POINTS="671 1876 670 1962 670 1962 671 1876"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_64" HPOS="664"  VPOS="1875" WIDTH="1"  HEIGHT="89"/>
+                        <String ID="segment_65" CONTENT="בבשים" HPOS="497" VPOS="1872" WIDTH="147" HEIGHT="97" WC="0.9818">
+                            <Shape>
+                                <Polygon POINTS="498 1887 497 1969 643 1969 644 1872"/>
+                            </Shape>
+                            <Glyph ID="char_186" CONTENT="ב" HPOS="643" VPOS="1872" WIDTH="1" HEIGHT="97" GC="0.9829">
+                                <Shape>
+                                    <Polygon POINTS="644 1872 643 1969 643 1969 644 1872"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_187" CONTENT="ב" HPOS="601" VPOS="1878" WIDTH="1" HEIGHT="84" GC="0.9729">
+                                <Shape>
+                                    <Polygon POINTS="602 1878 601 1962 601 1962 602 1878"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_188" CONTENT="ש" HPOS="559" VPOS="1887" WIDTH="1" HEIGHT="68" GC="0.9634">
+                                <Shape>
+                                    <Polygon POINTS="560 1887 559 1955 559 1955 560 1887"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_189" CONTENT="י" HPOS="517" VPOS="1887" WIDTH="1" HEIGHT="77" GC="0.9976">
+                                <Shape>
+                                    <Polygon POINTS="518 1887 517 1964 517 1964 518 1887"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_190" CONTENT="ם" HPOS="497" VPOS="1887" WIDTH="1" HEIGHT="82" GC="0.9924">
+                                <Shape>
+                                    <Polygon POINTS="498 1887 497 1969 497 1969 498 1887"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_66" HPOS="462"  VPOS="1887" WIDTH="8"  HEIGHT="79"/>
+                        <String ID="segment_67" CONTENT="וי" HPOS="420" VPOS="1887" WIDTH="36" HEIGHT="77" WC="0.9808">
+                            <Shape>
+                                <Polygon POINTS="421 1887 420 1959 455 1964 456 1887"/>
+                            </Shape>
+                            <Glyph ID="char_192" CONTENT="ו" HPOS="455" VPOS="1887" WIDTH="1" HEIGHT="77" GC="0.995">
+                                <Shape>
+                                    <Polygon POINTS="456 1887 455 1964 455 1964 456 1887"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_193" CONTENT="י" HPOS="420" VPOS="1887" WIDTH="1" HEIGHT="72" GC="0.9665">
+                                <Shape>
+                                    <Polygon POINTS="421 1887 420 1959 420 1959 421 1887"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_68" HPOS="413"  VPOS="1887" WIDTH="1"  HEIGHT="71"/>
+                        <String ID="segment_69" CONTENT="אצפ" HPOS="343" VPOS="1867" WIDTH="64" HEIGHT="91" WC="0.9707">
+                            <Shape>
+                                <Polygon POINTS="344 1881 343 1958 406 1957 407 1887"/>
+                            </Shape>
+                            <Glyph ID="char_195" CONTENT="א" HPOS="406" VPOS="1887" WIDTH="1" HEIGHT="70" GC="0.9995">
+                                <Shape>
+                                    <Polygon POINTS="407 1887 406 1957 406 1957 407 1887"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_196" CONTENT="צ" HPOS="372" VPOS="1867" WIDTH="0" HEIGHT="85" GC="0.9606">
+                                <Shape>
+                                    <Polygon POINTS="372 1867 372 1952 372 1952 372 1867"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_197" CONTENT="פ" HPOS="343" VPOS="1881" WIDTH="1" HEIGHT="77" GC="0.952">
+                                <Shape>
+                                    <Polygon POINTS="344 1881 343 1958 343 1958 344 1881"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_70" HPOS="330"  VPOS="1878" WIDTH="1"  HEIGHT="82"/>
+                        <String ID="segment_71" CONTENT="חם" HPOS="288" VPOS="1871" WIDTH="29" HEIGHT="95" WC="0.9913">
+                            <Shape>
+                                <Polygon POINTS="289 1871 288 1966 316 1963 317 1876"/>
+                            </Shape>
+                            <Glyph ID="char_199" CONTENT="ח" HPOS="309" VPOS="1875" WIDTH="8" HEIGHT="89" GC="0.9897">
+                                <Shape>
+                                    <Polygon POINTS="310 1875 309 1964 316 1963 317 1876"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_200" CONTENT="ם" HPOS="288" VPOS="1871" WIDTH="1" HEIGHT="95" GC="0.9929">
+                                <Shape>
+                                    <Polygon POINTS="289 1871 288 1966 288 1966 289 1871"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                    </TextLine>
+
+                    <TextLine ID="_2a9c3efe-9901-408d-ba28-37c9591ef0b7" HPOS="284" VPOS="1952" WIDTH="981" HEIGHT="94" BASELINE="287 1975 1265 1989" TAGREFS="LINE_TYPE_2">
+                        <Shape>
+                            <Polygon POINTS="287 1975 284 2023 1097 2046 1100 2046 1260 2032 1265 1989 1265 1964 287 1952 287 1975"/>
+                        </Shape>
+                        <String ID="segment_72" CONTENT="קרבםכם" HPOS="1007" VPOS="1961" WIDTH="232" HEIGHT="84" WC="0.7186">
+                            <Shape>
+                                <Polygon POINTS="1008 1961 1007 2043 1238 2034 1239 1964"/>
+                            </Shape>
+                            <Glyph ID="char_201" CONTENT="ק" HPOS="1238" VPOS="1964" WIDTH="1" HEIGHT="70" GC="0.1896">
+                                <Shape>
+                                    <Polygon POINTS="1239 1964 1238 2034 1238 2034 1239 1964"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_202" CONTENT="ר" HPOS="1198" VPOS="1963" WIDTH="1" HEIGHT="74" GC="0.5212">
+                                <Shape>
+                                    <Polygon POINTS="1199 1963 1198 2037 1198 2037 1199 1963"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_203" CONTENT="ב" HPOS="1163" VPOS="1963" WIDTH="1" HEIGHT="77" GC="0.6137">
+                                <Shape>
+                                    <Polygon POINTS="1164 1963 1163 2040 1163 2040 1164 1963"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_204" CONTENT="ם" HPOS="1117" VPOS="1962" WIDTH="1" HEIGHT="83" GC="0.9982">
+                                <Shape>
+                                    <Polygon POINTS="1118 1962 1117 2045 1117 2045 1118 1962"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_205" CONTENT="כ" HPOS="1053" VPOS="1961" WIDTH="1" HEIGHT="84" GC="0.9955">
+                                <Shape>
+                                    <Polygon POINTS="1054 1961 1053 2045 1053 2045 1054 1961"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_206" CONTENT="ם" HPOS="1007" VPOS="1961" WIDTH="1" HEIGHT="82" GC="0.9934">
+                                <Shape>
+                                    <Polygon POINTS="1008 1961 1007 2043 1007 2043 1008 1961"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_73" HPOS="978"  VPOS="1960" WIDTH="1"  HEIGHT="83"/>
+                        <String ID="segment_74" CONTENT=".גי" HPOS="886" VPOS="1959" WIDTH="76" HEIGHT="83" WC="0.8688">
+                            <Shape>
+                                <Polygon POINTS="887 1959 886 2040 961 2042 962 1960"/>
+                            </Shape>
+                            <Glyph ID="char_208" CONTENT="." HPOS="961" VPOS="1960" WIDTH="1" HEIGHT="82" GC="0.6466">
+                                <Shape>
+                                    <Polygon POINTS="962 1960 961 2042 961 2042 962 1960"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_209" CONTENT="ג" HPOS="909" VPOS="1960" WIDTH="1" HEIGHT="81" GC="0.9865">
+                                <Shape>
+                                    <Polygon POINTS="910 1960 909 2041 909 2041 910 1960"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_210" CONTENT="י" HPOS="886" VPOS="1959" WIDTH="1" HEIGHT="81" GC="0.9734">
+                                <Shape>
+                                    <Polygon POINTS="887 1959 886 2040 886 2040 887 1959"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_75" HPOS="852"  VPOS="1959" WIDTH="6"  HEIGHT="80"/>
+                        <String ID="segment_76" CONTENT="אחמא" HPOS="725" VPOS="1957" WIDTH="110" HEIGHT="82" WC="0.9293">
+                            <Shape>
+                                <Polygon POINTS="726 1957 725 2035 834 2039 835 1959"/>
+                            </Shape>
+                            <Glyph ID="char_212" CONTENT="א" HPOS="834" VPOS="1959" WIDTH="1" HEIGHT="80" GC="0.868">
+                                <Shape>
+                                    <Polygon POINTS="835 1959 834 2039 834 2039 835 1959"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_213" CONTENT="ח" HPOS="805" VPOS="1958" WIDTH="1" HEIGHT="80" GC="0.9351">
+                                <Shape>
+                                    <Polygon POINTS="806 1958 805 2038 805 2038 806 1958"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_214" CONTENT="מ" HPOS="765" VPOS="1958" WIDTH="1" HEIGHT="79" GC="0.9263">
+                                <Shape>
+                                    <Polygon POINTS="766 1958 765 2037 765 2037 766 1958"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_215" CONTENT="א" HPOS="725" VPOS="1957" WIDTH="1" HEIGHT="78" GC="0.988">
+                                <Shape>
+                                    <Polygon POINTS="726 1957 725 2035 725 2035 726 1957"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_77" HPOS="690"  VPOS="1957" WIDTH="1"  HEIGHT="77"/>
+                        <String ID="segment_78" CONTENT="בא" HPOS="523" VPOS="1955" WIDTH="35" HEIGHT="76" WC="0.941">
+                            <Shape>
+                                <Polygon POINTS="524 1955 523 2030 557 2031 558 1955"/>
+                            </Shape>
+                            <Glyph ID="char_217" CONTENT="ב" HPOS="557" VPOS="1955" WIDTH="1" HEIGHT="76" GC="0.9311">
+                                <Shape>
+                                    <Polygon POINTS="558 1955 557 2031 557 2031 558 1955"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_218" CONTENT="א" HPOS="523" VPOS="1955" WIDTH="1" HEIGHT="75" GC="0.9509">
+                                <Shape>
+                                    <Polygon POINTS="524 1955 523 2030 523 2030 524 1955"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_79" HPOS="471"  VPOS="1954" WIDTH="1"  HEIGHT="74"/>
+                        <String ID="segment_80" CONTENT="חגחמ" HPOS="332" VPOS="1953" WIDTH="128" HEIGHT="75" WC="0.7241">
+                            <Shape>
+                                <Polygon POINTS="333 1953 332 2024 459 2028 460 1954"/>
+                            </Shape>
+                            <Glyph ID="char_220" CONTENT="ח" HPOS="459" VPOS="1954" WIDTH="1" HEIGHT="74" GC="0.8906">
+                                <Shape>
+                                    <Polygon POINTS="460 1954 459 2028 459 2028 460 1954"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_221" CONTENT="ג" HPOS="407" VPOS="1953" WIDTH="1" HEIGHT="73" GC="0.5825">
+                                <Shape>
+                                    <Polygon POINTS="408 1953 407 2026 407 2026 408 1953"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_222" CONTENT="ח" HPOS="361" VPOS="1953" WIDTH="1" HEIGHT="72" GC="0.4538">
+                                <Shape>
+                                    <Polygon POINTS="362 1953 361 2025 361 2025 362 1953"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_223" CONTENT="מ" HPOS="332" VPOS="1953" WIDTH="1" HEIGHT="71" GC="0.9694">
+                                <Shape>
+                                    <Polygon POINTS="333 1953 332 2024 332 2024 333 1953"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                    </TextLine>
+
+                    <TextLine ID="_43675f47-c2f0-450c-ac80-c5c95a0b3d2b" HPOS="275" VPOS="2018" WIDTH="979" HEIGHT="113" BASELINE="278 2052 1254 2077" TAGREFS="LINE_TYPE_2">
+                        <Shape>
+                            <Polygon POINTS="278 2052 275 2092 492 2114 494 2114 600 2103 1143 2131 1146 2131 1248 2117 1254 2077 1251 2055 1152 2055 1120 2035 1117 2035 1115 2035 1112 2035 1035 2049 890 2029 887 2029 822 2043 779 2026 776 2026 773 2026 603 2038 546 2021 543 2021 540 2021 435 2032 278 2018 278 2052"/>
+                        </Shape>
+                        <String ID="segment_81" CONTENT="צפפהאיאוחר" HPOS="886" VPOS="2029" WIDTH="345" HEIGHT="101" WC="0.8257">
+                            <Shape>
+                                <Polygon POINTS="888 2029 886 2118 1230 2120 1231 2055"/>
+                            </Shape>
+                            <Glyph ID="char_224" CONTENT="צ" HPOS="1230" VPOS="2055" WIDTH="1" HEIGHT="65" GC="0.2656">
+                                <Shape>
+                                    <Polygon POINTS="1231 2055 1230 2120 1230 2120 1231 2055"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_225" CONTENT="פ" HPOS="1197" VPOS="2055" WIDTH="2" HEIGHT="69" GC="0.5597">
+                                <Shape>
+                                    <Polygon POINTS="1199 2055 1197 2124 1197 2124 1199 2055"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_226" CONTENT="פ" HPOS="1158" VPOS="2055" WIDTH="2" HEIGHT="74" GC="0.796">
+                                <Shape>
+                                    <Polygon POINTS="1160 2055 1158 2129 1158 2129 1160 2055"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_227" CONTENT="ה" HPOS="1125" VPOS="2040" WIDTH="3" HEIGHT="90" GC="0.9702">
+                                <Shape>
+                                    <Polygon POINTS="1128 2040 1125 2130 1125 2130 1128 2040"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_228" CONTENT="א" HPOS="1080" VPOS="2040" WIDTH="3" HEIGHT="88" GC="0.704">
+                                <Shape>
+                                    <Polygon POINTS="1083 2040 1080 2128 1080 2128 1083 2040"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_229" CONTENT="י" HPOS="1022" VPOS="2048" WIDTH="2" HEIGHT="77" GC="0.9988">
+                                <Shape>
+                                    <Polygon POINTS="1024 2048 1022 2125 1022 2125 1024 2048"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_230" CONTENT="א" HPOS="996" VPOS="2044" WIDTH="2" HEIGHT="79" GC="0.9914">
+                                <Shape>
+                                    <Polygon POINTS="998 2044 996 2123 996 2123 998 2044"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_231" CONTENT="ו" HPOS="950" VPOS="2038" WIDTH="3" HEIGHT="83" GC="0.9759">
+                                <Shape>
+                                    <Polygon POINTS="953 2038 950 2121 950 2121 953 2038"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_232" CONTENT="ח" HPOS="931" VPOS="2035" WIDTH="3" HEIGHT="85" GC="0.9971">
+                                <Shape>
+                                    <Polygon POINTS="934 2035 931 2120 931 2120 934 2035"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_233" CONTENT="ר" HPOS="886" VPOS="2029" WIDTH="2" HEIGHT="89" GC="0.9986">
+                                <Shape>
+                                    <Polygon POINTS="888 2029 886 2118 886 2118 888 2029"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_82" HPOS="867"  VPOS="2033" WIDTH="2"  HEIGHT="84"/>
+                        <String ID="segment_83" CONTENT="אליסאחגיי" HPOS="647" VPOS="2027" WIDTH="209" HEIGHT="89" WC="0.9042">
+                            <Shape>
+                                <Polygon POINTS="649 2035 647 2105 854 2116 856 2036"/>
+                            </Shape>
+                            <Glyph ID="char_235" CONTENT="א" HPOS="854" VPOS="2036" WIDTH="2" HEIGHT="80" GC="0.9123">
+                                <Shape>
+                                    <Polygon POINTS="856 2036 854 2116 854 2116 856 2036"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_236" CONTENT="ל" HPOS="841" VPOS="2037" WIDTH="9" HEIGHT="79" GC="0.9552">
+                                <Shape>
+                                    <Polygon POINTS="843 2039 841 2115 848 2116 850 2037"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_237" CONTENT="י" HPOS="828" VPOS="2041" WIDTH="1" HEIGHT="74" GC="0.9986">
+                                <Shape>
+                                    <Polygon POINTS="829 2041 828 2115 828 2115 829 2041"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_238" CONTENT="ס" HPOS="802" VPOS="2036" WIDTH="2" HEIGHT="77" GC="0.9403">
+                                <Shape>
+                                    <Polygon POINTS="804 2036 802 2113 802 2113 804 2036"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_239" CONTENT="א" HPOS="763" VPOS="2027" WIDTH="2" HEIGHT="84" GC="0.9901">
+                                <Shape>
+                                    <Polygon POINTS="765 2027 763 2111 763 2111 765 2027"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_240" CONTENT="ח" HPOS="731" VPOS="2029" WIDTH="2" HEIGHT="81" GC="0.625">
+                                <Shape>
+                                    <Polygon POINTS="733 2029 731 2110 731 2110 733 2029"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_241" CONTENT="ג" HPOS="692" VPOS="2032" WIDTH="2" HEIGHT="76" GC="0.9911">
+                                <Shape>
+                                    <Polygon POINTS="694 2032 692 2108 692 2108 694 2032"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_242" CONTENT="י" HPOS="672" VPOS="2033" WIDTH="2" HEIGHT="74" GC="0.9547">
+                                <Shape>
+                                    <Polygon POINTS="674 2033 672 2107 672 2107 674 2033"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_243" CONTENT="י" HPOS="647" VPOS="2035" WIDTH="2" HEIGHT="70" GC="0.7701">
+                                <Shape>
+                                    <Polygon POINTS="649 2035 647 2105 647 2105 649 2035"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_84" HPOS="640"  VPOS="2035" WIDTH="2"  HEIGHT="70"/>
+                        <String ID="segment_85" CONTENT="נאם" HPOS="523" VPOS="2022" WIDTH="61" HEIGHT="89" WC="0.8757">
+                            <Shape>
+                                <Polygon POINTS="525 2023 523 2111 582 2105 584 2032"/>
+                            </Shape>
+                            <Glyph ID="char_245" CONTENT="נ" HPOS="582" VPOS="2032" WIDTH="2" HEIGHT="73" GC="0.7681">
+                                <Shape>
+                                    <Polygon POINTS="584 2032 582 2105 582 2105 584 2032"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_246" CONTENT="א" HPOS="549" VPOS="2022" WIDTH="9" HEIGHT="86" GC="0.8903">
+                                <Shape>
+                                    <Polygon POINTS="551 2022 549 2108 556 2108 558 2025"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_247" CONTENT="ם" HPOS="523" VPOS="2023" WIDTH="2" HEIGHT="88" GC="0.9687">
+                                <Shape>
+                                    <Polygon POINTS="525 2023 523 2111 523 2111 525 2023"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_86" HPOS="478"  VPOS="2027" WIDTH="2"  HEIGHT="86"/>
+                        <String ID="segment_87" CONTENT="אםאם" HPOS="342" VPOS="2024" WIDTH="125" HEIGHT="87" WC="0.8247">
+                            <Shape>
+                                <Polygon POINTS="344 2024 342 2099 465 2111 467 2029"/>
+                            </Shape>
+                            <Glyph ID="char_249" CONTENT="א" HPOS="465" VPOS="2029" WIDTH="2" HEIGHT="82" GC="0.8253">
+                                <Shape>
+                                    <Polygon POINTS="467 2029 465 2111 465 2111 467 2029"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_250" CONTENT="ם" HPOS="420" VPOS="2031" WIDTH="2" HEIGHT="76" GC="0.9683">
+                                <Shape>
+                                    <Polygon POINTS="422 2031 420 2107 420 2107 422 2031"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_251" CONTENT="א" HPOS="381" VPOS="2027" WIDTH="2" HEIGHT="76" GC="0.509">
+                                <Shape>
+                                    <Polygon POINTS="383 2027 381 2103 381 2103 383 2027"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_252" CONTENT="ם" HPOS="342" VPOS="2024" WIDTH="2" HEIGHT="75" GC="0.9963">
+                                <Shape>
+                                    <Polygon POINTS="344 2024 342 2099 342 2099 344 2024"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                    </TextLine>
+
+                    <TextLine ID="_2edf6e1b-fbb3-4b6b-9139-4be5c4179f97" HPOS="244" VPOS="2092" WIDTH="996" HEIGHT="119" BASELINE="247 2126 1240 2157" TAGREFS="LINE_TYPE_2">
+                        <Shape>
+                            <Polygon POINTS="247 2126 244 2163 423 2188 426 2188 429 2188 483 2174 512 2191 514 2191 517 2191 520 2191 631 2180 819 2200 822 2200 824 2200 827 2200 844 2185 964 2205 967 2205 1055 2191 1194 2211 1197 2211 1200 2211 1237 2194 1240 2157 1240 2123 247 2092 247 2126"/>
+                        </Shape>
+                        <String ID="segment_88" CONTENT="ס2חגא.מי.םמח" HPOS="538" VPOS="2101" WIDTH="682" HEIGHT="109" WC="0.766">
+                            <Shape>
+                                <Polygon POINTS="541 2101 538 2189 1217 2203 1220 2122"/>
+                            </Shape>
+                            <Glyph ID="char_253" CONTENT="ס" HPOS="1217" VPOS="2122" WIDTH="3" HEIGHT="81" GC="0.7909">
+                                <Shape>
+                                    <Polygon POINTS="1220 2122 1217 2203 1217 2203 1220 2122"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_254" CONTENT="2" HPOS="1186" VPOS="2121" WIDTH="3" HEIGHT="89" GC="0.2157">
+                                <Shape>
+                                    <Polygon POINTS="1189 2121 1186 2210 1186 2210 1189 2121"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_255" CONTENT="ח" HPOS="1155" VPOS="2120" WIDTH="3" HEIGHT="85" GC="0.9578">
+                                <Shape>
+                                    <Polygon POINTS="1158 2120 1155 2205 1155 2205 1158 2120"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_256" CONTENT="ג" HPOS="1105" VPOS="2119" WIDTH="3" HEIGHT="79" GC="0.7802">
+                                <Shape>
+                                    <Polygon POINTS="1108 2119 1105 2198 1105 2198 1108 2119"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_257" CONTENT="א" HPOS="962" VPOS="2114" WIDTH="3" HEIGHT="91" GC="0.3371">
+                                <Shape>
+                                    <Polygon POINTS="965 2114 962 2205 962 2205 965 2114"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_258" CONTENT="." HPOS="924" VPOS="2113" WIDTH="3" HEIGHT="85" GC="0.7728">
+                                <Shape>
+                                    <Polygon POINTS="927 2113 924 2198 924 2198 927 2113"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_259" CONTENT="מ" HPOS="874" VPOS="2112" WIDTH="3" HEIGHT="78" GC="0.9621">
+                                <Shape>
+                                    <Polygon POINTS="877 2112 874 2190 874 2190 877 2112"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_260" CONTENT="י" HPOS="831" VPOS="2110" WIDTH="3" HEIGHT="86" GC="0.9908">
+                                <Shape>
+                                    <Polygon POINTS="834 2110 831 2196 831 2196 834 2110"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_261" CONTENT="." HPOS="812" VPOS="2110" WIDTH="3" HEIGHT="89" GC="0.99">
+                                <Shape>
+                                    <Polygon POINTS="815 2110 812 2199 812 2199 815 2110"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_262" CONTENT="ם" HPOS="762" VPOS="2108" WIDTH="3" HEIGHT="86" GC="0.5502">
+                                <Shape>
+                                    <Polygon POINTS="765 2108 762 2194 762 2194 765 2108"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_263" CONTENT="מ" HPOS="656" VPOS="2105" WIDTH="3" HEIGHT="78" GC="0.9009">
+                                <Shape>
+                                    <Polygon POINTS="659 2105 656 2183 656 2183 659 2105"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_264" CONTENT="ח" HPOS="538" VPOS="2101" WIDTH="3" HEIGHT="88" GC="0.943">
+                                <Shape>
+                                    <Polygon POINTS="541 2101 538 2189 538 2189 541 2101"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                    </TextLine>
+
+                    <TextLine ID="_a2787c70-bf10-458d-b98f-bec5f0f1be70" HPOS="307" VPOS="2168" WIDTH="936" HEIGHT="106" BASELINE="310 2200 1243 2222" TAGREFS="LINE_TYPE_2">
+                        <Shape>
+                            <Polygon POINTS="310 2200 307 2242 423 2265 426 2265 429 2265 489 2251 557 2268 560 2268 563 2268 742 2256 770 2274 773 2274 776 2274 779 2274 1237 2271 1243 2222 1240 2202 310 2168 310 2200"/>
+                        </Shape>
+                        <String ID="segment_89" CONTENT="שבםחיש" HPOS="949" VPOS="2191" WIDTH="278" HEIGHT="82" WC="0.8516">
+                            <Shape>
+                                <Polygon POINTS="951 2191 949 2273 1226 2271 1227 2202"/>
+                            </Shape>
+                            <Glyph ID="char_265" CONTENT="ש" HPOS="1226" VPOS="2202" WIDTH="1" HEIGHT="69" GC="0.4966">
+                                <Shape>
+                                    <Polygon POINTS="1227 2202 1226 2271 1226 2271 1227 2202"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_266" CONTENT="ב" HPOS="1098" VPOS="2197" WIDTH="1" HEIGHT="75" GC="0.8573">
+                                <Shape>
+                                    <Polygon POINTS="1099 2197 1098 2272 1098 2272 1099 2197"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_267" CONTENT="ם" HPOS="1053" VPOS="2195" WIDTH="1" HEIGHT="77" GC="0.8491">
+                                <Shape>
+                                    <Polygon POINTS="1054 2195 1053 2272 1053 2272 1054 2195"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_268" CONTENT="ח" HPOS="1007" VPOS="2194" WIDTH="2" HEIGHT="79" GC="0.9971">
+                                <Shape>
+                                    <Polygon POINTS="1009 2194 1007 2273 1007 2273 1009 2194"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_269" CONTENT="י" HPOS="968" VPOS="2192" WIDTH="2" HEIGHT="81" GC="0.9958">
+                                <Shape>
+                                    <Polygon POINTS="970 2192 968 2273 968 2273 970 2192"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_270" CONTENT="ש" HPOS="949" VPOS="2191" WIDTH="2" HEIGHT="82" GC="0.9138">
+                                <Shape>
+                                    <Polygon POINTS="951 2191 949 2273 949 2273 951 2191"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_90" HPOS="898"  VPOS="2190" WIDTH="2"  HEIGHT="83"/>
+                        <String ID="segment_91" CONTENT="מב" HPOS="706" VPOS="2183" WIDTH="181" HEIGHT="90" WC="0.8504">
+                            <Shape>
+                                <Polygon POINTS="708 2183 706 2258 885 2273 887 2189"/>
+                            </Shape>
+                            <Glyph ID="char_272" CONTENT="מ" HPOS="885" VPOS="2189" WIDTH="2" HEIGHT="84" GC="0.9185">
+                                <Shape>
+                                    <Polygon POINTS="887 2189 885 2273 885 2273 887 2189"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_273" CONTENT="ב" HPOS="706" VPOS="2183" WIDTH="2" HEIGHT="75" GC="0.7823">
+                                <Shape>
+                                    <Polygon POINTS="708 2183 706 2258 706 2258 708 2183"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_92" HPOS="668"  VPOS="2181" WIDTH="2"  HEIGHT="80"/>
+                        <String ID="segment_93" CONTENT="חבהרי" HPOS="322" VPOS="2169" WIDTH="258" HEIGHT="98" WC="0.6477">
+                            <Shape>
+                                <Polygon POINTS="324 2169 322 2245 577 2267 580 2178"/>
+                            </Shape>
+                            <Glyph ID="char_275" CONTENT="ח" HPOS="577" VPOS="2178" WIDTH="3" HEIGHT="89" GC="0.364">
+                                <Shape>
+                                    <Polygon POINTS="580 2178 577 2267 577 2267 580 2178"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_276" CONTENT="ב" HPOS="405" VPOS="2172" WIDTH="2" HEIGHT="89" GC="0.4447">
+                                <Shape>
+                                    <Polygon POINTS="407 2172 405 2261 405 2261 407 2172"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_277" CONTENT="ה" HPOS="367" VPOS="2170" WIDTH="2" HEIGHT="84" GC="0.7344">
+                                <Shape>
+                                    <Polygon POINTS="369 2170 367 2254 367 2254 369 2170"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_278" CONTENT="ר" HPOS="341" VPOS="2169" WIDTH="2" HEIGHT="80" GC="0.7497">
+                                <Shape>
+                                    <Polygon POINTS="343 2169 341 2249 341 2249 343 2169"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_279" CONTENT="י" HPOS="322" VPOS="2169" WIDTH="2" HEIGHT="76" GC="0.9457">
+                                <Shape>
+                                    <Polygon POINTS="324 2169 322 2245 322 2245 324 2169"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                    </TextLine>
+
+                    <TextLine ID="_fd16b92a-73ba-4a48-94f3-201fba04548d" HPOS="275" VPOS="2242" WIDTH="965" HEIGHT="117" BASELINE="278 2265 389 2282 1240 2305" TAGREFS="LINE_TYPE_2">
+                        <Shape>
+                            <Polygon POINTS="278 2265 275 2313 412 2336 415 2336 540 2325 580 2345 583 2345 585 2345 876 2339 1041 2359 1043 2359 1046 2359 1049 2359 1069 2345 1186 2356 1188 2356 1191 2356 1237 2339 1240 2305 1240 2288 1149 2285 1126 2265 1123 2265 1120 2265 1117 2265 1043 2279 989 2262 987 2262 984 2262 981 2262 941 2276 278 2242 278 2265"/>
+                        </Shape>
+                        <String ID="segment_94" CONTENT="באבסמי" HPOS="1047" VPOS="2266" WIDTH="171" HEIGHT="93" WC="0.5809">
+                            <Shape>
+                                <Polygon POINTS="1049 2278 1047 2359 1216 2347 1218 2287"/>
+                            </Shape>
+                            <Glyph ID="char_280" CONTENT="ב" HPOS="1216" VPOS="2287" WIDTH="2" HEIGHT="60" GC="0.312">
+                                <Shape>
+                                    <Polygon POINTS="1218 2287 1216 2347 1216 2347 1218 2287"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_281" CONTENT="א" HPOS="1190" VPOS="2286" WIDTH="2" HEIGHT="70" GC="0.4071">
+                                <Shape>
+                                    <Polygon POINTS="1192 2286 1190 2356 1190 2356 1192 2286"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_282" CONTENT="ב" HPOS="1171" VPOS="2286" WIDTH="2" HEIGHT="69" GC="0.6231">
+                                <Shape>
+                                    <Polygon POINTS="1173 2286 1171 2355 1171 2355 1173 2286"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_283" CONTENT="ס" HPOS="1125" VPOS="2266" WIDTH="2" HEIGHT="84" GC="0.6933">
+                                <Shape>
+                                    <Polygon POINTS="1127 2266 1125 2350 1125 2350 1127 2266"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_284" CONTENT="מ" HPOS="1086" VPOS="2270" WIDTH="2" HEIGHT="77" GC="0.8386">
+                                <Shape>
+                                    <Polygon POINTS="1088 2270 1086 2347 1086 2347 1088 2270"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_285" CONTENT="י" HPOS="1047" VPOS="2278" WIDTH="2" HEIGHT="81" GC="0.6112">
+                                <Shape>
+                                    <Polygon POINTS="1049 2278 1047 2359 1047 2359 1049 2278"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_95" HPOS="1028"  VPOS="2275" WIDTH="8"  HEIGHT="83"/>
+                        <String ID="segment_96" CONTENT="כי" HPOS="976" VPOS="2263" WIDTH="47" HEIGHT="94" WC="0.9641">
+                            <Shape>
+                                <Polygon POINTS="978 2263 976 2351 1021 2357 1023 2273"/>
+                            </Shape>
+                            <Glyph ID="char_287" CONTENT="כ" HPOS="1021" VPOS="2273" WIDTH="2" HEIGHT="84" GC="0.9292">
+                                <Shape>
+                                    <Polygon POINTS="1023 2273 1021 2357 1021 2357 1023 2273"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_288" CONTENT="י" HPOS="976" VPOS="2263" WIDTH="2" HEIGHT="88" GC="0.9991">
+                                <Shape>
+                                    <Polygon POINTS="978 2263 976 2351 976 2351 978 2263"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_97" HPOS="943"  VPOS="2272" WIDTH="9"  HEIGHT="76"/>
+                        <String ID="segment_98" CONTENT="מא" HPOS="892" VPOS="2274" WIDTH="47" HEIGHT="72" WC="0.8465">
+                            <Shape>
+                                <Polygon POINTS="894 2274 892 2341 937 2346 939 2276"/>
+                            </Shape>
+                            <Glyph ID="char_290" CONTENT="מ" HPOS="937" VPOS="2276" WIDTH="2" HEIGHT="70" GC="0.9899">
+                                <Shape>
+                                    <Polygon POINTS="939 2276 937 2346 937 2346 939 2276"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_291" CONTENT="א" HPOS="892" VPOS="2274" WIDTH="2" HEIGHT="67" GC="0.7031">
+                                <Shape>
+                                    <Polygon POINTS="894 2274 892 2341 892 2341 894 2274"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_99" HPOS="859"  VPOS="2272" WIDTH="9"  HEIGHT="67"/>
+                        <String ID="segment_100" CONTENT="יצבור" HPOS="755" VPOS="2267" WIDTH="100" HEIGHT="74" WC="0.9704">
+                            <Shape>
+                                <Polygon POINTS="757 2267 755 2341 853 2339 855 2272"/>
+                            </Shape>
+                            <Glyph ID="char_293" CONTENT="י" HPOS="853" VPOS="2272" WIDTH="2" HEIGHT="67" GC="0.9944">
+                                <Shape>
+                                    <Polygon POINTS="855 2272 853 2339 853 2339 855 2272"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_294" CONTENT="צ" HPOS="833" VPOS="2271" WIDTH="2" HEIGHT="69" GC="0.9978">
+                                <Shape>
+                                    <Polygon POINTS="835 2271 833 2340 833 2340 835 2271"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_295" CONTENT="ב" HPOS="807" VPOS="2269" WIDTH="2" HEIGHT="71" GC="0.906">
+                                <Shape>
+                                    <Polygon POINTS="809 2269 807 2340 807 2340 809 2269"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_296" CONTENT="ו" HPOS="768" VPOS="2267" WIDTH="2" HEIGHT="74" GC="0.9981">
+                                <Shape>
+                                    <Polygon POINTS="770 2267 768 2341 768 2341 770 2267"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_297" CONTENT="ר" HPOS="755" VPOS="2267" WIDTH="2" HEIGHT="74" GC="0.9556">
+                                <Shape>
+                                    <Polygon POINTS="757 2267 755 2341 755 2341 757 2267"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_101" HPOS="729"  VPOS="2265" WIDTH="2"  HEIGHT="77"/>
+                        <String ID="segment_102" CONTENT="איב" HPOS="658" VPOS="2262" WIDTH="60" HEIGHT="81" WC="0.9904">
+                            <Shape>
+                                <Polygon POINTS="660 2262 658 2343 716 2342 718 2265"/>
+                            </Shape>
+                            <Glyph ID="char_299" CONTENT="א" HPOS="716" VPOS="2265" WIDTH="2" HEIGHT="77" GC="0.9852">
+                                <Shape>
+                                    <Polygon POINTS="718 2265 716 2342 716 2342 718 2265"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_300" CONTENT="י" HPOS="677" VPOS="2263" WIDTH="2" HEIGHT="80" GC="0.9938">
+                                <Shape>
+                                    <Polygon POINTS="679 2263 677 2343 677 2343 679 2263"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_301" CONTENT="ב" HPOS="658" VPOS="2262" WIDTH="2" HEIGHT="81" GC="0.9923">
+                                <Shape>
+                                    <Polygon POINTS="660 2262 658 2343 658 2343 660 2262"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_103" HPOS="625"  VPOS="2260" WIDTH="2"  HEIGHT="84"/>
+                        <String ID="segment_104" CONTENT="אללאמיא.ב" HPOS="309" VPOS="2244" WIDTH="305" HEIGHT="101" WC="0.9272">
+                            <Shape>
+                                <Polygon POINTS="321 2244 309 2319 612 2344 614 2259"/>
+                            </Shape>
+                            <Glyph ID="char_303" CONTENT="א" HPOS="612" VPOS="2259" WIDTH="2" HEIGHT="85" GC="0.8174">
+                                <Shape>
+                                    <Polygon POINTS="614 2259 612 2344 612 2344 614 2259"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_304" CONTENT="ל" HPOS="600" VPOS="2259" WIDTH="8" HEIGHT="86" GC="0.9694">
+                                <Shape>
+                                    <Polygon POINTS="602 2259 600 2345 606 2345 608 2259"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_305" CONTENT="ל" HPOS="567" VPOS="2257" WIDTH="2" HEIGHT="82" GC="0.8944">
+                                <Shape>
+                                    <Polygon POINTS="569 2257 567 2339 567 2339 569 2257"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_306" CONTENT="א" HPOS="536" VPOS="2255" WIDTH="1" HEIGHT="70" GC="0.9081">
+                                <Shape>
+                                    <Polygon POINTS="537 2255 536 2325 536 2325 537 2255"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_307" CONTENT="מ" HPOS="483" VPOS="2253" WIDTH="3" HEIGHT="77" GC="0.9952">
+                                <Shape>
+                                    <Polygon POINTS="486 2253 483 2330 483 2330 486 2253"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_308" CONTENT="י" HPOS="444" VPOS="2251" WIDTH="3" HEIGHT="82" GC="0.9875">
+                                <Shape>
+                                    <Polygon POINTS="447 2251 444 2333 444 2333 447 2251"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_309" CONTENT="א" HPOS="424" VPOS="2250" WIDTH="3" HEIGHT="85" GC="0.9639">
+                                <Shape>
+                                    <Polygon POINTS="427 2250 424 2335 424 2335 427 2250"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_310" CONTENT="." HPOS="379" VPOS="2248" WIDTH="13" HEIGHT="83" GC="0.9349">
+                                <Shape>
+                                    <Polygon POINTS="392 2248 379 2331 379 2331 392 2248"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_311" CONTENT="ב" HPOS="309" VPOS="2244" WIDTH="12" HEIGHT="75" GC="0.8742">
+                                <Shape>
+                                    <Polygon POINTS="321 2244 309 2319 309 2319 321 2244"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                    </TextLine>
+
+                    <TextLine ID="_a2d3b877-518c-47aa-a548-ca84301284db" HPOS="224" VPOS="2302" WIDTH="1019" HEIGHT="139" BASELINE="230 2333 463 2359 1243 2384" TAGREFS="LINE_TYPE_2">
+                        <Shape>
+                            <Polygon POINTS="230 2333 224 2387 585 2418 819 2427 822 2427 824 2427 827 2427 841 2416 853 2424 853 2427 856 2427 859 2427 861 2427 1012 2421 1166 2441 1169 2441 1237 2427 1243 2384 1240 2362 1100 2336 1097 2336 1021 2350 930 2350 921 2336 918 2336 918 2333 915 2333 913 2333 910 2333 836 2342 816 2325 813 2325 810 2325 807 2325 804 2325 753 2342 603 2339 594 2325 591 2325 591 2322 588 2322 585 2322 583 2322 460 2330 435 2313 432 2313 429 2313 426 2313 423 2313 386 2328 349 2308 347 2308 230 2302 230 2333"/>
+                        </Shape>
+                        <String ID="segment_105" CONTENT="סאליבלכדהאמי" HPOS="753" VPOS="2325" WIDTH="472" HEIGHT="115" WC="0.6983">
+                            <Shape>
+                                <Polygon POINTS="755 2341 753 2424 1223 2430 1225 2359"/>
+                            </Shape>
+                            <Glyph ID="char_312" CONTENT="ס" HPOS="1223" VPOS="2359" WIDTH="2" HEIGHT="71" GC="0.2626">
+                                <Shape>
+                                    <Polygon POINTS="1225 2359 1223 2430 1223 2430 1225 2359"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_313" CONTENT="א" HPOS="1188" VPOS="2353" WIDTH="9" HEIGHT="84" GC="0.4824">
+                                <Shape>
+                                    <Polygon POINTS="1191 2353 1188 2437 1194 2436 1197 2354"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_314" CONTENT="ל" HPOS="1181" VPOS="2352" WIDTH="3" HEIGHT="86" GC="0.4357">
+                                <Shape>
+                                    <Polygon POINTS="1184 2352 1181 2438 1181 2438 1184 2352"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_315" CONTENT="י" HPOS="1160" VPOS="2348" WIDTH="3" HEIGHT="92" GC="0.3498">
+                                <Shape>
+                                    <Polygon POINTS="1163 2348 1160 2440 1160 2440 1163 2348"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_316" CONTENT="ב" HPOS="1139" VPOS="2344" WIDTH="3" HEIGHT="94" GC="0.8575">
+                                <Shape>
+                                    <Polygon POINTS="1142 2344 1139 2438 1139 2438 1142 2344"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_317" CONTENT="ל" HPOS="1099" VPOS="2336" WIDTH="3" HEIGHT="96" GC="0.9903">
+                                <Shape>
+                                    <Polygon POINTS="1102 2336 1099 2432 1099 2432 1102 2336"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_318" CONTENT="כ" HPOS="1009" VPOS="2350" WIDTH="2" HEIGHT="71" GC="0.9252">
+                                <Shape>
+                                    <Polygon POINTS="1011 2350 1009 2421 1009 2421 1011 2350"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_319" CONTENT="ד" HPOS="967" VPOS="2350" WIDTH="2" HEIGHT="73" GC="0.2829">
+                                <Shape>
+                                    <Polygon POINTS="969 2350 967 2423 967 2423 969 2350"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_320" CONTENT="ה" HPOS="912" VPOS="2333" WIDTH="3" HEIGHT="92" GC="0.9987">
+                                <Shape>
+                                    <Polygon POINTS="915 2333 912 2425 912 2425 915 2333"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_321" CONTENT="א" HPOS="870" VPOS="2338" WIDTH="2" HEIGHT="89" GC="0.9964">
+                                <Shape>
+                                    <Polygon POINTS="872 2338 870 2427 870 2427 872 2338"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_322" CONTENT="מ" HPOS="801" VPOS="2325" WIDTH="3" HEIGHT="101" GC="0.94">
+                                <Shape>
+                                    <Polygon POINTS="804 2325 801 2426 801 2426 804 2325"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_323" CONTENT="י" HPOS="753" VPOS="2341" WIDTH="2" HEIGHT="83" GC="0.8577">
+                                <Shape>
+                                    <Polygon POINTS="755 2341 753 2424 753 2424 755 2341"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_106" HPOS="739"  VPOS="2342" WIDTH="2"  HEIGHT="82"/>
+                        <String ID="segment_107" CONTENT="אמצם..ב" HPOS="410" VPOS="2314" WIDTH="317" HEIGHT="109" WC="0.9411">
+                            <Shape>
+                                <Polygon POINTS="420 2314 410 2403 725 2423 727 2341"/>
+                            </Shape>
+                            <Glyph ID="char_325" CONTENT="א" HPOS="725" VPOS="2341" WIDTH="2" HEIGHT="82" GC="0.9915">
+                                <Shape>
+                                    <Polygon POINTS="727 2341 725 2423 725 2423 727 2341"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_326" CONTENT="מ" HPOS="677" VPOS="2341" WIDTH="2" HEIGHT="81" GC="0.9969">
+                                <Shape>
+                                    <Polygon POINTS="679 2341 677 2422 677 2422 679 2341"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_327" CONTENT="צ" HPOS="635" VPOS="2340" WIDTH="2" HEIGHT="80" GC="0.9925">
+                                <Shape>
+                                    <Polygon POINTS="637 2340 635 2420 635 2420 637 2340"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_328" CONTENT="ם" HPOS="594" VPOS="2329" WIDTH="3" HEIGHT="89" GC="0.9789">
+                                <Shape>
+                                    <Polygon POINTS="597 2329 594 2418 594 2418 597 2329"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_329" CONTENT="." HPOS="511" VPOS="2327" WIDTH="3" HEIGHT="85" GC="0.8674">
+                                <Shape>
+                                    <Polygon POINTS="514 2327 511 2412 511 2412 514 2327"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_330" CONTENT="." HPOS="483" VPOS="2328" WIDTH="3" HEIGHT="81" GC="0.925">
+                                <Shape>
+                                    <Polygon POINTS="486 2328 483 2409 483 2409 486 2328"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_331" CONTENT="ב" HPOS="410" VPOS="2314" WIDTH="10" HEIGHT="89" GC="0.8357">
+                                <Shape>
+                                    <Polygon POINTS="420 2314 410 2403 410 2403 420 2314"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                    </TextLine>
+
+                    <TextLine ID="_42a65886-54df-40f0-bae9-98503382c382" HPOS="267" VPOS="2393" WIDTH="978" HEIGHT="114" BASELINE="270 2413 492 2436 1245 2450" TAGREFS="LINE_TYPE_2">
+                        <Shape>
+                            <Polygon POINTS="270 2413 267 2461 1018 2504 1177 2507 1180 2507 1183 2507 1243 2484 1245 2450 1243 2424 483 2418 460 2399 457 2399 455 2399 452 2399 449 2399 423 2413 415 2401 412 2401 412 2399 409 2399 406 2399 270 2393 270 2413"/>
+                        </Shape>
+                        <String ID="segment_108" CONTENT="מואבפאגימ.ואכמגש.." HPOS="277" VPOS="2394" WIDTH="939" HEIGHT="113" WC="0.8983">
+                            <Shape>
+                                <Polygon POINTS="284 2394 277 2462 1215 2495 1216 2424"/>
+                            </Shape>
+                            <Glyph ID="char_332" CONTENT="מ" HPOS="1215" VPOS="2424" WIDTH="1" HEIGHT="71" GC="0.6716">
+                                <Shape>
+                                    <Polygon POINTS="1216 2424 1215 2495 1215 2495 1216 2424"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_333" CONTENT="ו" HPOS="1178" VPOS="2423" WIDTH="1" HEIGHT="84" GC="0.5459">
+                                <Shape>
+                                    <Polygon POINTS="1179 2423 1178 2507 1178 2507 1179 2423"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_334" CONTENT="א" HPOS="1160" VPOS="2423" WIDTH="7" HEIGHT="84" GC="0.9619">
+                                <Shape>
+                                    <Polygon POINTS="1161 2423 1160 2507 1166 2507 1167 2423"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_335" CONTENT="ב" HPOS="1123" VPOS="2423" WIDTH="1" HEIGHT="83" GC="0.9882">
+                                <Shape>
+                                    <Polygon POINTS="1124 2423 1123 2506 1123 2506 1124 2423"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_336" CONTENT="פ" HPOS="1074" VPOS="2423" WIDTH="1" HEIGHT="82" GC="0.9939">
+                                <Shape>
+                                    <Polygon POINTS="1075 2423 1074 2505 1074 2505 1075 2423"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_337" CONTENT="א" HPOS="1037" VPOS="2422" WIDTH="1" HEIGHT="82" GC="0.9959">
+                                <Shape>
+                                    <Polygon POINTS="1038 2422 1037 2504 1037 2504 1038 2422"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_338" CONTENT="ג" HPOS="981" VPOS="2422" WIDTH="1" HEIGHT="80" GC="0.9961">
+                                <Shape>
+                                    <Polygon POINTS="982 2422 981 2502 981 2502 982 2422"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_339" CONTENT="י" HPOS="938" VPOS="2422" WIDTH="1" HEIGHT="77" GC="0.9879">
+                                <Shape>
+                                    <Polygon POINTS="939 2422 938 2499 938 2499 939 2422"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_340" CONTENT="מ" HPOS="914" VPOS="2421" WIDTH="1" HEIGHT="77" GC="0.7946">
+                                <Shape>
+                                    <Polygon POINTS="915 2421 914 2498 914 2498 915 2421"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_341" CONTENT="." HPOS="877" VPOS="2421" WIDTH="1" HEIGHT="75" GC="0.7928">
+                                <Shape>
+                                    <Polygon POINTS="878 2421 877 2496 877 2496 878 2421"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_342" CONTENT="ו" HPOS="822" VPOS="2421" WIDTH="1" HEIGHT="72" GC="0.9557">
+                                <Shape>
+                                    <Polygon POINTS="823 2421 822 2493 822 2493 823 2421"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_343" CONTENT="א" HPOS="803" VPOS="2421" WIDTH="1" HEIGHT="71" GC="0.8307">
+                                <Shape>
+                                    <Polygon POINTS="804 2421 803 2492 803 2492 804 2421"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_344" CONTENT="כ" HPOS="754" VPOS="2420" WIDTH="1" HEIGHT="69" GC="0.9976">
+                                <Shape>
+                                    <Polygon POINTS="755 2420 754 2489 754 2489 755 2420"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_345" CONTENT="מ" HPOS="711" VPOS="2420" WIDTH="1" HEIGHT="66" GC="0.9987">
+                                <Shape>
+                                    <Polygon POINTS="712 2420 711 2486 711 2486 712 2420"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_346" CONTENT="ג" HPOS="656" VPOS="2419" WIDTH="1" HEIGHT="64" GC="0.9674">
+                                <Shape>
+                                    <Polygon POINTS="657 2419 656 2483 656 2483 657 2419"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_347" CONTENT="ש" HPOS="582" VPOS="2419" WIDTH="1" HEIGHT="60" GC="0.8507">
+                                <Shape>
+                                    <Polygon POINTS="583 2419 582 2479 582 2479 583 2419"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_348" CONTENT="." HPOS="526" VPOS="2418" WIDTH="1" HEIGHT="58" GC="0.8556">
+                                <Shape>
+                                    <Polygon POINTS="527 2418 526 2476 526 2476 527 2418"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_349" CONTENT="." HPOS="277" VPOS="2394" WIDTH="7" HEIGHT="68" GC="0.9835">
+                                <Shape>
+                                    <Polygon POINTS="284 2394 277 2462 277 2462 284 2394"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                    </TextLine>
+
+                    <TextLine ID="_d1b83d16-3b00-4bc4-af09-0d413f45bafa" HPOS="216" VPOS="2455" WIDTH="1118" HEIGHT="154" BASELINE="219 2487 512 2518 1334 2526" TAGREFS="LINE_TYPE_2">
+                        <Shape>
+                            <Polygon POINTS="219 2487 216 2549 457 2561 494 2589 497 2589 500 2589 503 2589 597 2569 614 2583 614 2586 617 2586 620 2586 622 2586 625 2586 657 2572 696 2589 699 2589 702 2589 785 2575 807 2595 807 2598 810 2598 813 2598 816 2598 924 2575 1063 2606 1325 2609 1334 2526 1334 2509 1211 2484 1208 2484 1206 2484 1157 2501 1134 2481 1134 2478 1132 2478 1129 2478 1126 2478 1123 2478 1066 2498 955 2472 952 2472 950 2472 947 2472 907 2498 785 2498 645 2467 642 2467 640 2467 637 2467 637 2470 611 2492 563 2492 543 2472 543 2470 540 2470 537 2470 534 2470 469 2484 384 2458 381 2458 219 2455 219 2487"/>
+                        </Shape>
+                        <String ID="segment_109" CONTENT="ב" HPOS="1211" VPOS="2484" WIDTH="1" HEIGHT="124" WC="0.5141">
+                            <Shape>
+                                <Polygon POINTS="1212 2484 1211 2608 1211 2608 1212 2484"/>
+                            </Shape>
+                            <Glyph ID="char_350" CONTENT="ב" HPOS="1211" VPOS="2484" WIDTH="1" HEIGHT="124" GC="0.5141">
+                                <Shape>
+                                    <Polygon POINTS="1212 2484 1211 2608 1211 2608 1212 2484"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_110" HPOS="1183"  VPOS="2492" WIDTH="1"  HEIGHT="115"/>
+                        <String ID="segment_111" CONTENT="ה" HPOS="1165" VPOS="2498" WIDTH="1" HEIGHT="109" WC="0.3137">
+                            <Shape>
+                                <Polygon POINTS="1166 2498 1165 2607 1165 2607 1166 2498"/>
+                            </Shape>
+                            <Glyph ID="char_352" CONTENT="ה" HPOS="1165" VPOS="2498" WIDTH="1" HEIGHT="109" GC="0.3137">
+                                <Shape>
+                                    <Polygon POINTS="1166 2498 1165 2607 1165 2607 1166 2498"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_112" HPOS="1129"  VPOS="2478" WIDTH="1"  HEIGHT="129"/>
+                        <String ID="segment_113" CONTENT="אגד" HPOS="1030" VPOS="2488" WIDTH="64" HEIGHT="118" WC="0.5748">
+                            <Shape>
+                                <Polygon POINTS="1031 2490 1030 2599 1093 2606 1094 2488"/>
+                            </Shape>
+                            <Glyph ID="char_354" CONTENT="א" HPOS="1093" VPOS="2488" WIDTH="1" HEIGHT="118" GC="0.5781">
+                                <Shape>
+                                    <Polygon POINTS="1094 2488 1093 2606 1093 2606 1094 2488"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_355" CONTENT="ג" HPOS="1057" VPOS="2496" WIDTH="1" HEIGHT="109" GC="0.4898">
+                                <Shape>
+                                    <Polygon POINTS="1058 2496 1057 2605 1057 2605 1058 2496"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_356" CONTENT="ד" HPOS="1030" VPOS="2490" WIDTH="1" HEIGHT="109" GC="0.6566">
+                                <Shape>
+                                    <Polygon POINTS="1031 2490 1030 2599 1030 2599 1031 2490"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_114" HPOS="1003"  VPOS="2483" WIDTH="10"  HEIGHT="112"/>
+                        <String ID="segment_115" CONTENT="אחומיאמי" HPOS="786" VPOS="2473" WIDTH="200" HEIGHT="124" WC="0.8365">
+                            <Shape>
+                                <Polygon POINTS="787 2498 786 2576 985 2589 986 2479"/>
+                            </Shape>
+                            <Glyph ID="char_358" CONTENT="א" HPOS="985" VPOS="2479" WIDTH="1" HEIGHT="110" GC="0.7062">
+                                <Shape>
+                                    <Polygon POINTS="986 2479 985 2589 985 2589 986 2479"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_359" CONTENT="ח" HPOS="958" VPOS="2473" WIDTH="1" HEIGHT="110" GC="0.9475">
+                                <Shape>
+                                    <Polygon POINTS="959 2473 958 2583 958 2583 959 2473"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_360" CONTENT="ו" HPOS="931" VPOS="2482" WIDTH="1" HEIGHT="95" GC="0.9764">
+                                <Shape>
+                                    <Polygon POINTS="932 2482 931 2577 931 2577 932 2482"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_361" CONTENT="מ" HPOS="912" VPOS="2494" WIDTH="1" HEIGHT="84" GC="0.9679">
+                                <Shape>
+                                    <Polygon POINTS="913 2494 912 2578 912 2578 913 2494"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_362" CONTENT="י" HPOS="894" VPOS="2498" WIDTH="1" HEIGHT="83" GC="0.9791">
+                                <Shape>
+                                    <Polygon POINTS="895 2498 894 2581 894 2581 895 2498"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_363" CONTENT="א" HPOS="867" VPOS="2498" WIDTH="1" HEIGHT="89" GC="0.9195">
+                                <Shape>
+                                    <Polygon POINTS="868 2498 867 2587 867 2587 868 2498"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_364" CONTENT="מ" HPOS="822" VPOS="2498" WIDTH="1" HEIGHT="99" GC="0.9618">
+                                <Shape>
+                                    <Polygon POINTS="823 2498 822 2597 822 2597 823 2498"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_365" CONTENT="י" HPOS="786" VPOS="2498" WIDTH="1" HEIGHT="78" GC="0.2336">
+                                <Shape>
+                                    <Polygon POINTS="787 2498 786 2576 786 2576 787 2498"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_116" HPOS="768"  VPOS="2494" WIDTH="10"  HEIGHT="84"/>
+                        <String ID="segment_117" CONTENT="אמרך" HPOS="632" VPOS="2472" WIDTH="128" HEIGHT="115" WC="0.7389">
+                            <Shape>
+                                <Polygon POINTS="633 2474 632 2583 759 2579 760 2492"/>
+                            </Shape>
+                            <Glyph ID="char_367" CONTENT="א" HPOS="759" VPOS="2492" WIDTH="1" HEIGHT="87" GC="0.7611">
+                                <Shape>
+                                    <Polygon POINTS="760 2492 759 2579 759 2579 760 2492"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_368" CONTENT="מ" HPOS="714" VPOS="2482" WIDTH="1" HEIGHT="105" GC="0.6619">
+                                <Shape>
+                                    <Polygon POINTS="715 2482 714 2587 714 2587 715 2482"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_369" CONTENT="ר" HPOS="669" VPOS="2472" WIDTH="1" HEIGHT="105" GC="0.6271">
+                                <Shape>
+                                    <Polygon POINTS="670 2472 669 2577 669 2577 670 2472"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_370" CONTENT="ך" HPOS="632" VPOS="2474" WIDTH="1" HEIGHT="109" GC="0.9053">
+                                <Shape>
+                                    <Polygon POINTS="633 2474 632 2583 632 2583 633 2474"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_118" HPOS="605"  VPOS="2492" WIDTH="1"  HEIGHT="83"/>
+                        <String ID="segment_119" CONTENT="אפאי" HPOS="473" VPOS="2470" WIDTH="115" HEIGHT="117" WC="0.8574">
+                            <Shape>
+                                <Polygon POINTS="483 2481 473 2573 587 2571 588 2492"/>
+                            </Shape>
+                            <Glyph ID="char_372" CONTENT="א" HPOS="587" VPOS="2492" WIDTH="1" HEIGHT="79" GC="0.9364">
+                                <Shape>
+                                    <Polygon POINTS="588 2492 587 2571 587 2571 588 2492"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_373" CONTENT="פ" HPOS="542" VPOS="2470" WIDTH="1" HEIGHT="111" GC="0.8988">
+                                <Shape>
+                                    <Polygon POINTS="543 2470 542 2581 542 2581 543 2470"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_374" CONTENT="א" HPOS="515" VPOS="2474" WIDTH="1" HEIGHT="113" GC="0.9429">
+                                <Shape>
+                                    <Polygon POINTS="516 2474 515 2587 515 2587 516 2474"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_375" CONTENT="י" HPOS="473" VPOS="2481" WIDTH="10" HEIGHT="92" GC="0.6516">
+                                <Shape>
+                                    <Polygon POINTS="483 2481 473 2573 473 2573 483 2481"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_120" HPOS="457"  VPOS="2483" WIDTH="8"  HEIGHT="78"/>
+                        <String ID="segment_121" CONTENT="כובי" HPOS="358" VPOS="2458" WIDTH="89" HEIGHT="102" WC="0.9637">
+                            <Shape>
+                                <Polygon POINTS="368 2458 358 2556 439 2560 447 2477"/>
+                            </Shape>
+                            <Glyph ID="char_377" CONTENT="כ" HPOS="439" VPOS="2477" WIDTH="8" HEIGHT="83" GC="0.9661">
+                                <Shape>
+                                    <Polygon POINTS="447 2477 439 2560 439 2560 447 2477"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_378" CONTENT="ו" HPOS="412" VPOS="2469" WIDTH="9" HEIGHT="90" GC="0.9881">
+                                <Shape>
+                                    <Polygon POINTS="421 2469 412 2559 412 2559 421 2469"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_379" CONTENT="ב" HPOS="394" VPOS="2464" WIDTH="9" HEIGHT="94" GC="0.9686">
+                                <Shape>
+                                    <Polygon POINTS="403 2464 394 2558 394 2558 403 2464"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_380" CONTENT="י" HPOS="358" VPOS="2458" WIDTH="19" HEIGHT="98" GC="0.9318">
+                                <Shape>
+                                    <Polygon POINTS="368 2458 358 2556 367 2556 377 2458"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                        <SP ID="segment_122" HPOS="349"  VPOS="2458" WIDTH="10"  HEIGHT="98"/>
+                        <String ID="segment_123" CONTENT="מבובר" HPOS="248" VPOS="2456" WIDTH="101" HEIGHT="99" WC="0.8072">
+                            <Shape>
+                                <Polygon POINTS="259 2456 248 2551 338 2555 349 2457"/>
+                            </Shape>
+                            <Glyph ID="char_382" CONTENT="מ" HPOS="338" VPOS="2457" WIDTH="11" HEIGHT="98" GC="0.995">
+                                <Shape>
+                                    <Polygon POINTS="349 2457 338 2555 338 2555 349 2457"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_383" CONTENT="ב" HPOS="311" VPOS="2457" WIDTH="11" HEIGHT="97" GC="0.8933">
+                                <Shape>
+                                    <Polygon POINTS="322 2457 311 2554 311 2554 322 2457"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_384" CONTENT="ו" HPOS="293" VPOS="2457" WIDTH="11" HEIGHT="96" GC="0.7516">
+                                <Shape>
+                                    <Polygon POINTS="304 2457 293 2553 293 2553 304 2457"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_385" CONTENT="ב" HPOS="275" VPOS="2456" WIDTH="11" HEIGHT="96" GC="0.9742">
+                                <Shape>
+                                    <Polygon POINTS="286 2456 275 2552 275 2552 286 2456"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_386" CONTENT="ר" HPOS="248" VPOS="2456" WIDTH="11" HEIGHT="95" GC="0.4219">
+                                <Shape>
+                                    <Polygon POINTS="259 2456 248 2551 248 2551 259 2456"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                    </TextLine>
+</TextBlock>
+                <TextBlock ID="_4cb1af60-c56a-47d0-8e6a-1369144167d2" HPOS="1319" VPOS="1864" WIDTH="211" HEIGHT="134" TAGREFS="REGION_TYPE_1">
+<Shape>
+                        <Polygon POINTS="1447 1864 1530 1910 1484 1998 1362 1986 1319 1941 1447 1864"/>
+                    </Shape>
+                    <TextLine ID="_e20006fb-1bd0-4b7b-8f86-5ccbed50756e" HPOS="1379" VPOS="1878" WIDTH="85" HEIGHT="108" BASELINE="1382 1924 1464 1921" TAGREFS="LINE_TYPE_1">
+                        <Shape>
+                            <Polygon POINTS="1379 1901 1382 1924 1382 1969 1462 1986 1464 1921 1459 1878 1402 1884 1379 1901"/>
+                        </Shape>
+                        <String ID="segment_124" CONTENT="ב" HPOS="1449" VPOS="1879" WIDTH="4" HEIGHT="105" WC="0.9759">
+                            <Shape>
+                                <Polygon POINTS="1449 1879 1453 1984 1453 1984 1449 1879"/>
+                            </Shape>
+                            <Glyph ID="char_387" CONTENT="ב" HPOS="1449" VPOS="1879" WIDTH="4" HEIGHT="105" GC="0.9759">
+                                <Shape>
+                                    <Polygon POINTS="1449 1879 1453 1984 1453 1984 1449 1879"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                    </TextLine>
+</TextBlock>
+                <TextBlock ID="textblock_3">
+                    
+                    <TextLine ID="_fd118633-ac71-49a4-9a32-fb506e54f74b" HPOS="1385" VPOS="2478" WIDTH="173" HEIGHT="122" BASELINE="1388 2526 1558 2518" TAGREFS="LINE_TYPE_2">
+                        <Shape>
+                            <Polygon POINTS="1388 2526 1388 2578 1481 2600 1484 2600 1487 2600 1558 2578 1558 2518 1553 2478 1385 2484 1388 2526"/>
+                        </Shape>
+                        <String ID="segment_125" CONTENT="ינוס" HPOS="1456" VPOS="2478" WIDTH="100" HEIGHT="119" WC="0.8674">
+                            <Shape>
+                                <Polygon POINTS="1456 2481 1461 2595 1556 2579 1551 2478"/>
+                            </Shape>
+                            <Glyph ID="char_388" CONTENT="י" HPOS="1551" VPOS="2478" WIDTH="5" HEIGHT="101" GC="0.5043">
+                                <Shape>
+                                    <Polygon POINTS="1551 2478 1556 2579 1556 2579 1551 2478"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_389" CONTENT="נ" HPOS="1525" VPOS="2479" WIDTH="5" HEIGHT="108" GC="0.9661">
+                                <Shape>
+                                    <Polygon POINTS="1525 2479 1530 2587 1530 2587 1525 2479"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_390" CONTENT="ו" HPOS="1490" VPOS="2480" WIDTH="5" HEIGHT="117" GC="0.9998">
+                                <Shape>
+                                    <Polygon POINTS="1490 2480 1495 2597 1495 2597 1490 2480"/>
+                                </Shape>
+                            </Glyph>
+                            <Glyph ID="char_391" CONTENT="ס" HPOS="1456" VPOS="2481" WIDTH="5" HEIGHT="114" GC="0.9993">
+                                <Shape>
+                                    <Polygon POINTS="1456 2481 1461 2595 1461 2595 1456 2481"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                    </TextLine>
+
+                </TextBlock>
+                <TextBlock ID="_541ea4f5-d8ee-46dc-85c6-bd31dd82509d" HPOS="1342" VPOS="613" WIDTH="63" HEIGHT="66" TAGREFS="REGION_TYPE_1">
+<Shape>
+                        <Polygon POINTS="1359 613 1405 613 1382 679 1342 667 1359 613"/>
+                    </Shape></TextBlock>
+                <TextBlock ID="_38b554bd-e4ab-4f25-b29d-50e16ce8f663" HPOS="1419" VPOS="2524" WIDTH="31" HEIGHT="31" TAGREFS="REGION_TYPE_1">
+<Shape>
+                        <Polygon POINTS="1425 2524 1450 2524 1450 2544 1419 2555 1425 2524"/>
+                    </Shape></TextBlock>
+                <TextBlock ID="_c435043c-efe3-4d74-aa45-6a75842bce68" HPOS="1442" VPOS="613" WIDTH="179" HEIGHT="66" TAGREFS="REGION_TYPE_1">
+<Shape>
+                        <Polygon POINTS="1447 613 1598 613 1621 656 1442 679 1487 667 1447 613"/>
+                    </Shape></TextBlock>
+            </PrintSpace>
+        </Page>
+    </Layout>
+</alto>

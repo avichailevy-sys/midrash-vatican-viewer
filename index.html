@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MiDRASH Vatican Viewer — Barb.or.1 (pilot)</title>
+
+  <!--
+    Page styling. Keep it minimal — Mirador takes over the whole viewport.
+    The #mirador div is where Mirador renders itself. It MUST have a height,
+    otherwise Mirador will render at zero pixels tall and show nothing.
+  -->
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+    #mirador {
+      width: 100%;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+
+  <!--
+    The mount point for Mirador. Its ID must match the `id` field in the
+    Mirador.viewer({...}) configuration below.
+  -->
+  <div id="mirador"></div>
+
+  <!--
+    The Islandora pre-built Mirador bundle. This is a single JavaScript file
+    that contains Mirador 3 + the mirador-textoverlay plugin + the
+    mirador-image-tools plugin, all bundled together. Loading this script
+    defines a global `Mirador` object that exposes `Mirador.viewer(config)`.
+
+    Source: https://github.com/islandora/mirador-integration-islandora
+  -->
+  <script src="https://islandora.github.io/mirador-integration-islandora/islandora-mirador-0.1.0.js"></script>
+
+  <!--
+    The configuration for Mirador. This is where we tell it:
+      - what manifest to load (the modified Barb.or.1 manifest with seeAlso)
+      - which window to open it in at startup
+      - that the text overlay should be enabled and visible by default
+      - styling preferences for the overlay (font, colors)
+  -->
+  <script>
+    Mirador.viewer({
+      // Tells Mirador where in the DOM to render itself.
+      id: 'mirador',
+
+      // The list of manifests Mirador knows about. Each entry creates a
+      // catalog entry that the user can pick from in the workspace selector.
+      // We only have one manifest for this pilot.
+      catalog: [
+        {
+          manifestId: 'Barb.or.1_manifest_modified.json',
+          provider: 'Biblioteca Apostolica Vaticana (transcription by MiDRASH/EPHE)'
+        }
+      ],
+
+      // Open a window with this manifest already loaded at startup.
+      // Without this, the user would see an empty workspace and have to
+      // open the manifest manually from the catalog.
+      windows: [
+        {
+          manifestId: 'Barb.or.1_manifest_modified.json',
+
+          // Open at the third canvas (folio 1r), since canvases 1 and 2
+          // are the cover and flyleaf. Adjust to whatever makes sense.
+          canvasIndex: 2,
+
+          // Configure the textoverlay plugin per-window. Initially:
+          //   - enabled: true   = the plugin is active
+          //   - visible: true   = the overlay is shown on the page
+          //   - selectable: true = the user can select and copy text
+          // The user can toggle these from a button in the window toolbar.
+          textOverlay: {
+            enabled: true,
+            visible: true,
+            selectable: true,
+            // If the model's confidence on a word is below this threshold,
+            // the overlay still renders the word but in a faded style.
+            // Set to 0 to show all words at full opacity regardless of
+            // confidence; set higher to fade uncertain words.
+            opacity: 0.75,
+          },
+        }
+      ],
+
+      // Theming. The textoverlay plugin reads these to style overlay text.
+      // We pick a Hebrew-friendly font and a clear selection highlight.
+      themes: {
+        light: {
+          // Use a system Hebrew-capable font if available, fall back to
+          // generic serif. The actual font on screen depends on what the
+          // user's machine has installed.
+          typography: {
+            fontFamily: '"SBL Hebrew", "Times New Roman", serif',
+          },
+          overrides: {
+            MuiPaper: {
+              root: {
+                backgroundColor: '#fafafa',
+              }
+            }
+          }
+        }
+      },
+
+      // Window-level UI options. We want the user to see informative
+      // metadata, attribution, etc.
+      window: {
+        // Show the metadata panel (canvas labels, manifest title, etc.)
+        sideBarOpen: false,
+        // Default view is a single page rather than a book spread.
+        // Useful because most ALTOs are per-page rather than per-spread.
+        defaultView: 'single',
+        // Allow the user to switch between views.
+        views: [
+          { key: 'single', behaviors: ['individuals'] },
+          { key: 'book',   behaviors: ['paged'] },
+          { key: 'gallery' },
+        ],
+      },
+
+      // Don't show the workspace add-window button — for the pilot there's
+      // only one manuscript so the user doesn't need to add other windows.
+      // (Remove this when you add more manuscripts to the catalog.)
+      workspaceControlPanel: {
+        enabled: true,
+      },
+    });
+  </script>
+
+</body>
+</html>
