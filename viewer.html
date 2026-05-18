@@ -183,19 +183,23 @@
 
     /* === OSD overlays (text + regions on the image) === */
     /* OpenSeadragon overlays are positioned in image coordinates and scale
-       automatically with zoom. We use SVG so polygons render crisply. */
+       automatically with zoom. We use SVG so polygons and text render crisply
+       and scale correctly with the viewport at any zoom level. */
     .osd-word-overlay {
-      color: rgba(255, 0, 0, 0.0);
-      font-family: "SBL Hebrew", "Frank Ruehl", serif;
       pointer-events: none;
-      direction: rtl;
-      white-space: nowrap;
-      overflow: hidden;
-      line-height: 1;
+      overflow: visible;
     }
-    .osd-word-overlay.show-text {
-      color: rgba(255, 50, 50, 0.85);
-      text-shadow: 0 0 2px rgba(255, 255, 255, 0.7);
+    /* The SVG text inside each word overlay. Hidden by default (transparent fill).
+       When .show-text is toggled, the text becomes visible. */
+    .osd-word-overlay .overlay-text {
+      fill: rgba(255, 0, 0, 0);
+      font-family: "SBL Hebrew", "Frank Ruehl", serif;
+    }
+    .osd-word-overlay.show-text .overlay-text {
+      fill: rgba(220, 30, 30, 0.85);
+      paint-order: stroke;
+      stroke: rgba(255, 255, 255, 0.6);
+      stroke-width: 0.5;
     }
     .osd-region-overlay {
       pointer-events: none;
@@ -666,6 +670,10 @@
       });
 
       // === Per-word overlays (for text-on-image and click highlighting) ===
+      // We use SVG <text> inside an SVG with the word's natural width/height as
+      // its viewBox. SVG text scales with the SVG, which scales with the OSD
+      // viewport — so the text always fits its word's bounding box regardless
+      // of zoom level. This is how the Mirador textoverlay plugin does it.
       altoData.lines.forEach(line => {
         line.words.forEach(word => {
           if (!word.content || !word.w || !word.h) return;
@@ -678,8 +686,21 @@
           el.className = `osd-word-overlay`;
           if (state.showTextOverlay) el.classList.add('show-text');
           el.dataset.wordId = word.id;
-          el.style.fontSize = `${h * 0.9}px`;
-          el.textContent = word.content;
+          // SVG with viewBox matching the word's natural box. The text element
+          // inside is sized in viewBox units (font-size = h), so it fills the
+          // word's box at any zoom level. textLength + lengthAdjust forces the
+          // text to fit horizontally within the word's width.
+          el.innerHTML = `
+            <svg width="100%" height="100%" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none"
+                 style="position:absolute; inset:0; overflow:visible;">
+              <text x="${w}" y="${h * 0.85}"
+                    font-size="${h * 0.9}"
+                    text-anchor="end"
+                    textLength="${w}"
+                    lengthAdjust="spacingAndGlyphs"
+                    class="overlay-text">${escapeHtml(word.content)}</text>
+            </svg>
+          `;
 
           v.addOverlay({
             element: el,
