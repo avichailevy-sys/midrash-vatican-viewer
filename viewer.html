@@ -5,57 +5,226 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MiDRASH Vatican Viewer</title>
 
+  <!--
+    OpenSeadragon: the deep-zoom image library that Mirador uses internally.
+    We use it directly here. Single CDN script, no build step.
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/openseadragon@4.1.0/build/openseadragon/openseadragon.min.js"></script>
+
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-      overflow: hidden;
-      font-family: sans-serif;
-      background: #1c1c1c;
+    /* ===== Layout ====================================================== */
+    /* Three-region layout:
+       - Top: thin header bar
+       - Main: image area (left, expandable) + text panel (right, optional)
+       - The text panel can be hidden by toggling a class on <body>.   */
+
+    :root {
+      --bg-dark: #1c1c1c;
+      --bg-panel: #f6f4ee;
+      --text-panel: #1c1c1c;
+      --text-muted: #777;
+      --accent: #c0a070;
+      --accent-active: #6b4423;
+      --border: #d8d4cc;
+      --highlight: rgba(255, 200, 0, 0.45);
+
+      /* Region polygon colors. Semi-transparent so the image shows through.
+         These are research-tool colors, picked for visual distinctness. */
+      --region-Main: rgba(50, 120, 220, 0.18);
+      --region-Main-stroke: rgba(50, 120, 220, 0.7);
+      --region-Arabic: rgba(160, 60, 200, 0.18);
+      --region-Arabic-stroke: rgba(160, 60, 200, 0.7);
+      --region-Oblique: rgba(220, 130, 30, 0.18);
+      --region-Oblique-stroke: rgba(220, 130, 30, 0.7);
+      --region-Vertical: rgba(50, 170, 90, 0.18);
+      --region-Vertical-stroke: rgba(50, 170, 90, 0.7);
+      --region-Other: rgba(150, 150, 150, 0.18);
+      --region-Other-stroke: rgba(150, 150, 150, 0.7);
     }
 
-    /* A thin top bar with the manuscript name and a back link.
-       Mirador takes everything below. */
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0; padding: 0;
+      height: 100%; width: 100%;
+      overflow: hidden;
+      background: var(--bg-dark);
+      font-family: Georgia, "Times New Roman", serif;
+      color: #eee;
+    }
+
+    /* === Top bar === */
     #topbar {
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 36px;
+      top: 0; left: 0; right: 0;
+      height: 44px;
       background: #2a2a2a;
-      color: #eee;
+      border-bottom: 1px solid #444;
       display: flex;
       align-items: center;
-      padding: 0 1rem;
+      padding: 0 0.8rem;
+      gap: 0.8rem;
       font-size: 0.9rem;
       z-index: 100;
-      border-bottom: 1px solid #444;
     }
+    #topbar a { color: var(--accent); text-decoration: none; }
+    #topbar a:hover { color: #e0c090; }
+    #ms-label { font-weight: bold; }
+    #page-label { color: var(--text-muted); margin-left: auto; }
 
-    #topbar a {
-      color: #c0a070;
-      text-decoration: none;
-      margin-right: 1.5rem;
-    }
-    #topbar a:hover {
-      color: #e0c090;
-    }
-
-    #manuscript-name {
-      font-weight: bold;
-    }
-
-    #mirador {
+    /* === Controls bar === */
+    #controls {
       position: absolute;
-      top: 36px;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      top: 44px; left: 0; right: 0;
+      height: 40px;
+      background: #232323;
+      border-bottom: 1px solid #444;
+      display: flex;
+      align-items: center;
+      padding: 0 0.8rem;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+      z-index: 99;
+    }
+    #controls button {
+      background: #383838;
+      color: #ddd;
+      border: 1px solid #555;
+      padding: 0.3rem 0.7rem;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: inherit;
+      border-radius: 3px;
+    }
+    #controls button:hover { background: #484848; }
+    #controls button.active {
+      background: var(--accent-active);
+      border-color: var(--accent);
+      color: white;
+    }
+    #controls .sep {
+      width: 1px;
+      height: 22px;
+      background: #555;
+      margin: 0 0.3rem;
+    }
+    #controls select {
+      background: #383838;
+      color: #ddd;
+      border: 1px solid #555;
+      padding: 0.25rem 0.4rem;
+      font-family: inherit;
+      font-size: inherit;
+      border-radius: 3px;
     }
 
-    /* Error message shown if no ?ms= parameter is supplied. */
+    /* === Image area === */
+    #image-area {
+      position: absolute;
+      top: 84px; bottom: 0; left: 0;
+      right: 45%;  /* leave room for the text panel */
+      background: #000;
+      transition: right 0.2s;
+    }
+    body.no-panel #image-area { right: 0; }
+
+    #osd {
+      width: 100%; height: 100%;
+    }
+
+    /* === Text panel === */
+    #text-panel {
+      position: absolute;
+      top: 84px; bottom: 0; right: 0;
+      width: 45%;
+      background: var(--bg-panel);
+      color: var(--text-panel);
+      overflow-y: auto;
+      padding: 1.5rem 1.8rem;
+      direction: rtl;     /* Hebrew text is right-to-left */
+      font-family: "SBL Hebrew", "Frank Ruehl", "Times New Roman", serif;
+      font-size: 1.1rem;
+      line-height: 1.9;
+      border-left: 1px solid var(--border);
+      transition: width 0.2s;
+    }
+    body.no-panel #text-panel { display: none; }
+
+    #text-panel .line {
+      margin-bottom: 0.4rem;
+    }
+    #text-panel .word {
+      cursor: pointer;
+      padding: 1px 1px;
+      border-radius: 2px;
+      transition: background 0.1s;
+    }
+    #text-panel .word:hover {
+      background: rgba(192, 160, 112, 0.3);
+    }
+    #text-panel .word.highlighted {
+      background: var(--highlight);
+    }
+    #text-panel .region-Main {}
+    #text-panel .region-Arabic { color: #6b3a8e; }
+    #text-panel .region-Oblique { color: #c46a1c; font-style: italic; }
+    #text-panel .region-Vertical { color: #2a8a4a; }
+    #text-panel .region-Other { color: var(--text-muted); }
+
+    #text-panel .empty-message {
+      color: var(--text-muted);
+      font-style: italic;
+      direction: ltr;
+      font-family: Georgia, serif;
+      font-size: 0.95rem;
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    /* === OSD overlays (text + regions on the image) === */
+    /* OpenSeadragon overlays are positioned in image coordinates and scale
+       automatically with zoom. We use SVG so polygons render crisply. */
+    .osd-word-overlay {
+      color: rgba(255, 0, 0, 0.0);
+      font-family: "SBL Hebrew", "Frank Ruehl", serif;
+      pointer-events: none;
+      direction: rtl;
+      white-space: nowrap;
+      overflow: hidden;
+      line-height: 1;
+    }
+    .osd-word-overlay.show-text {
+      color: rgba(255, 50, 50, 0.85);
+      text-shadow: 0 0 2px rgba(255, 255, 255, 0.7);
+    }
+    .osd-region-overlay {
+      pointer-events: none;
+      border: 2px solid transparent;
+    }
+    .osd-region-overlay.show {
+      border-width: 2px;
+    }
+
+    /* Highlight when a word is clicked in the text panel */
+    .osd-word-overlay.highlighted {
+      background: var(--highlight);
+    }
+
+    /* === Loading / error states === */
+    #status {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      color: #aaa;
+      font-size: 1rem;
+      z-index: 50;
+      pointer-events: none;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 0.6rem 1.2rem;
+      border-radius: 4px;
+    }
+    #status.hidden { display: none; }
+
     #error {
       display: none;
       padding: 3rem;
@@ -63,8 +232,32 @@
       font-family: Georgia, serif;
       font-size: 1.1rem;
     }
-    #error a {
-      color: #c0a070;
+    #error a { color: var(--accent); }
+
+    /* Region legend (small panel showing what each color means) */
+    #region-legend {
+      position: absolute;
+      bottom: 1rem; left: 1rem;
+      background: rgba(30, 30, 30, 0.9);
+      padding: 0.6rem 0.8rem;
+      border: 1px solid #555;
+      border-radius: 4px;
+      font-size: 0.78rem;
+      color: #ddd;
+      z-index: 50;
+      display: none;
+    }
+    #region-legend.show { display: block; }
+    #region-legend .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin: 0.15rem 0;
+    }
+    #region-legend .swatch {
+      width: 16px; height: 16px;
+      border: 2px solid;
+      border-radius: 2px;
     }
   </style>
 </head>
@@ -72,85 +265,544 @@
 <body>
 
   <div id="topbar">
-    <a href="index.html">← Back to manuscripts</a>
-    <span id="manuscript-name"></span>
+    <a href="index.html">← Back</a>
+    <span id="ms-label"></span>
+    <span id="page-label"></span>
   </div>
 
-  <div id="mirador"></div>
+  <div id="controls">
+    <button id="prev-page">◀ Previous</button>
+    <select id="page-selector"></select>
+    <button id="next-page">Next ▶</button>
+    <span class="sep"></span>
+    <button id="toggle-text-panel" class="active">Text panel</button>
+    <button id="toggle-text-overlay">Text overlay</button>
+    <button id="toggle-regions">Region polygons</button>
+    <span class="sep"></span>
+    <button id="reset-view">Fit to view</button>
+  </div>
+
+  <div id="image-area">
+    <div id="osd"></div>
+    <div id="status">Loading…</div>
+    <div id="region-legend"></div>
+  </div>
+
+  <div id="text-panel"></div>
 
   <div id="error">
     <h2>No manuscript selected</h2>
-    <p>This viewer needs a manuscript name in the URL. For example:
-       <code>viewer.html?ms=Vat.ebr.108</code></p>
+    <p>This viewer needs a manuscript name in the URL.
+       Example: <code>viewer.html?ms=Vat.ebr.108</code></p>
     <p><a href="index.html">← Return to the manuscript list</a></p>
   </div>
 
-  <!-- The Islandora Mirador bundle: Mirador 3 + textoverlay + image-tools. -->
-  <script src="https://islandora.github.io/mirador-integration-islandora/islandora-mirador-0.1.0.js"></script>
-
   <script>
-    // === Read the ?ms= parameter from the URL ===========================
-    // URLs look like:  viewer.html?ms=Vat.ebr.108
-    // We parse it, validate that it's present, and use it to construct
-    // the manifest URL. If missing, we show the error message instead
-    // of trying to load Mirador.
-    const params = new URLSearchParams(window.location.search);
-    const ms = params.get('ms');
+    // ================================================================
+    // CONFIGURATION & GLOBALS
+    // ================================================================
 
-    if (!ms) {
-      document.getElementById('mirador').style.display = 'none';
+    // ALTO XML namespace — needed for parsing
+    const ALTO_NS = "http://www.loc.gov/standards/alto/ns-v4#";
+
+    // Map region/line type LABEL substrings to color category names.
+    // The categories correspond to CSS classes and color variables above.
+    function categorizeType(label) {
+      if (!label) return "Other";
+      if (label === "Main" || label === "default") return "Main";
+      if (label.startsWith("Arabic")) return "Arabic";
+      if (label.startsWith("Oblique")) return "Oblique";
+      if (label.startsWith("Vertical")) return "Vertical";
+      if (label === "Upside_Down") return "Other";
+      return "Other";
+    }
+
+    // Color palette for region polygon strokes/fills. Keep in sync with CSS.
+    const REGION_COLORS = {
+      Main:     { fill: "rgba(50, 120, 220, 0.15)",  stroke: "rgba(50, 120, 220, 0.85)" },
+      Arabic:   { fill: "rgba(160, 60, 200, 0.15)",  stroke: "rgba(160, 60, 200, 0.85)" },
+      Oblique:  { fill: "rgba(220, 130, 30, 0.15)",  stroke: "rgba(220, 130, 30, 0.85)" },
+      Vertical: { fill: "rgba(50, 170, 90, 0.15)",   stroke: "rgba(50, 170, 90, 0.85)" },
+      Other:    { fill: "rgba(150, 150, 150, 0.12)", stroke: "rgba(150, 150, 150, 0.7)" },
+    };
+
+    // App state
+    const state = {
+      ms: null,              // manuscript shelfmark from ?ms=
+      manifest: null,        // the IIIF manifest object
+      canvases: [],          // list of canvas objects (one per page)
+      currentCanvasIdx: 0,   // which canvas we're showing
+      altoCache: {},         // canvasId -> parsed ALTO data
+      viewer: null,          // OpenSeadragon viewer instance
+      showTextPanel: true,
+      showTextOverlay: false,
+      showRegions: false,
+    };
+
+    // ================================================================
+    // PARAMETER PARSING & STARTUP
+    // ================================================================
+
+    const params = new URLSearchParams(window.location.search);
+    const msParam = params.get('ms');
+
+    if (!msParam) {
+      // No manuscript specified — show error and stop
+      document.getElementById('image-area').style.display = 'none';
+      document.getElementById('text-panel').style.display = 'none';
+      document.getElementById('controls').style.display = 'none';
       document.getElementById('error').style.display = 'block';
     } else {
-      // Show the manuscript name in the top bar.
-      document.getElementById('manuscript-name').textContent = ms;
+      state.ms = msParam;
+      document.getElementById('ms-label').textContent = msParam;
+      bootstrap();
+    }
 
-      // The manifest lives at <ms>/manifest.json, relative to this page.
-      const manifestUrl = ms + '/manifest.json';
+    // ================================================================
+    // BOOTSTRAP: fetch manifest, initialize viewer, set up UI
+    // ================================================================
 
-      // === Mirador configuration ========================================
-      Mirador.viewer({
-        id: 'mirador',
-        catalog: [
-          { manifestId: manifestUrl, provider: 'Biblioteca Apostolica Vaticana — MiDRASH/EPHE' }
-        ],
-        windows: [
-          {
-            manifestId: manifestUrl,
-            // Open at the third canvas (folio 1r), skipping cover and flyleaf.
-            // If the manuscript's structure is different, the user can
-            // navigate manually.
-            canvasIndex: 2,
-            // Enable the text overlay by default.
-            textOverlay: {
-              enabled: true,
-              visible: true,
-              selectable: true,
-              opacity: 0.75,
-            },
-          }
-        ],
-        themes: {
-          light: {
-            typography: {
-              fontFamily: '"SBL Hebrew", "Times New Roman", serif',
-            }
-          }
-        },
-        window: {
-          sideBarOpen: false,
-          defaultView: 'single',
-          views: [
-            { key: 'single', behaviors: ['individuals'] },
-            { key: 'book',   behaviors: ['paged'] },
-            { key: 'gallery' },
-          ],
-        },
-        workspaceControlPanel: {
-          enabled: true,
-        },
+    async function bootstrap() {
+      try {
+        setStatus("Loading manifest…");
+        const response = await fetch(`${state.ms}/manifest.json`);
+        if (!response.ok) throw new Error(`Manifest fetch failed: ${response.status}`);
+        state.manifest = await response.json();
+        state.canvases = state.manifest.sequences[0].canvases;
+
+        // Populate page selector dropdown
+        populatePageSelector();
+
+        // Initialize OpenSeadragon
+        initViewer();
+
+        // Open the first reasonable canvas (skip cover, start at folio 1r if present).
+        // Default to canvas index 2; if fewer canvases, default to 0.
+        const startIdx = state.canvases.length > 2 ? 2 : 0;
+        await goToCanvas(startIdx);
+
+        // Wire up controls
+        wireControls();
+
+        setStatus(null);
+      } catch (err) {
+        console.error(err);
+        setStatus(`Error: ${err.message}`);
+      }
+    }
+
+    // ================================================================
+    // OPENSEADRAGON VIEWER
+    // ================================================================
+
+    function initViewer() {
+      state.viewer = OpenSeadragon({
+        id: "osd",
+        prefixUrl: "https://cdn.jsdelivr.net/npm/openseadragon@4.1.0/build/openseadragon/images/",
+        showNavigationControl: true,
+        navigationControlAnchor: OpenSeadragon.ControlAnchor.TOP_LEFT,
+        showFullPageControl: false,
+        showHomeControl: true,
+        showZoomControl: true,
+        showRotationControl: true,
+        gestureSettingsTouch: { pinchRotate: false },
+        animationTime: 0.4,
+        constrainDuringPan: true,
+        visibilityRatio: 0.6,
+        minZoomLevel: 0.5,
+        defaultZoomLevel: 0,
+        homeFillsViewer: false,
       });
     }
-  </script>
 
+    // ================================================================
+    // CANVAS NAVIGATION
+    // ================================================================
+
+    async function goToCanvas(idx) {
+      if (idx < 0 || idx >= state.canvases.length) return;
+      state.currentCanvasIdx = idx;
+      const canvas = state.canvases[idx];
+
+      // Update top bar label and dropdown selection
+      document.getElementById('page-label').textContent =
+        `${idx + 1} / ${state.canvases.length} — ${canvas.label}`;
+      document.getElementById('page-selector').value = idx;
+
+      // Clear current overlays
+      state.viewer.clearOverlays();
+
+      // Load the image into OpenSeadragon
+      const imageService = canvas.images[0].resource.service['@id'];
+      setStatus("Loading image…");
+      state.viewer.open(`${imageService}/info.json`);
+
+      // Wait until OSD has loaded the image so we know its dimensions for overlays
+      await new Promise(resolve => {
+        const handler = () => {
+          state.viewer.removeHandler('open', handler);
+          resolve();
+        };
+        state.viewer.addHandler('open', handler);
+      });
+
+      // Fetch and parse the ALTO if available
+      const seeAlso = canvas.seeAlso;
+      if (seeAlso && seeAlso.length > 0) {
+        const altoUrl = seeAlso[0]['@id'];
+        await loadAndRenderAlto(altoUrl, canvas);
+      } else {
+        renderTextPanel(null);
+      }
+
+      setStatus(null);
+    }
+
+    async function loadAndRenderAlto(url, canvas) {
+      try {
+        let altoData = state.altoCache[canvas['@id']];
+        if (!altoData) {
+          setStatus("Loading transcription…");
+          const response = await fetch(url);
+          if (!response.ok) throw new Error(`ALTO fetch failed: ${response.status}`);
+          const xmlText = await response.text();
+          altoData = parseAlto(xmlText);
+          state.altoCache[canvas['@id']] = altoData;
+        }
+        renderTextPanel(altoData);
+        renderImageOverlays(altoData, canvas);
+      } catch (err) {
+        console.error("ALTO load/render error:", err);
+        renderTextPanel(null);
+      }
+    }
+
+    // ================================================================
+    // ALTO PARSING
+    // ================================================================
+
+    function parseAlto(xmlText) {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(xmlText, "text/xml");
+
+      // Get the page dimensions declared inside the ALTO
+      const pageEl = doc.getElementsByTagNameNS(ALTO_NS, "Page")[0];
+      const pageWidth = parseInt(pageEl.getAttribute("WIDTH"));
+      const pageHeight = parseInt(pageEl.getAttribute("HEIGHT"));
+
+      // Build a tag-id -> label index from the <Tags> block
+      const tagIndex = {};
+      const tagEls = doc.getElementsByTagNameNS(ALTO_NS, "OtherTag");
+      for (const t of tagEls) {
+        tagIndex[t.getAttribute("ID")] = {
+          label: t.getAttribute("LABEL"),
+          type: t.getAttribute("TYPE"),  // "type" or "region"
+        };
+      }
+
+      // Walk through TextBlocks (regions)
+      const regions = [];
+      const lines = [];
+      const blockEls = doc.getElementsByTagNameNS(ALTO_NS, "TextBlock");
+      for (const block of blockEls) {
+        const tagref = block.getAttribute("TAGREFS");
+        const tagInfo = tagref ? tagIndex[tagref] : null;
+        const regionLabel = tagInfo ? tagInfo.label : null;
+        const regionCategory = categorizeType(regionLabel);
+
+        // Extract region polygon (from <Shape><Polygon POINTS=...>)
+        const polyEl = block.getElementsByTagNameNS(ALTO_NS, "Polygon")[0];
+        const regionPolygon = polyEl ? parsePolygon(polyEl.getAttribute("POINTS")) : null;
+
+        regions.push({
+          id: block.getAttribute("ID"),
+          label: regionLabel,
+          category: regionCategory,
+          polygon: regionPolygon,
+        });
+
+        // Walk through TextLines inside this block
+        const lineEls = block.getElementsByTagNameNS(ALTO_NS, "TextLine");
+        for (const line of lineEls) {
+          const lineTagref = line.getAttribute("TAGREFS");
+          const lineTagInfo = lineTagref ? tagIndex[lineTagref] : null;
+          const lineLabel = lineTagInfo ? lineTagInfo.label : null;
+          const lineCategory = categorizeType(lineLabel);
+
+          // Extract each word (<String>)
+          const stringEls = line.getElementsByTagNameNS(ALTO_NS, "String");
+          const words = [];
+          for (const s of stringEls) {
+            const content = s.getAttribute("CONTENT") || "";
+            const x = parseInt(s.getAttribute("HPOS"));
+            const y = parseInt(s.getAttribute("VPOS"));
+            const w = parseInt(s.getAttribute("WIDTH"));
+            const h = parseInt(s.getAttribute("HEIGHT"));
+            const conf = parseFloat(s.getAttribute("WC")) || 0;
+            words.push({
+              id: s.getAttribute("ID"),
+              content, x, y, w, h, confidence: conf,
+            });
+          }
+
+          lines.push({
+            id: line.getAttribute("ID"),
+            regionId: block.getAttribute("ID"),
+            regionCategory: regionCategory,
+            label: lineLabel,
+            category: lineCategory,
+            words: words,
+          });
+        }
+      }
+
+      return { pageWidth, pageHeight, regions, lines };
+    }
+
+    function parsePolygon(pointsStr) {
+      // ALTO polygons are space-separated x y x y x y...
+      if (!pointsStr) return [];
+      const nums = pointsStr.trim().split(/\s+/).map(Number);
+      const pts = [];
+      for (let i = 0; i + 1 < nums.length; i += 2) {
+        pts.push([nums[i], nums[i + 1]]);
+      }
+      return pts;
+    }
+
+    // ================================================================
+    // TEXT PANEL RENDERING
+    // ================================================================
+
+    function renderTextPanel(altoData) {
+      const panel = document.getElementById('text-panel');
+      if (!altoData) {
+        panel.innerHTML = '<div class="empty-message">No transcription available for this page.</div>';
+        return;
+      }
+      const html = altoData.lines.map(line => {
+        const wordsHtml = line.words.map(w =>
+          `<span class="word" data-word-id="${w.id}">${escapeHtml(w.content)}</span>`
+        ).join(' ');
+        return `<div class="line region-${line.category}">${wordsHtml}</div>`;
+      }).join('');
+      panel.innerHTML = html;
+
+      // Wire up click handlers on words
+      panel.querySelectorAll('.word').forEach(el => {
+        el.addEventListener('click', () => {
+          highlightWord(el.dataset.wordId);
+        });
+      });
+    }
+
+    function escapeHtml(s) {
+      return s.replace(/[&<>"']/g, c => ({
+        '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+      }[c]));
+    }
+
+    // ================================================================
+    // IMAGE OVERLAYS (regions + words)
+    // ================================================================
+
+    function renderImageOverlays(altoData, canvas) {
+      const v = state.viewer;
+      const cw = canvas.width;
+      const ch = canvas.height;
+
+      // Scale factor: ALTO coordinates may differ from canvas dimensions
+      // (for Barb.or.1 they match, but be safe).
+      const sx = cw / altoData.pageWidth;
+      const sy = ch / altoData.pageHeight;
+
+      // === Region polygons ===
+      // For each region, create an SVG element absolutely positioned over the image.
+      // OpenSeadragon's addOverlay needs a viewport rectangle, so we compute the
+      // bounding box of each polygon in image coordinates and convert to viewport
+      // coordinates. Then we shape the actual polygon via inline SVG.
+      altoData.regions.forEach((region, idx) => {
+        if (!region.polygon || region.polygon.length < 3) return;
+
+        const xs = region.polygon.map(p => p[0] * sx);
+        const ys = region.polygon.map(p => p[1] * sy);
+        const minX = Math.min(...xs);
+        const maxX = Math.max(...xs);
+        const minY = Math.min(...ys);
+        const maxY = Math.max(...ys);
+        const bbWidth = maxX - minX;
+        const bbHeight = maxY - minY;
+        if (bbWidth <= 0 || bbHeight <= 0) return;
+
+        // SVG polygon points, relative to the bounding box (in 0..bbWidth, 0..bbHeight)
+        const svgPoints = region.polygon.map(p =>
+          `${(p[0] * sx - minX).toFixed(1)},${(p[1] * sy - minY).toFixed(1)}`
+        ).join(' ');
+
+        const colors = REGION_COLORS[region.category] || REGION_COLORS.Other;
+        const wrapper = document.createElement('div');
+        wrapper.className = `osd-region-overlay region-cat-${region.category}`;
+        wrapper.style.position = 'absolute';
+        wrapper.innerHTML = `
+          <svg width="100%" height="100%" viewBox="0 0 ${bbWidth} ${bbHeight}" preserveAspectRatio="none"
+               style="position:absolute; inset:0;">
+            <polygon points="${svgPoints}"
+                     fill="${colors.fill}"
+                     stroke="${colors.stroke}"
+                     stroke-width="2"
+                     vector-effect="non-scaling-stroke"
+                     class="region-poly" />
+          </svg>
+        `;
+        // Hide initially (will be toggled by region toggle)
+        wrapper.style.display = state.showRegions ? 'block' : 'none';
+
+        v.addOverlay({
+          element: wrapper,
+          location: v.viewport.imageToViewportRectangle(
+            new OpenSeadragon.Rect(minX, minY, bbWidth, bbHeight)
+          ),
+        });
+      });
+
+      // === Per-word overlays (for text-on-image and click highlighting) ===
+      altoData.lines.forEach(line => {
+        line.words.forEach(word => {
+          if (!word.content || !word.w || !word.h) return;
+          const x = word.x * sx;
+          const y = word.y * sy;
+          const w = word.w * sx;
+          const h = word.h * sy;
+
+          const el = document.createElement('div');
+          el.className = `osd-word-overlay`;
+          if (state.showTextOverlay) el.classList.add('show-text');
+          el.dataset.wordId = word.id;
+          el.style.fontSize = `${h * 0.9}px`;
+          el.textContent = word.content;
+
+          v.addOverlay({
+            element: el,
+            location: v.viewport.imageToViewportRectangle(
+              new OpenSeadragon.Rect(x, y, w, h)
+            ),
+          });
+        });
+      });
+
+      // Update the region legend
+      updateRegionLegend(altoData);
+    }
+
+    function updateRegionLegend(altoData) {
+      const legend = document.getElementById('region-legend');
+      const categories = new Set(altoData.regions.map(r => r.category));
+      if (categories.size === 0) {
+        legend.innerHTML = '';
+        return;
+      }
+      const labels = {
+        Main: 'Main text',
+        Arabic: 'Arabic / sidebar',
+        Oblique: 'Oblique (angled)',
+        Vertical: 'Vertical (rotated)',
+        Other: 'Other',
+      };
+      const items = Array.from(categories).map(cat => {
+        const c = REGION_COLORS[cat] || REGION_COLORS.Other;
+        return `<div class="legend-item">
+          <div class="swatch" style="background:${c.fill}; border-color:${c.stroke};"></div>
+          <span>${labels[cat] || cat}</span>
+        </div>`;
+      });
+      legend.innerHTML = `<strong style="display:block; margin-bottom:0.3rem;">Region types</strong>` + items.join('');
+    }
+
+    // ================================================================
+    // WORD HIGHLIGHTING (click-linking)
+    // ================================================================
+
+    function highlightWord(wordId) {
+      // In text panel
+      document.querySelectorAll('#text-panel .word.highlighted').forEach(el =>
+        el.classList.remove('highlighted'));
+      const panelEl = document.querySelector(`#text-panel .word[data-word-id="${CSS.escape(wordId)}"]`);
+      if (panelEl) {
+        panelEl.classList.add('highlighted');
+        panelEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+
+      // On image
+      document.querySelectorAll('.osd-word-overlay.highlighted').forEach(el =>
+        el.classList.remove('highlighted'));
+      const overlayEl = document.querySelector(`.osd-word-overlay[data-word-id="${CSS.escape(wordId)}"]`);
+      if (overlayEl) {
+        overlayEl.classList.add('highlighted');
+        // Pan to the word
+        const bounds = state.viewer.getOverlayById(overlayEl).getBounds(state.viewer.viewport);
+        state.viewer.viewport.panTo(bounds.getCenter(), false);
+      }
+    }
+
+    // ================================================================
+    // UI CONTROLS
+    // ================================================================
+
+    function wireControls() {
+      document.getElementById('prev-page').addEventListener('click', () => {
+        if (state.currentCanvasIdx > 0) goToCanvas(state.currentCanvasIdx - 1);
+      });
+      document.getElementById('next-page').addEventListener('click', () => {
+        if (state.currentCanvasIdx < state.canvases.length - 1)
+          goToCanvas(state.currentCanvasIdx + 1);
+      });
+      document.getElementById('page-selector').addEventListener('change', (e) => {
+        goToCanvas(parseInt(e.target.value));
+      });
+      document.getElementById('toggle-text-panel').addEventListener('click', (e) => {
+        state.showTextPanel = !state.showTextPanel;
+        document.body.classList.toggle('no-panel', !state.showTextPanel);
+        e.target.classList.toggle('active', state.showTextPanel);
+      });
+      document.getElementById('toggle-text-overlay').addEventListener('click', (e) => {
+        state.showTextOverlay = !state.showTextOverlay;
+        document.querySelectorAll('.osd-word-overlay').forEach(el => {
+          el.classList.toggle('show-text', state.showTextOverlay);
+        });
+        e.target.classList.toggle('active', state.showTextOverlay);
+      });
+      document.getElementById('toggle-regions').addEventListener('click', (e) => {
+        state.showRegions = !state.showRegions;
+        document.querySelectorAll('.osd-region-overlay').forEach(el => {
+          el.style.display = state.showRegions ? 'block' : 'none';
+        });
+        document.getElementById('region-legend').classList.toggle('show', state.showRegions);
+        e.target.classList.toggle('active', state.showRegions);
+      });
+      document.getElementById('reset-view').addEventListener('click', () => {
+        state.viewer.viewport.goHome();
+      });
+    }
+
+    function populatePageSelector() {
+      const sel = document.getElementById('page-selector');
+      state.canvases.forEach((c, i) => {
+        const opt = document.createElement('option');
+        opt.value = i;
+        opt.textContent = `${i + 1}. ${c.label}`;
+        sel.appendChild(opt);
+      });
+    }
+
+    function setStatus(msg) {
+      const el = document.getElementById('status');
+      if (msg === null) {
+        el.classList.add('hidden');
+      } else {
+        el.textContent = msg;
+        el.classList.remove('hidden');
+      }
+    }
+  </script>
 </body>
 </html>
