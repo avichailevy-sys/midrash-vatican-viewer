@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+    xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-3.xsd">
+    <Description>
+        <MeasurementUnit>pixel</MeasurementUnit>
+        <sourceImageInformation>
+            <fileName>/nas/archive/paris-data/non_ktiv_mss_imgs/Vatican_MSS/MSS_Vat.ebr.108/IM990001981090205171_00254_Vat.ebr.108_0254_yh_dorso.jpg</fileName>
+        </sourceImageInformation>
+        <Processing ID="OCR_0">
+            <processingCategory>other</processingCategory>
+            <processingStepDescription>unknown</processingStepDescription>
+            <processingSoftware>
+                <softwareName>kraken</softwareName>
+                <softwareVersion>5.3.1.dev56</softwareVersion>
+            </processingSoftware>
+        </Processing>
+    </Description>
+    <Tags>
+        <OtherTag DESCRIPTION="line type" ID="LINE_TYPE_1" TYPE="type" LABEL="Main"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_1" TYPE="region" LABEL="Margin"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_2" TYPE="region" LABEL="Main"/>
+    </Tags>
+    <Layout>
+        <Page WIDTH="750" HEIGHT="2693" PHYSICAL_IMG_NR="0" ID="page_0">
+            <PrintSpace HPOS="0" VPOS="0" WIDTH="750" HEIGHT="2693">
+                <TextBlock ID="_ec31cf43-54e5-4f3b-90fb-97345aa54687" HPOS="116" VPOS="709" WIDTH="373" HEIGHT="141" TAGREFS="REGION_TYPE_2">
+<Shape>
+                        <Polygon POINTS="462 709 489 718 480 850 116 823 134 789 249 789 350 736 444 771 462 709"/>
+                    </Shape>
+                    <TextLine ID="_36f7cf6c-3e37-49d5-85ca-51f38cd6783b" HPOS="211" VPOS="789" WIDTH="27" HEIGHT="57" BASELINE="213 814 238 812" TAGREFS="LINE_TYPE_1">
+                        <Shape>
+                            <Polygon POINTS="233 789 211 789 213 814 215 846 238 846 238 812 235 789 233 789"/>
+                        </Shape>
+                        <String CONTENT=""/>
+                    </TextLine>
+</TextBlock>
+                <TextBlock ID="_9f225a15-03fd-4605-a649-dd2649abe313" HPOS="269" VPOS="870" WIDTH="7" HEIGHT="7" TAGREFS="REGION_TYPE_2">
+<Shape>
+                        <Polygon POINTS="273 870 276 877 269 877 269 870 273 870"/>
+                    </Shape></TextBlock>
+                <TextBlock ID="_672e1f8a-67cb-470f-acee-3cac27c60ee8" HPOS="116" VPOS="556" WIDTH="364" HEIGHT="34" TAGREFS="REGION_TYPE_2">
+<Shape>
+                        <Polygon POINTS="294 556 426 565 480 590 116 590 294 556"/>
+                    </Shape></TextBlock>
+                <TextBlock ID="_129bf666-0529-48d8-bd06-3887d3de3ded" HPOS="323" VPOS="870" WIDTH="7" HEIGHT="16" TAGREFS="REGION_TYPE_2">
+<Shape>
+                        <Polygon POINTS="330 870 330 886 323 886 323 870 330 870"/>
+                    </Shape></TextBlock>
+                <TextBlock ID="_35fd0f92-1673-4480-b60b-bead53efb529" HPOS="276" VPOS="673" WIDTH="213" HEIGHT="42" TAGREFS="REGION_TYPE_2">
+<Shape>
+                        <Polygon POINTS="276 673 480 682 489 697 287 715 276 673"/>
+                    </Shape></TextBlock>
+                <TextBlock ID="_51d7a0af-cf65-49d6-ab4b-cf4012c3fdb5" HPOS="341" VPOS="870" WIDTH="94" HEIGHT="16" TAGREFS="REGION_TYPE_2">
+<Shape>
+                        <Polygon POINTS="348 870 435 870 435 886 341 886 348 870"/>
+                    </Shape></TextBlock>
+                <TextBlock ID="_0868b1a1-6ef3-486e-8f1e-339710856dca" HPOS="455" VPOS="870" WIDTH="34" HEIGHT="16" TAGREFS="REGION_TYPE_2">
+<Shape>
+                        <Polygon POINTS="462 870 489 870 489 886 455 886 462 870"/>
+                    </Shape></TextBlock>
+            </PrintSpace>
+        </Page>
+    </Layout>
+</alto>

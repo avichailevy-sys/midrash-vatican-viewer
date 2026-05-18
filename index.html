@@ -1,143 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MiDRASH Vatican Viewer — Barb.or.1 (pilot)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiDRASH Vatican Viewer</title>
 
-  <!--
-    Page styling. Keep it minimal — Mirador takes over the whole viewport.
-    The #mirador div is where Mirador renders itself. It MUST have a height,
-    otherwise Mirador will render at zero pixels tall and show nothing.
-  -->
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-      overflow: hidden;
-      font-family: sans-serif;
+    :root {
+      --bg: #fafaf7;
+      --surface: #ffffff;
+      --text: #1c1c1c;
+      --text-muted: #666;
+      --border: #d8d4cc;
+      --accent: #6b4423;
+      --accent-hover: #4a2e15;
+      --warning-bg: #fdf6e3;
+      --warning-text: #826200;
     }
-    #mirador {
-      width: 100%;
-      height: 100vh;
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      line-height: 1.6;
+      padding: 3rem 1.5rem;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 3rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+    }
+
+    h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: 2rem;
+      font-weight: normal;
+      letter-spacing: -0.01em;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-style: italic;
+      margin: 0;
+    }
+
+    .intro {
+      margin: 1.5rem 0 0 0;
+      font-size: 0.95rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: normal;
+      margin: 0 0 1.5rem 0;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .manuscript-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .manuscript {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .manuscript:hover {
+      border-color: var(--accent);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+
+    .ms-shelfmark {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 0 0 0.25rem 0;
+    }
+
+    .ms-title {
+      color: var(--text);
+      margin: 0 0 0.5rem 0;
+    }
+
+    .ms-description {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin: 0 0 0.75rem 0;
+    }
+
+    .ms-meta {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin: 0 0 1rem 0;
+      flex-wrap: wrap;
+    }
+
+    .ms-meta span::before {
+      content: "·";
+      margin-right: 0.5rem;
+    }
+
+    .ms-meta span:first-child::before {
+      content: "";
+      margin-right: 0;
+    }
+
+    .ms-note {
+      background: var(--warning-bg);
+      color: var(--warning-text);
+      font-size: 0.85rem;
+      padding: 0.6rem 0.85rem;
+      border-radius: 3px;
+      margin: 0 0 1rem 0;
+    }
+
+    .open-link {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 3px;
+      font-size: 0.95rem;
+      transition: background 0.15s;
+    }
+
+    .open-link:hover {
+      background: var(--accent-hover);
+    }
+
+    footer {
+      margin-top: 4rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    footer p {
+      margin: 0.25rem 0;
     }
   </style>
 </head>
+
 <body>
+  <div class="container">
 
-  <!--
-    The mount point for Mirador. Its ID must match the `id` field in the
-    Mirador.viewer({...}) configuration below.
-  -->
-  <div id="mirador"></div>
+    <header>
+      <h1>MiDRASH Vatican Viewer</h1>
+      <p class="subtitle">Pilot — Vatican manuscript transcriptions with text overlay</p>
+      <p class="intro">
+        This viewer overlays automatic HTR transcriptions onto manuscript page
+        images from the Biblioteca Apostolica Vaticana. The transcriptions
+        were produced through the ERC-Synergy MiDRASH project using Kraken
+        via eScriptorium. Page images are served by the Vatican; transcriptions
+        and modified IIIF manifests are hosted as part of this pilot.
+      </p>
+    </header>
 
-  <!--
-    The Islandora pre-built Mirador bundle. This is a single JavaScript file
-    that contains Mirador 3 + the mirador-textoverlay plugin + the
-    mirador-image-tools plugin, all bundled together. Loading this script
-    defines a global `Mirador` object that exposes `Mirador.viewer(config)`.
+    <h2>Available manuscripts</h2>
 
-    Source: https://github.com/islandora/mirador-integration-islandora
-  -->
-  <script src="https://islandora.github.io/mirador-integration-islandora/islandora-mirador-0.1.0.js"></script>
+    <ul class="manuscript-list">
 
-  <!--
-    The configuration for Mirador. This is where we tell it:
-      - what manifest to load (the modified Barb.or.1 manifest with seeAlso)
-      - which window to open it in at startup
-      - that the text overlay should be enabled and visible by default
-      - styling preferences for the overlay (font, colors)
-  -->
-  <script>
-    Mirador.viewer({
-      // Tells Mirador where in the DOM to render itself.
-      id: 'mirador',
+      <li class="manuscript">
+        <div class="ms-shelfmark">Vat.ebr.23</div>
+        <div class="ms-title">Masoretic Bible — Prophets (נביאים)</div>
+        <p class="ms-description">
+          Medieval Masoretic Hebrew Bible manuscript containing vocalized
+          biblical text with cantillation marks and Masoretic notes.
+        </p>
+        <div class="ms-meta">
+          <span>Hebrew</span>
+          <span>290 pages</span>
+          <span>Vatican Hebrew collection</span>
+        </div>
+        <a class="open-link" href="viewer.html?ms=Vat.ebr.23">Open in viewer →</a>
+      </li>
 
-      // The list of manifests Mirador knows about. Each entry creates a
-      // catalog entry that the user can pick from in the workspace selector.
-      // We only have one manifest for this pilot.
-      catalog: [
-        {
-          manifestId: 'Barb.or.1_manifest_modified.json',
-          provider: 'Biblioteca Apostolica Vaticana (transcription by MiDRASH/EPHE)'
-        }
-      ],
+      <li class="manuscript">
+        <div class="ms-shelfmark">Vat.ebr.108</div>
+        <div class="ms-title">Babylonian Talmud — Seder Moed</div>
+        <p class="ms-description">
+          Medieval manuscript of the Babylonian Talmud containing tractates
+          from Seder Moed: Moed Katan, Hagigah, and parts of Shabbat and
+          Eruvin, often with Rashi's commentary alongside the text.
+        </p>
+        <div class="ms-meta">
+          <span>Hebrew</span>
+          <span>260 pages</span>
+          <span>Vatican Hebrew collection</span>
+        </div>
+        <a class="open-link" href="viewer.html?ms=Vat.ebr.108">Open in viewer →</a>
+      </li>
 
-      // Open a window with this manifest already loaded at startup.
-      // Without this, the user would see an empty workspace and have to
-      // open the manifest manually from the catalog.
-      windows: [
-        {
-          manifestId: 'Barb.or.1_manifest_modified.json',
+      <li class="manuscript">
+        <div class="ms-shelfmark">Barb.or.1</div>
+        <div class="ms-title">Syriac manuscript</div>
+        <p class="ms-description">
+          Manuscript from the Barberini Oriental collection.
+        </p>
+        <div class="ms-meta">
+          <span>Syriac</span>
+          <span>586 pages</span>
+          <span>Barberini Oriental collection</span>
+        </div>
+        <p class="ms-note">
+          <strong>Note:</strong> This manuscript is in Syriac, not Hebrew.
+          The HTR transcription overlay was produced by a Hebrew-trained
+          model and therefore contains meaningless output. The page images
+          and layout segmentation are however correct, making this
+          manuscript usable for layout-analysis purposes only.
+        </p>
+        <a class="open-link" href="viewer.html?ms=Barb.or.1">Open in viewer →</a>
+      </li>
 
-          // Open at the third canvas (folio 1r), since canvases 1 and 2
-          // are the cover and flyleaf. Adjust to whatever makes sense.
-          canvasIndex: 2,
+    </ul>
 
-          // Configure the textoverlay plugin per-window. Initially:
-          //   - enabled: true   = the plugin is active
-          //   - visible: true   = the overlay is shown on the page
-          //   - selectable: true = the user can select and copy text
-          // The user can toggle these from a button in the window toolbar.
-          textOverlay: {
-            enabled: true,
-            visible: true,
-            selectable: true,
-            // If the model's confidence on a word is below this threshold,
-            // the overlay still renders the word but in a faded style.
-            // Set to 0 to show all words at full opacity regardless of
-            // confidence; set higher to fade uncertain words.
-            opacity: 0.75,
-          },
-        }
-      ],
+    <footer>
+      <p>ERC-Synergy MiDRASH project · EPHE-PSL, Paris</p>
+      <p>Pilot deployment. Page images © Biblioteca Apostolica Vaticana.</p>
+    </footer>
 
-      // Theming. The textoverlay plugin reads these to style overlay text.
-      // We pick a Hebrew-friendly font and a clear selection highlight.
-      themes: {
-        light: {
-          // Use a system Hebrew-capable font if available, fall back to
-          // generic serif. The actual font on screen depends on what the
-          // user's machine has installed.
-          typography: {
-            fontFamily: '"SBL Hebrew", "Times New Roman", serif',
-          },
-          overrides: {
-            MuiPaper: {
-              root: {
-                backgroundColor: '#fafafa',
-              }
-            }
-          }
-        }
-      },
-
-      // Window-level UI options. We want the user to see informative
-      // metadata, attribution, etc.
-      window: {
-        // Show the metadata panel (canvas labels, manifest title, etc.)
-        sideBarOpen: false,
-        // Default view is a single page rather than a book spread.
-        // Useful because most ALTOs are per-page rather than per-spread.
-        defaultView: 'single',
-        // Allow the user to switch between views.
-        views: [
-          { key: 'single', behaviors: ['individuals'] },
-          { key: 'book',   behaviors: ['paged'] },
-          { key: 'gallery' },
-        ],
-      },
-
-      // Don't show the workspace add-window button — for the pilot there's
-      // only one manuscript so the user doesn't need to add other windows.
-      // (Remove this when you add more manuscripts to the catalog.)
-      workspaceControlPanel: {
-        enabled: true,
-      },
-    });
-  </script>
-
+  </div>
 </body>
 </html>

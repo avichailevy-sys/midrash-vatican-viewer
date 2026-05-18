@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiDRASH Vatican Viewer</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      font-family: sans-serif;
+      background: #1c1c1c;
+    }
+
+    /* A thin top bar with the manuscript name and a back link.
+       Mirador takes everything below. */
+    #topbar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 36px;
+      background: #2a2a2a;
+      color: #eee;
+      display: flex;
+      align-items: center;
+      padding: 0 1rem;
+      font-size: 0.9rem;
+      z-index: 100;
+      border-bottom: 1px solid #444;
+    }
+
+    #topbar a {
+      color: #c0a070;
+      text-decoration: none;
+      margin-right: 1.5rem;
+    }
+    #topbar a:hover {
+      color: #e0c090;
+    }
+
+    #manuscript-name {
+      font-weight: bold;
+    }
+
+    #mirador {
+      position: absolute;
+      top: 36px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    /* Error message shown if no ?ms= parameter is supplied. */
+    #error {
+      display: none;
+      padding: 3rem;
+      color: #ddd;
+      font-family: Georgia, serif;
+      font-size: 1.1rem;
+    }
+    #error a {
+      color: #c0a070;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="topbar">
+    <a href="index.html">← Back to manuscripts</a>
+    <span id="manuscript-name"></span>
+  </div>
+
+  <div id="mirador"></div>
+
+  <div id="error">
+    <h2>No manuscript selected</h2>
+    <p>This viewer needs a manuscript name in the URL. For example:
+       <code>viewer.html?ms=Vat.ebr.108</code></p>
+    <p><a href="index.html">← Return to the manuscript list</a></p>
+  </div>
+
+  <!-- The Islandora Mirador bundle: Mirador 3 + textoverlay + image-tools. -->
+  <script src="https://islandora.github.io/mirador-integration-islandora/islandora-mirador-0.1.0.js"></script>
+
+  <script>
+    // === Read the ?ms= parameter from the URL ===========================
+    // URLs look like:  viewer.html?ms=Vat.ebr.108
+    // We parse it, validate that it's present, and use it to construct
+    // the manifest URL. If missing, we show the error message instead
+    // of trying to load Mirador.
+    const params = new URLSearchParams(window.location.search);
+    const ms = params.get('ms');
+
+    if (!ms) {
+      document.getElementById('mirador').style.display = 'none';
+      document.getElementById('error').style.display = 'block';
+    } else {
+      // Show the manuscript name in the top bar.
+      document.getElementById('manuscript-name').textContent = ms;
+
+      // The manifest lives at <ms>/manifest.json, relative to this page.
+      const manifestUrl = ms + '/manifest.json';
+
+      // === Mirador configuration ========================================
+      Mirador.viewer({
+        id: 'mirador',
+        catalog: [
+          { manifestId: manifestUrl, provider: 'Biblioteca Apostolica Vaticana — MiDRASH/EPHE' }
+        ],
+        windows: [
+          {
+            manifestId: manifestUrl,
+            // Open at the third canvas (folio 1r), skipping cover and flyleaf.
+            // If the manuscript's structure is different, the user can
+            // navigate manually.
+            canvasIndex: 2,
+            // Enable the text overlay by default.
+            textOverlay: {
+              enabled: true,
+              visible: true,
+              selectable: true,
+              opacity: 0.75,
+            },
+          }
+        ],
+        themes: {
+          light: {
+            typography: {
+              fontFamily: '"SBL Hebrew", "Times New Roman", serif',
+            }
+          }
+        },
+        window: {
+          sideBarOpen: false,
+          defaultView: 'single',
+          views: [
+            { key: 'single', behaviors: ['individuals'] },
+            { key: 'book',   behaviors: ['paged'] },
+            { key: 'gallery' },
+          ],
+        },
+        workspaceControlPanel: {
+          enabled: true,
+        },
+      });
+    }
+  </script>
+
+</body>
+</html>

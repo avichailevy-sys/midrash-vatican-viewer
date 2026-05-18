@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+    xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-3.xsd">
+    <Description>
+        <MeasurementUnit>pixel</MeasurementUnit>
+        <sourceImageInformation>
+            <fileName>/nas/archive/paris-data/non_ktiv_mss_imgs/Vatican_MSS/MSS_Vat.ebr.108/IM990001981090205171_00255_Vat.ebr.108_0255_yl_taglio.centrale.jpg</fileName>
+        </sourceImageInformation>
+        <Processing ID="OCR_0">
+            <processingCategory>other</processingCategory>
+            <processingStepDescription>unknown</processingStepDescription>
+            <processingSoftware>
+                <softwareName>kraken</softwareName>
+                <softwareVersion>5.3.1.dev56</softwareVersion>
+            </processingSoftware>
+        </Processing>
+    </Description>
+    <Tags>
+        <OtherTag DESCRIPTION="line type" ID="LINE_TYPE_1" TYPE="type" LABEL="Arabic"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_1" TYPE="region" LABEL="Arabic"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_2" TYPE="region" LABEL="Oblique_135"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_3" TYPE="region" LABEL="Oblique_45"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_4" TYPE="region" LABEL="Oblique_225"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_5" TYPE="region" LABEL="Oblique_315"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_6" TYPE="region" LABEL="Main"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_7" TYPE="region" LABEL="Upside_Down"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_8" TYPE="region" LABEL="Vertical_Top_Down_270"/>
+        <OtherTag DESCRIPTION="region type" ID="REGION_TYPE_9" TYPE="region" LABEL="Vertical_Bottom_Up_90"/>
+    </Tags>
+    <Layout>
+        <Page WIDTH="750" HEIGHT="2773" PHYSICAL_IMG_NR="0" ID="page_0">
+            <PrintSpace HPOS="0" VPOS="0" WIDTH="750" HEIGHT="2773">
+                <TextBlock ID="_4c322d94-4323-4162-bb0f-990a840a5539" HPOS="83" VPOS="212" WIDTH="359" HEIGHT="941" TAGREFS="REGION_TYPE_1">
+<Shape>
+                        <Polygon POINTS="275 212 423 240 442 314 395 1153 175 1143 175 1109 201 1127 268 1090 120 1060 83 1005 83 711 138 462 194 249 275 212"/>
+                    </Shape>
+                    <TextLine ID="_b9cd83c9-255f-496c-8405-4ac9a444e6e0" HPOS="370" VPOS="288" WIDTH="222" HEIGHT="49" BASELINE="418 311 421 298" TAGREFS="LINE_TYPE_1">
+                        <Shape>
+                            <Polygon POINTS="418 311 592 337 592 323 421 298 370 288 370 302 418 311"/>
+                        </Shape>
+                        <String CONTENT=""/>
+                    </TextLine>
+
+                    <TextLine ID="_83beb8bd-81ce-42b5-8f39-79a360602ac9" HPOS="356" VPOS="238" WIDTH="42" HEIGHT="175" BASELINE="363 307 398 309" TAGREFS="LINE_TYPE_1">
+                        <Shape>
+                            <Polygon POINTS="363 307 356 413 391 402 398 309 398 238 365 238 363 307"/>
+                        </Shape>
+                        <String CONTENT=""/>
+                    </TextLine>
+
+                    <TextLine ID="_bee012fb-0df0-4cc7-9c56-6ad01254b6ec" HPOS="331" VPOS="450" WIDTH="74" HEIGHT="79" BASELINE="351 503 375 501 377 469" TAGREFS="LINE_TYPE_1">
+                        <Shape>
+                            <Polygon POINTS="349 501 351 503 398 529 405 485 377 469 340 450 331 489 349 501"/>
+                        </Shape>
+                        <String CONTENT=""/>
+                    </TextLine>
+
+                    <TextLine ID="_43ce07bb-2078-4cab-904d-2ab84f6d334a" HPOS="314" VPOS="482" WIDTH="95" HEIGHT="81" BASELINE="351 501 375 506 381 538" TAGREFS="LINE_TYPE_1">
+                        <Shape>
+                            <Polygon POINTS="361 494 351 501 314 529 319 563 381 538 409 517 391 482 361 494"/>
+                        </Shape>
+                        <String ID="segment_0" CONTENT="ב" HPOS="317" VPOS="538" WIDTH="64" HEIGHT="12" WC="0.8651">
+                            <Shape>
+                                <Polygon POINTS="381 538 317 550 317 550 381 538"/>
+                            </Shape>
+                            <Glyph ID="char_0" CONTENT="ב" HPOS="317" VPOS="538" WIDTH="64" HEIGHT="12" GC="0.8651">
+                                <Shape>
+                                    <Polygon POINTS="381 538 317 550 317 550 381 538"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                    </TextLine>
+
+                    <TextLine ID="_8b40b480-2663-4b67-9c32-ee1c6717881e" HPOS="236" VPOS="242" WIDTH="99" HEIGHT="157" BASELINE="238 316 328 302" TAGREFS="LINE_TYPE_1">
+                        <Shape>
+                            <Polygon POINTS="236 307 238 316 250 399 335 353 328 302 317 242 268 242 266 242 263 242 261 242 240 258 236 307"/>
+                        </Shape>
+                        <String CONTENT=""/>
+                    </TextLine>
+
+                    <TextLine ID="_eaadc121-ae6b-480f-952e-8ba22a35598a" HPOS="150" VPOS="311" WIDTH="120" HEIGHT="84" BASELINE="238 314 261 318 263 351" TAGREFS="LINE_TYPE_1">
+                        <Shape>
+                            <Polygon POINTS="240 311 238 314 150 369 150 395 263 351 270 344 261 311 240 311"/>
+                        </Shape>
+                        <String ID="segment_1" CONTENT="]" HPOS="238" VPOS="314" WIDTH="0" HEIGHT="0" WC="0.9067">
+                            <Shape>
+                                <Polygon POINTS="238 314 238 314 238 314 238 314"/>
+                            </Shape>
+                            <Glyph ID="char_1" CONTENT="]" HPOS="238" VPOS="314" WIDTH="0" HEIGHT="0" GC="0.9067">
+                                <Shape>
+                                    <Polygon POINTS="238 314 238 314 238 314 238 314"/>
+                                </Shape>
+                            </Glyph>
+                        </String>
+                    </TextLine>
+</TextBlock>
+                <TextBlock ID="_e763e08b-415b-4b63-a305-810693f0d243" HPOS="203" VPOS="1867" WIDTH="7" HEIGHT="7" TAGREFS="REGION_TYPE_1">
+<Shape>
+                        <Polygon POINTS="208 1867 210 1874 203 1874 203 1867 208 1867"/>
+                    </Shape></TextBlock>
+                <TextBlock ID="_93112c65-6db9-449f-bd1e-597bfd0c804e" HPOS="231" VPOS="1173" WIDTH="7" HEIGHT="7" TAGREFS="REGION_TYPE_1">
+<Shape>
+                        <Polygon POINTS="238 1173 238 1180 231 1180 231 1173 238 1173"/>
+                    </Shape></TextBlock>
+                <TextBlock ID="_f03aa3f8-477e-4a4b-be55-0b298ee96904" HPOS="212" VPOS="1275" WIDTH="44" HEIGHT="44" TAGREFS="REGION_TYPE_1">
+<Shape>
+                        <Polygon POINTS="219 1275 256 1284 238 1319 212 1300 219 1275"/>
+                    </Shape></TextBlock>
+                <TextBlock ID="_85d9424d-a777-4e29-a10c-66d921a1d561" HPOS="222" VPOS="1830" WIDTH="81" HEIGHT="62" TAGREFS="REGION_TYPE_1">
+<Shape>
+                        <Polygon POINTS="266 1830 303 1883 222 1892 222 1848 266 1830"/>
+                    </Shape></TextBlock>
+                <TextBlock ID="_270e1731-b3ed-47b9-9ff8-346b23a99df0" HPOS="361" VPOS="1266" WIDTH="34" HEIGHT="81" TAGREFS="REGION_TYPE_1">
+<Shape>
+                        <Polygon POINTS="368 1266 395 1282 361 1347 361 1266 368 1266"/>
+                    </Shape></TextBlock>
+                <TextBlock ID="_ad610433-3cdd-4a0c-a355-fe862a66dec5" HPOS="388" VPOS="1247" WIDTH="7" HEIGHT="7" TAGREFS="REGION_TYPE_1">
+<Shape>
+                        <Polygon POINTS="395 1247 395 1254 388 1254 388 1247 395 1247"/>
+                    </Shape></TextBlock>
+                <TextBlock ID="_58e1da60-9b0b-49f4-9d97-fc2b7213d8d5" HPOS="444" VPOS="240" WIDTH="44" HEIGHT="16" TAGREFS="REGION_TYPE_7">
+<Shape>
+                        <Polygon POINTS="444 240 488 240 488 256 444 256 444 240"/>
+                    </Shape></TextBlock>
+            </PrintSpace>
+        </Page>
+    </Layout>
+</alto>
