@@ -117,6 +117,17 @@
       font-size: inherit;
       border-radius: 3px;
     }
+    /* Opacity slider — visually subtle, sized to fit alongside buttons. */
+    #controls input[type="range"] {
+      width: 100px;
+      accent-color: var(--accent);
+      cursor: pointer;
+    }
+    #controls #overlay-opacity-label {
+      color: #aaa;
+      font-size: 0.78rem;
+      margin-right: 0.2rem;
+    }
 
     /* === Image area === */
     #image-area {
@@ -190,15 +201,17 @@
       overflow: visible;
     }
     /* The SVG text inside each word overlay. Hidden by default (transparent fill).
-       When .show-text is toggled, the text becomes visible. */
+       When .show-text is toggled, the text becomes visible. The opacity of the
+       text is driven by the --overlay-opacity CSS variable, which the slider
+       updates dynamically. */
     .osd-word-overlay .overlay-text {
       fill: rgba(255, 0, 0, 0);
       font-family: "SBL Hebrew", "Frank Ruehl", serif;
     }
     .osd-word-overlay.show-text .overlay-text {
-      fill: rgba(220, 30, 30, 0.85);
+      fill: rgba(220, 30, 30, var(--overlay-opacity, 0.7));
       paint-order: stroke;
-      stroke: rgba(255, 255, 255, 0.6);
+      stroke: rgba(255, 255, 255, calc(var(--overlay-opacity, 0.7) * 0.7));
       stroke-width: 0.5;
     }
     .osd-region-overlay {
@@ -281,6 +294,8 @@
     <span class="sep"></span>
     <button id="toggle-text-panel" class="active">Text panel</button>
     <button id="toggle-text-overlay">Text overlay</button>
+    <label for="overlay-opacity" id="overlay-opacity-label">opacity</label>
+    <input type="range" id="overlay-opacity" min="0" max="100" value="70" step="1" />
     <button id="toggle-regions">Region polygons</button>
     <span class="sep"></span>
     <button id="reset-view">Fit to view</button>
@@ -670,10 +685,15 @@
       });
 
       // === Per-word overlays (for text-on-image and click highlighting) ===
-      // We use SVG <text> inside an SVG with the word's natural width/height as
-      // its viewBox. SVG text scales with the SVG, which scales with the OSD
-      // viewport — so the text always fits its word's bounding box regardless
-      // of zoom level. This is how the Mirador textoverlay plugin does it.
+      // Browser branch:
+      //   - Chrome/Edge/Safari: use textLength + lengthAdjust to stretch
+      //     glyphs to exactly fit each word's actual pixel width. This is
+      //     what produces the tight visual alignment between overlay text
+      //     and manuscript word.
+      //   - Firefox: ignores textLength for some configurations. We use
+      //     a different SVG technique (preserveAspectRatio="none" with a
+      //     proportional viewBox) that gets close to the same result.
+      const isFirefox = navigator.userAgent.toLowerCase().includes('firefox');
       altoData.lines.forEach(line => {
         line.words.forEach(word => {
           if (!word.content || !word.w || !word.h) return;
@@ -686,21 +706,40 @@
           el.className = `osd-word-overlay`;
           if (state.showTextOverlay) el.classList.add('show-text');
           el.dataset.wordId = word.id;
-          // SVG with viewBox matching the word's natural box. The text element
-          // inside is sized in viewBox units (font-size = h), so it fills the
-          // word's box at any zoom level. textLength + lengthAdjust forces the
-          // text to fit horizontally within the word's width.
-          el.innerHTML = `
-            <svg width="100%" height="100%" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none"
-                 style="position:absolute; inset:0; overflow:visible;">
-              <text x="${w}" y="${h * 0.85}"
-                    font-size="${h * 0.9}"
-                    text-anchor="end"
-                    textLength="${w}"
-                    lengthAdjust="spacingAndGlyphs"
-                    class="overlay-text">${escapeHtml(word.content)}</text>
-            </svg>
-          `;
+
+          if (isFirefox) {
+            // Firefox path: viewBox sized by character count; SVG container
+            // stretches non-uniformly. Approximate but works.
+            const charCount = word.content.length || 1;
+            const vbHeight = 100;
+            const vbWidth = charCount * 65;
+            el.innerHTML = `
+              <svg width="100%" height="100%" viewBox="0 0 ${vbWidth} ${vbHeight}"
+                   preserveAspectRatio="none"
+                   style="position:absolute; inset:0; overflow:visible;">
+                <text x="${vbWidth}" y="${vbHeight * 0.85}"
+                      font-size="${vbHeight * 0.9}"
+                      text-anchor="end"
+                      class="overlay-text">${escapeHtml(word.content)}</text>
+              </svg>
+            `;
+          } else {
+            // Chrome/Edge/Safari path: textLength forces the text to exactly
+            // span the word's actual width via glyph stretching. This is the
+            // version that produces tight alignment with manuscript ink.
+            el.innerHTML = `
+              <svg width="100%" height="100%" viewBox="0 0 ${w} ${h}"
+                   preserveAspectRatio="none"
+                   style="position:absolute; inset:0; overflow:visible;">
+                <text x="${w}" y="${h * 0.85}"
+                      font-size="${h * 0.9}"
+                      text-anchor="end"
+                      textLength="${w}"
+                      lengthAdjust="spacingAndGlyphs"
+                      class="overlay-text">${escapeHtml(word.content)}</text>
+              </svg>
+            `;
+          }
 
           v.addOverlay({
             element: el,
@@ -803,6 +842,17 @@
       document.getElementById('reset-view').addEventListener('click', () => {
         state.viewer.viewport.goHome();
       });
+
+      // Opacity slider: maps slider value (0..100) to CSS variable (0..1).
+      // The CSS variable --overlay-opacity drives the alpha of the overlay
+      // text fill, so the user can blend the overlay against the manuscript.
+      const slider = document.getElementById('overlay-opacity');
+      const applyOpacity = () => {
+        const val = parseInt(slider.value, 10) / 100;
+        document.documentElement.style.setProperty('--overlay-opacity', val);
+      };
+      slider.addEventListener('input', applyOpacity);
+      applyOpacity();  // apply the initial value
     }
 
     function populatePageSelector() {
