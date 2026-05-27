@@ -209,10 +209,17 @@
       font-family: "SBL Hebrew", "Frank Ruehl", serif;
     }
     .osd-word-overlay.show-text .overlay-text {
-      fill: rgba(220, 30, 30, var(--overlay-opacity, 0.7));
-      paint-order: stroke;
-      stroke: rgba(255, 255, 255, calc(var(--overlay-opacity, 0.7) * 0.7));
-      stroke-width: 0.5;
+      fill: rgba(180, 20, 20, var(--overlay-opacity, 0.7));
+    }
+    /* White background rect that sits behind the text. Fades in sync with the
+       text via the same --overlay-opacity variable. At full slider, it provides
+       an opaque white card behind each word, blocking the manuscript ink for
+       readability. At minimum slider, it fades to invisible along with the text. */
+    .osd-word-overlay .overlay-bg {
+      fill: rgba(255, 255, 255, 0);
+    }
+    .osd-word-overlay.show-text .overlay-bg {
+      fill: rgba(255, 255, 255, var(--overlay-opacity, 0.7));
     }
     .osd-region-overlay {
       pointer-events: none;
@@ -717,6 +724,8 @@
               <svg width="100%" height="100%" viewBox="0 0 ${vbWidth} ${vbHeight}"
                    preserveAspectRatio="none"
                    style="position:absolute; inset:0; overflow:visible;">
+                <rect x="0" y="0" width="${vbWidth}" height="${vbHeight}"
+                      class="overlay-bg" />
                 <text x="${vbWidth}" y="${vbHeight * 0.85}"
                       font-size="${vbHeight * 0.9}"
                       text-anchor="end"
@@ -731,6 +740,8 @@
               <svg width="100%" height="100%" viewBox="0 0 ${w} ${h}"
                    preserveAspectRatio="none"
                    style="position:absolute; inset:0; overflow:visible;">
+                <rect x="0" y="0" width="${w}" height="${h}"
+                      class="overlay-bg" />
                 <text x="${w}" y="${h * 0.85}"
                       font-size="${h * 0.9}"
                       text-anchor="end"
