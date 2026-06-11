@@ -1,0 +1,429 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/manifest.json",
+  "@type": "sc:Manifest",
+  "metadata": [
+    {
+      "label": "Shelfmark",
+      "value": "Vat.ebr.530.pt.2"
+    }
+  ],
+  "label": "Vat.ebr.530.pt.2",
+  "description": "",
+  "thumbnail": {
+    "@id": "https://digi.vatlib.it/pub/digit/MSS_Vat.ebr.530.pt.2/cover/cover.jpg",
+    "@type": "dctypes:Image",
+    "format": "image/jpeg"
+  },
+  "viewingDirection": "right-to-left",
+  "viewingHint": "paged",
+  "attribution": "Images Copyright Biblioteca Apostolica Vaticana",
+  "logo": "https://digi.vatlib.it/resource/img/i/DVL_logo.jpg",
+  "sequences": [
+    {
+      "@type": "sc:Sequence",
+      "canvases": [
+        {
+          "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/canvas/p0001",
+          "@type": "sc:Canvas",
+          "label": "1r",
+          "width": 3562,
+          "height": 4981,
+          "images": [
+            {
+              "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/res/anno0001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/res/img0001",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.530.pt.2/Vat.ebr.530.pt.2_0001_fa_0001r.jp2",
+                  "profile": "http://iiif.io/api/image/2/level2.json"
+                },
+                "width": 3562,
+                "height": 4981
+              },
+              "on": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/canvas/p0001"
+            }
+          ],
+          "thumbnail": {
+            "@id": "https://digi.vatlib.it/pub/digit/MSS_Vat.ebr.530.pt.2/thumb/Vat.ebr.530.pt.2_0001_fa_0001r.tif.jpg",
+            "@type": "dctypes:Image",
+            "format": "image/jpeg",
+            "width": 107,
+            "height": 150
+          },
+          "viewingHint": "non-paged",
+          "seeAlso": [
+            {
+              "@id": "https://avichailevy-sys.github.io/midrash-vatican-viewer/Vat.ebr.530.pt.2/altos/IM990001954650205171_00001_Vat.ebr.530.pt.2_0001_fa_0001r.xml",
+              "format": "application/alto+xml",
+              "profile": "http://www.loc.gov/standards/alto/v4/alto-4-3.xsd"
+            }
+          ]
+        },
+        {
+          "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/canvas/p0002",
+          "@type": "sc:Canvas",
+          "label": "1v",
+          "width": 3562,
+          "height": 4981,
+          "images": [
+            {
+              "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/res/anno0002",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/res/img0002",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.530.pt.2/Vat.ebr.530.pt.2_0002_fa_0001v.jp2",
+                  "profile": "http://iiif.io/api/image/2/level2.json"
+                },
+                "width": 3562,
+                "height": 4981
+              },
+              "on": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/canvas/p0002"
+            }
+          ],
+          "thumbnail": {
+            "@id": "https://digi.vatlib.it/pub/digit/MSS_Vat.ebr.530.pt.2/thumb/Vat.ebr.530.pt.2_0002_fa_0001v.tif.jpg",
+            "@type": "dctypes:Image",
+            "format": "image/jpeg",
+            "width": 107,
+            "height": 150
+          },
+          "seeAlso": [
+            {
+              "@id": "https://avichailevy-sys.github.io/midrash-vatican-viewer/Vat.ebr.530.pt.2/altos/IM990001954650205171_00002_Vat.ebr.530.pt.2_0002_fa_0001v.xml",
+              "format": "application/alto+xml",
+              "profile": "http://www.loc.gov/standards/alto/v4/alto-4-3.xsd"
+            }
+          ]
+        },
+        {
+          "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/canvas/p0003",
+          "@type": "sc:Canvas",
+          "label": "2r",
+          "width": 3562,
+          "height": 4981,
+          "images": [
+            {
+              "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/res/anno0003",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/res/img0003",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.530.pt.2/Vat.ebr.530.pt.2_0003_fa_0002r.jp2",
+                  "profile": "http://iiif.io/api/image/2/level2.json"
+                },
+                "width": 3562,
+                "height": 4981
+              },
+              "on": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/canvas/p0003"
+            }
+          ],
+          "thumbnail": {
+            "@id": "https://digi.vatlib.it/pub/digit/MSS_Vat.ebr.530.pt.2/thumb/Vat.ebr.530.pt.2_0003_fa_0002r.tif.jpg",
+            "@type": "dctypes:Image",
+            "format": "image/jpeg",
+            "width": 107,
+            "height": 150
+          },
+          "seeAlso": [
+            {
+              "@id": "https://avichailevy-sys.github.io/midrash-vatican-viewer/Vat.ebr.530.pt.2/altos/IM990001954650205171_00003_Vat.ebr.530.pt.2_0003_fa_0002r.xml",
+              "format": "application/alto+xml",
+              "profile": "http://www.loc.gov/standards/alto/v4/alto-4-3.xsd"
+            }
+          ]
+        },
+        {
+          "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/canvas/p0004",
+          "@type": "sc:Canvas",
+          "label": "2v",
+          "width": 3562,
+          "height": 4914,
+          "images": [
+            {
+              "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/res/anno0004",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/res/img0004",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.530.pt.2/Vat.ebr.530.pt.2_0004_fa_0002v.jp2",
+                  "profile": "http://iiif.io/api/image/2/level2.json"
+                },
+                "width": 3562,
+                "height": 4914
+              },
+              "on": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/canvas/p0004"
+            }
+          ],
+          "thumbnail": {
+            "@id": "https://digi.vatlib.it/pub/digit/MSS_Vat.ebr.530.pt.2/thumb/Vat.ebr.530.pt.2_0004_fa_0002v.tif.jpg",
+            "@type": "dctypes:Image",
+            "format": "image/jpeg",
+            "width": 108,
+            "height": 150
+          },
+          "viewingHint": "non-paged",
+          "seeAlso": [
+            {
+              "@id": "https://avichailevy-sys.github.io/midrash-vatican-viewer/Vat.ebr.530.pt.2/altos/IM990001954650205171_00004_Vat.ebr.530.pt.2_0004_fa_0002v.xml",
+              "format": "application/alto+xml",
+              "profile": "http://www.loc.gov/standards/alto/v4/alto-4-3.xsd"
+            }
+          ]
+        },
+        {
+          "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/canvas/p0005",
+          "@type": "sc:Canvas",
+          "label": "3r.[02.fs.0000]",
+          "width": 5230,
+          "height": 6706,
+          "images": [
+            {
+              "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/res/anno0005",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/res/img0005",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.530.pt.2/Vat.ebr.530.pt.2_0005_fa_0003r.%5B02.fs.0000%5D.jp2",
+                  "profile": "http://iiif.io/api/image/2/level2.json"
+                },
+                "width": 5230,
+                "height": 6706
+              },
+              "on": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/canvas/p0005"
+            }
+          ],
+          "thumbnail": {
+            "@id": "https://digi.vatlib.it/pub/digit/MSS_Vat.ebr.530.pt.2/thumb/Vat.ebr.530.pt.2_0005_fa_0003r.%5B02.fs.0000%5D.tif.jpg",
+            "@type": "dctypes:Image",
+            "format": "image/jpeg",
+            "width": 116,
+            "height": 150
+          },
+          "viewingHint": "non-paged",
+          "seeAlso": [
+            {
+              "@id": "https://avichailevy-sys.github.io/midrash-vatican-viewer/Vat.ebr.530.pt.2/altos/IM990001954650205171_00005_Vat.ebr.530.pt.2_0005_fa_0003r.%5B02.fs.0000%5D.xml",
+              "format": "application/alto+xml",
+              "profile": "http://www.loc.gov/standards/alto/v4/alto-4-3.xsd"
+            }
+          ]
+        },
+        {
+          "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/canvas/p0006",
+          "@type": "sc:Canvas",
+          "label": "3v.[02.fs.0000]",
+          "width": 5337,
+          "height": 6714,
+          "images": [
+            {
+              "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/res/anno0006",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/res/img0006",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.530.pt.2/Vat.ebr.530.pt.2_0006_fa_0003v.%5B02.fs.0000%5D.jp2",
+                  "profile": "http://iiif.io/api/image/2/level2.json"
+                },
+                "width": 5337,
+                "height": 6714
+              },
+              "on": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/canvas/p0006"
+            }
+          ],
+          "thumbnail": {
+            "@id": "https://digi.vatlib.it/pub/digit/MSS_Vat.ebr.530.pt.2/thumb/Vat.ebr.530.pt.2_0006_fa_0003v.%5B02.fs.0000%5D.tif.jpg",
+            "@type": "dctypes:Image",
+            "format": "image/jpeg",
+            "width": 119,
+            "height": 150
+          },
+          "viewingHint": "non-paged",
+          "seeAlso": [
+            {
+              "@id": "https://avichailevy-sys.github.io/midrash-vatican-viewer/Vat.ebr.530.pt.2/altos/IM990001954650205171_00006_Vat.ebr.530.pt.2_0006_fa_0003v.%5B02.fs.0000%5D.xml",
+              "format": "application/alto+xml",
+              "profile": "http://www.loc.gov/standards/alto/v4/alto-4-3.xsd"
+            }
+          ]
+        },
+        {
+          "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/canvas/p0007",
+          "@type": "sc:Canvas",
+          "label": "custodia",
+          "width": 5155,
+          "height": 6503,
+          "images": [
+            {
+              "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/res/anno0007",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/res/img0007",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.530.pt.2/Vat.ebr.530.pt.2_0007_yr_custodia.jp2",
+                  "profile": "http://iiif.io/api/image/2/level2.json"
+                },
+                "width": 5155,
+                "height": 6503
+              },
+              "on": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/canvas/p0007"
+            }
+          ],
+          "thumbnail": {
+            "@id": "https://digi.vatlib.it/pub/digit/MSS_Vat.ebr.530.pt.2/thumb/Vat.ebr.530.pt.2_0007_yr_custodia.tif.jpg",
+            "@type": "dctypes:Image",
+            "format": "image/jpeg",
+            "width": 118,
+            "height": 150
+          },
+          "viewingHint": "non-paged",
+          "seeAlso": [
+            {
+              "@id": "https://avichailevy-sys.github.io/midrash-vatican-viewer/Vat.ebr.530.pt.2/altos/IM990001954650205171_00007_Vat.ebr.530.pt.2_0007_yr_custodia.xml",
+              "format": "application/alto+xml",
+              "profile": "http://www.loc.gov/standards/alto/v4/alto-4-3.xsd"
+            }
+          ]
+        },
+        {
+          "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/canvas/p0008",
+          "@type": "sc:Canvas",
+          "label": "colorchecker",
+          "width": 5070,
+          "height": 6322,
+          "images": [
+            {
+              "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/res/anno0008",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/res/img0008",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.530.pt.2/Vat.ebr.530.pt.2_0008_zx_colorchecker.jp2",
+                  "profile": "http://iiif.io/api/image/2/level2.json"
+                },
+                "width": 5070,
+                "height": 6322
+              },
+              "on": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/canvas/p0008"
+            }
+          ],
+          "thumbnail": {
+            "@id": "https://digi.vatlib.it/pub/digit/MSS_Vat.ebr.530.pt.2/thumb/Vat.ebr.530.pt.2_0008_zx_colorchecker.tif.jpg",
+            "@type": "dctypes:Image",
+            "format": "image/jpeg",
+            "width": 120,
+            "height": 150
+          },
+          "viewingHint": "non-paged",
+          "seeAlso": [
+            {
+              "@id": "https://avichailevy-sys.github.io/midrash-vatican-viewer/Vat.ebr.530.pt.2/altos/IM990001954650205171_00008_Vat.ebr.530.pt.2_0008_zx_colorchecker.xml",
+              "format": "application/alto+xml",
+              "profile": "http://www.loc.gov/standards/alto/v4/alto-4-3.xsd"
+            }
+          ]
+        },
+        {
+          "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/canvas/p0009",
+          "@type": "sc:Canvas",
+          "label": "scala.millimetrica",
+          "width": 5230,
+          "height": 6706,
+          "images": [
+            {
+              "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/res/anno0009",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/res/img0009",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.530.pt.2/Vat.ebr.530.pt.2_0009_zz_scala.millimetrica.jp2",
+                  "profile": "http://iiif.io/api/image/2/level2.json"
+                },
+                "width": 5230,
+                "height": 6706
+              },
+              "on": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/canvas/p0009"
+            }
+          ],
+          "thumbnail": {
+            "@id": "https://digi.vatlib.it/pub/digit/MSS_Vat.ebr.530.pt.2/thumb/Vat.ebr.530.pt.2_0009_zz_scala.millimetrica.tif.jpg",
+            "@type": "dctypes:Image",
+            "format": "image/jpeg",
+            "width": 116,
+            "height": 150
+          },
+          "viewingHint": "non-paged",
+          "seeAlso": [
+            {
+              "@id": "https://avichailevy-sys.github.io/midrash-vatican-viewer/Vat.ebr.530.pt.2/altos/IM990001954650205171_00009_Vat.ebr.530.pt.2_0009_zz_scala.millimetrica.xml",
+              "format": "application/alto+xml",
+              "profile": "http://www.loc.gov/standards/alto/v4/alto-4-3.xsd"
+            }
+          ]
+        }
+      ],
+      "viewingDirection": "right-to-left",
+      "viewingHint": "paged"
+    }
+  ],
+  "structures": [
+    {
+      "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/range/r0",
+      "@type": "sc:Range",
+      "label": " ",
+      "ranges": [
+        "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/range/r0-0"
+      ]
+    },
+    {
+      "@id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/range/r0-0",
+      "@type": "sc:Range",
+      "label": "Vat.ebr.530.pt.2",
+      "within": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/range/r0",
+      "canvases": [
+        "https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.2/canvas/p0001"
+      ]
+    }
+  ],
+  "seeAlso": [
+    "https://digi.vatlib.it/mss/detail/Vat.ebr.530.pt.2"
+  ]
+}
